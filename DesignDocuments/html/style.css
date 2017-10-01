@@ -1,0 +1,36 @@
+body {
+  background-color: #FFDDAA;
+}
+
+#button {
+  border-radius: 15px;
+  color: black;
+}
+
+.pagehead {
+  margin: 50px 0 50px 0;
+}
+
+.required {
+  background-color: yellow;
+  border-color: red;
+}
+
+form {
+  border: 5px solid #84B0C6;
+  padding:25px;
+}
+
+.bold, li {
+  font-weight: bold;
+}
+
+.clear {
+  background-color: white;
+  border-color:white;
+}
+
+.clearDiv {
+  background-color: #FFDDAA;
+  border-color:white;
+}
