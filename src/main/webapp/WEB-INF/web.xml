@@ -101,8 +101,12 @@
     <servlet-class>org.apache.cocoon.servletservice.DispatcherServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
+    <servlet>
+        <servlet-name>ServletStartup</servlet-name>
+        <servlet-class>edu.matc.controller.ServletStartup</servlet-class>
+    </servlet>
 
-  <!-- URL space mappings ============================================= -->
+    <!-- URL space mappings ============================================= -->
 
   <!--
     - Cocoon handles all the URL space assigned to the webapp using its sitemap.
