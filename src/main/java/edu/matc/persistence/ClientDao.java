@@ -6,9 +6,9 @@ import edu.matc.entity.Client;
 import java.sql.Date;
 import java.sql.ResultSet;
 import java.util.List;
-import java.util.ArrayList:
+import java.util.ArrayList;
 
-public class ClientDAO {
+public class ClientDao {
 
     private ArrayList<Client> clients;
 
@@ -30,7 +30,7 @@ public class ClientDAO {
         Client client = new Client();
 
 
-
+/*
     client.setUserUserID(int userUserID) {
 
     }
@@ -82,7 +82,7 @@ public class ClientDAO {
     }
 
         client.setDateUserRegistered(resultSet.getString());
+    }*/
+
     }
-
-
 }

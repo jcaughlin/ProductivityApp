@@ -1,12 +1,16 @@
-<jsp:include page="jstl_tag.jsp"/>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: josephcaughlin
   Date: 10/5/17
   Time: 1:24 PM
-  To change this template use File | Settings | File Templates.
+  To change this template use Preferences | File and Code Templates--%>
 --%>
 <!--Page Heading-->
+
+
+<!--Start of container-->
+<div class="container"></div>
 <div class="row pagehead">
     <div class="col-sm-10">
         <div class="page-header row center-block">
@@ -17,3 +21,10 @@
         <jsp:include page="dropdown_menu.jsp" />
     </div>
 </div>
+
+
+<jsp:include page="head.jsp"/>
+
+<jsp:include page="header.jsp"/>
+
+<jsp:include page="footer.jsp"/>
