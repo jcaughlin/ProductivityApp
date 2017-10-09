@@ -1,7 +1,7 @@
 package edu.matc.entity;
 
 
-public class CommonUserTasks {  
+public class CommonUserTasks {
         private double sleepTime;
         private double showerTime;
         private double studyTime;
