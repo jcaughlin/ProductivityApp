@@ -26,6 +26,9 @@
     <!-- Custom styles for this template -->
     <link href="http://v4-alpha.getbootstrap.com/examples/grid/grid.css" rel="stylesheet">
 
+    <!--Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 

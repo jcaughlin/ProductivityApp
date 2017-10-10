@@ -8,6 +8,9 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
+<!-- User name and password come from previous page -->
+<!-- TODO servlets to process-->
+
 <fieldset>
     <form class="form-signin" method="post" action="$1">
         <h2 class="form-signin-heading">Create an Account</h2>

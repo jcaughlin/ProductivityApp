@@ -11,7 +11,7 @@
 
 
 <fieldset>
-    <form class="form-signin" method="post" action="/login.jsp">
+    <form class="form-signin" method="post" action="/content/new_user_index_content.jsp">
         <h2 class="form-signin-heading">Create an Account</h2>
 
         <!-- Create User Name-->

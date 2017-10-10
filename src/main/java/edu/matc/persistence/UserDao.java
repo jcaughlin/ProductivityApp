@@ -144,11 +144,16 @@ public class UserDao {
         }
     }
 
+    /**
+     * Remove user
+     *
+     * @param user
+     */
     public void removeUser(User user) {
         Transaction transaction = null;
         Session session = null;
 
-        try{
+        try {
             session = SessionFactoryProvider.getSessionFactory().openSession();
             transaction = session.beginTransaction();
             session.delete(user);
@@ -162,10 +167,34 @@ public class UserDao {
                 }
             }
         } finally {
-                if(session !=  null) {
-                    session.close();
-                }
+            if (session != null) {
+                session.close();
             }
         }
+    }
+
+    /**
+     * Query user by email
+     *
+     * @param userEmail
+     * @return user
+     */
+    public User userRecoverPasswordWithEmail(String userEmail) {
+
+        User user = null;
+        Session session = null;
+
+        try {
+            session = SessionFactoryProvider.getSessionFactory().openSession();
+            user = (User) session.get(User.class, userEmail);
+        } catch (HibernateException he) {
+            log.error("Error in search by User Email");
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+        return user;
+    }
 }
 
