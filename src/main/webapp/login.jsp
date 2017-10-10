@@ -14,9 +14,9 @@
     <form class="form-signin" method="post" action="/login.jsp">
         <h2 class="form-signin-heading">Create an Account</h2>
 
-        <!-- User Email-->
-        <label for="userEmail" class="sr-only">Password</label>
-        <input type="email" class="form-control" id="userEmail" placeholder="Email address" required autofocus>
+        <!-- Create User Name-->
+        <label for="userName" class="sr-only">Create User</label>
+        <input type="email" class="form-control" id="userName" placeholder="Create User Name" required autofocus>
 
         <!--User password-->
         <label for="userpassword" class="sr-only">Create Password:</label>

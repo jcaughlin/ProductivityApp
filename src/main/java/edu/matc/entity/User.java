@@ -2,13 +2,15 @@ package edu.matc.entity;
 
 
 import org.hibernate.annotations.GenericGenerator;
-import edu.matc.entity.Client;
 import javax.persistence.*;
 import java.sql.Date;
 
+/**
+ *
+ */
 @Entity
 @Table(name = "productivity_appdb")
-public class Client {
+public class User {
 
     @Id
     @GeneratedValue(generator="increment")
@@ -44,7 +46,7 @@ public class Client {
     private String userCity;
 
     // Empty Constructor
-    public Client() {
+    public User() {
 
     }
 
