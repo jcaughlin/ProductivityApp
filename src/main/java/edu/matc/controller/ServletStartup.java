@@ -39,7 +39,7 @@ public class ServletStartup extends HttpServlet {
 
         LocalDate date = LocalDate.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy");
-        String year = date.format(formatter);;
+        String year = date.format(formatter);
 
 
         HttpSession session = request.getSession();

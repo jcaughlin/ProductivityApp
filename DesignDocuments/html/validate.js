@@ -173,7 +173,7 @@ function validateForm() {
       var suffixTextBox = document.getElementById("userTelSuffix");
       var suffixOutput = document.getElementById("suffixError");
       var telSuffixSpan = document.createElement("span");
-      telSuffixSpan.setAttribute("id", "suffixErrorId")
+      telSuffixSpan.setAttribute("id", "suffixErrorId");
       var suffixErrorMessage = document.createTextNode(SUFFIX_ERROR);
       telSuffixSpan.appendChild(suffixErrorMessage);
       suffixOutput.appendChild(telSuffixSpan);

@@ -1,17 +1,46 @@
 package edu.matc.entity;
 
+
+import org.hibernate.annotations.GenericGenerator;
+import edu.matc.entity.Client;
+import javax.persistence.*;
 import java.sql.Date;
 
+@Entity
+@Table(name = "productivity_appdb")
 public class Client {
 
+    @Id
+    @GeneratedValue(generator="increment")
+    @GenericGenerator(name = "increment", strategy = "increment")
+    @Column(name = "user_id")
     private int userUserID;
-    private String userFirstName;
-    private String userLastName;
+
+    @Column(name = "user_name")
     private String userUserName;
+
+    @Column(name = "user_password")
     private String userPassword;
+
+    @Column(name = "user_first_name")
+    private String userFirstName;
+
+    @Column(name = "user_last_name")
+    private String userLastName;
+
+    @Column(name = "user_email")
+    private String userEmail;
+
+    @Column(name = "user_registered_date")
     private Date dateUserRegistered;
+
+    @Column(name = "user_dateofbirth")
     private Date userDateOfBirth;
+
+    @Column(name = "user_photo_link")
     private String pathToUserPhoto;
+
+    @Column(name = "user_city")
     private String userCity;
 
     // Empty Constructor
@@ -19,18 +48,7 @@ public class Client {
 
     }
 
-    // Client Constructor
-    public Client(int userUserID, String userFirstName, String userLastName, String userUserName, String userPassword, Date dateUserRegistered, Date userDateOfBirth, String pathToUserPhoto, String userCity) {
-        this.userUserID = userUserID;
-        this.userFirstName = userFirstName;
-        this.userLastName = userLastName;
-        this.userUserName = userUserName;
-        this.userPassword = userPassword;
-        this.dateUserRegistered = dateUserRegistered;
-        this.userDateOfBirth = userDateOfBirth;
-        this.pathToUserPhoto = pathToUserPhoto;
-        this.userCity = userCity;
-    }
+
 
     public int getUserUserID() {
         return userUserID;
@@ -102,5 +120,13 @@ public class Client {
 
     public void setUserCity(String userCity) {
         this.userCity = userCity;
+    }
+
+    public String getUserEmail() {
+        return userEmail;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
     }
 }
