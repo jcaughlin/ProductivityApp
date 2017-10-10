@@ -9,52 +9,34 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<div class="pull-right">
+
 <fieldset>
-    <form class="form-vertial" method="post" action="/login.jsp">
+    <form class="form-signin" method="post" action="/login.jsp">
+        <h2 class="form-signin-heading">Create an Account</h2>
 
         <!-- User Email-->
-        <div class="control-group">
-            <label class="control-label" for="email">Email Address:</label>
-            <div class="controls">
-                <input type="email" required="required" class="input-xlarge" id="email" name="email">
-            </div>
-        </div>
+        <label for="userEmail" class="sr-only">Password</label>
+        <input type="email" class="form-control" id="userEmail" placeholder="Email address" required autofocus>
 
         <!--User password-->
-        <div class="control-group">
-            <label class="control-label" for="userpassword">Create Password:</label>
+        <label for="userpassword" class="sr-only">Create Password:</label>
+        <input type="password" class="form-control" id="userPassword" placeholder="Password" required>
 
-        <div class="controls"></div>
-            <input type="email" required="required" class="input-xlarge" id="userpassword" name="userpassword">
+        <!--User password-->
+        <label for="userPasswordVerify" class="sr-only">Verify Password:</label>
+        <input type="password" class="form-control" id="userPasswordVerify" placeholder="Verify Password" required>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="Remember Me">
+                <span>Remember Me</span>
+            </label>
         </div>
 
-
-        <!--User password verify-->
-        <div class="control-group">
-            <label class="control-label" for="passwordverify">Verify Password:</label>
-            <div class="controls">
-                <input type="password" required="required" class="input-xlarge" id="passwordverify" name="passwordverify">
-            </div>
-        </div>
-<div class="control-group">
-
-    <div class="g-recaptcha" data-sitekey="6LcoVTMUAAAAALS8qu7IVM0NiSeXfFddonZJi8Z1"></div>
-</div>
         <!--Submit Button-->
-        <div class="control-group">
-            <div class="button-group">
         <input type="submit" class="btn btn-success" value="Sign Up Now">
-            </div>
-        </div>
-
-
-
 
     </form>
-
-
-
 </fieldset>
 
-</div>
+

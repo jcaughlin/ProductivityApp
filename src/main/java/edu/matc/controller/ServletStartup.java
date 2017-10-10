@@ -3,34 +3,57 @@ package edu.matc.controller;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.annotation.*;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import org.apache.log4j.*;
-/**
- *
- *
- *@author    JS Caughlin
- */
+import java.time.format.DateTimeFormatter;
+import java.time.LocalDate;
+
+
 @WebServlet(
-        name = "ServletStartup",
-        urlPatterns = {"/welcome"}
-) public class ServletStartup extends HttpServlet {
+        urlPatterns = {"/startup"}
+)
 
-    Logger logger = Logger.getLogger(this.getClass());
+public class ServletStartup extends HttpServlet {
 
-
-    public void doGet(HttpServletRequest request, HttpServletResponse response)
+    /**
+     *  Handles HTTP GET requests.
+     *
+     *@param  request               the HttpRequest
+     *@param  response              the HttpResponse
+     *@exception  ServletException  if there is a general
+     *                              servlet exception
+     *@exception  IOException       if there is a general
+     *                              I/O exception
+     */
+    public void doGet(HttpServletRequest request,
+                      HttpServletResponse response)
             throws ServletException, IOException {
 
-        String url = "/index.jsp";
+        //Create the url
+
+        String url = "/Users/josephcaughlin/MadJavaEntFall2017/ProductivityApp/src/main/webapp/index.jsp";
+
+        LocalDate date = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy");
+        String year = date.format(formatter);;
 
 
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher(url);
-        requestDispatcher.forward(request,response);
+        HttpSession session = request.getSession();
+        session.setAttribute("Year", year);
+
+
+
+
+        //Forward to jsp page
+        RequestDispatcher  dispatcher =
+                getServletContext().getRequestDispatcher(url);
+
+        dispatcher.forward(request, response);
+
     }
 
 }
-

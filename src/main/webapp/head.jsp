@@ -1,11 +1,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page language="java" session="true" %>
 <%--
   Created by IntelliJ IDEA.
   User: josephcaughlin
   Date: 10/5/17
   Time: 1:27 PM
   To change this template use Preferences | File and Code Templates--%>
---%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +18,7 @@
     <meta name="author" content="">
     <link rel="icon" href="http://v4-alpha.getbootstrap.com/favicon.ico">
 
-    <title>$#[[$Title$]]#</title>
+    <title>${title}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,6 +29,9 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 
+    <script src="../javascript/scripts.js"></script>
+
     <!-- User Style Sheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="../css/userstyles.css" rel="stylesheet">
+
 </head>

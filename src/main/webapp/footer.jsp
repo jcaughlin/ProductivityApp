@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page language="java" session="true" %>
 <%--
   Created by IntelliJ IDEA.
   User: josephcaughlin
@@ -8,8 +9,10 @@
 --%>
 
 
-</div class="footer">
-    <p> &#169; (©) by ${USER} code for year </p>
+<div class="footer">
+    <p> &#169;&nbsp;${author}&nbsp;<c:out value="${sessionScope.Year}"/></p>
+
+    <c:out value="${sessionScope.Year}" />
 </div>
 
 </div> <!--Botton of Container-->
