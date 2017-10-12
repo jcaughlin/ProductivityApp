@@ -41,6 +41,7 @@ In some ways this is a personal kaizen project as well as a gut check. I plan to
  * [OpenWeatherMap] [https://openweathermap.org/examples]
  * [Google Calendar] [https://developers.google.com/google-apps/calendar/]
  * [Google Calendar Java Quickstart] https://developers.google.com/google-apps/calendar/quickstart/java
+ * [Google Task] [https://developers.google.com/google-apps/tasks/]
  * Stop Watch
 * Deploy to AWS per requirements
 * Logging
