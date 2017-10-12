@@ -15,16 +15,27 @@
         <h2 class="form-signin-heading">Create an Account</h2>
 
         <!-- Create User Name-->
-        <label for="userName" class="sr-only">Create User</label>
-        <input type="email" class="form-control" id="userName" placeholder="Create User Name" required autofocus>
+        <div class="form-group has-warning">
+            <label for="userName" class="sr-only">Create User Name</label>
+            <input type="email" class="form-control" id="userName" placeholder="Create User Name" required autofocus>
+            <div class="form-control-feedback">User Name is already in user.</div>
+        </div>
+
 
         <!--User password-->
-        <label for="userpassword" class="sr-only">Create Password:</label>
-        <input type="password" class="form-control" id="userPassword" placeholder="Password" required>
+        <div class="form-group">
+            <label for="userpassword" class="sr-only">Create Password:</label>
+            <input type="password" class="form-control" id="userPassword" placeholder="Password" required>
+        </div>
+
 
         <!--User password-->
-        <label for="userPasswordVerify" class="sr-only">Verify Password:</label>
-        <input type="password" class="form-control" id="userPasswordVerify" placeholder="Verify Password" required>
+        <div class="form-group has-warning">
+            <label for="userPasswordVerify" class="sr-only">Verify Password:</label>
+            <input type="password" class="form-control" id="userPasswordVerify" placeholder="Verify Password" required>
+            <div class="form-control-feedback">Passwords Do Not Match</div>
+        </div>
+
 
         <div class="checkbox">
             <label>

@@ -46,16 +46,17 @@
 
 ### Week 7
 - [ ] Time log entries
+- [ ] Amazon Web Services
 - [ ] Add user search functionality
+- [ ] Add user registration
 - [ ] Add Data Analyis Features
-- [ ] Determine how to add paging of search results
-- [ ] Integration with weather service and/or snow depth data
+
 
 ### Week 8
 - [ ] Time log entries
 - [ ] Don't Panic
 - [ ] Implement paging of search results
-- [ ] Open Weather Map Integration
+- [ ] JSON Open Weather Map Integration
 - [ ] Code review
 
 ### Week 9
@@ -64,6 +65,7 @@
 - [ ] Add password reset/reminder function
 
 ### Week 10
+- [ ] Google Tasks vs. Calendar
 - [ ] Time log entries
 
 ### Week 11
