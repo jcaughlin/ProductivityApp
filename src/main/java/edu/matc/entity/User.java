@@ -9,7 +9,7 @@ import java.sql.Date;
  *
  */
 @Entity
-@Table(name = "productivity_appdb")
+@Table(name = "users")
 public class User {
 
     @Id
@@ -37,7 +37,7 @@ public class User {
     private Date dateUserRegistered;
 
     @Column(name = "user_dateofbirth")
-    private Date userDateOfBirth;
+    private String userDateOfBirth;
 
     @Column(name = "user_photo_link")
     private String pathToUserPhoto;
@@ -100,11 +100,11 @@ public class User {
         this.dateUserRegistered = dateUserRegistered;
     }
 
-    public Date getUserDateOfBirth() {
+    public String getUserDateOfBirth() {
         return userDateOfBirth;
     }
 
-    public void setUserDateOfBirth(Date userDateOfBirth) {
+    public void setUserDateOfBirth(String userDateOfBirth) {
         this.userDateOfBirth = userDateOfBirth;
     }
 

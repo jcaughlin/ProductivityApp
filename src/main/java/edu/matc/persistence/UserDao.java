@@ -84,13 +84,37 @@ public class UserDao {
     }
 
     /**
+     * Gets a user from the database
+     *
+     * @param user_name The username to find
+     * @return a User
+     */
+    public User getUserByUserName(String user_name) {
+        User user = null;
+        Session session = null;
+
+        try {
+            session = SessionFactoryProvider.getSessionFactory().openSession();
+            user = (User) session.get(User.class, user_name);
+        } catch (HibernateException he) {
+            log.error("Error retrieving username: " + user_name, he);
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+
+        return user;
+    }
+
+    /**
      * save new user
      *
      * @param user user to insert
      * @return id of the inserted user
      */
 
-    public int insert(User user) {
+    public int addUser(User user) {
         int id = 0;
         Transaction transaction = null;
         Session session = null;
@@ -102,7 +126,7 @@ public class UserDao {
         } catch (HibernateException he) {
             if (transaction != null) {
                 try {
-                    transaction.rollback();
+                    transaction.rollback();x``
                 } catch (HibernateException he2) {
                     log.error("Error rolling back save of user: " + user, he2);
                 }
@@ -176,17 +200,17 @@ public class UserDao {
     /**
      * Query user by email
      *
-     * @param userEmail
+     * @param user_email
      * @return user
      */
-    public User userRecoverPasswordWithEmail(String userEmail) {
+    public User userRecoverPasswordWithEmail(String user_email) {
 
         User user = null;
         Session session = null;
 
         try {
             session = SessionFactoryProvider.getSessionFactory().openSession();
-            user = (User) session.get(User.class, userEmail);
+            user = (User) session.get(User.class, user_email);
         } catch (HibernateException he) {
             log.error("Error in search by User Email");
         } finally {
@@ -196,5 +220,6 @@ public class UserDao {
         }
         return user;
     }
+
 }
 
