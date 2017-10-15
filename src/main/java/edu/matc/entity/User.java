@@ -51,6 +51,17 @@ public class User {
     }
 
 
+    public User(String userFirstName, String userLastName, String userUserName, String userCity,
+                String userEmail, String userPassword) {
+        this.userFirstName = userFirstName;
+        this.userLastName = userLastName;
+        this.userUserName = userUserName;
+        this.userCity = userCity;
+        this.userEmail = userEmail;
+        this.userPassword = userPassword;
+    }
+
+
 
     public int getUserUserID() {
         return userUserID;
@@ -130,5 +141,22 @@ public class User {
 
     public void setUserEmail(String userEmail) {
         this.userEmail = userEmail;
+    }
+
+    @Override
+    public String toString() {
+        String userString;
+
+        userString = "\nUserID: " + userUserID + "\n" +
+                "User\'s Name: " + userFirstName + " " + userLastName + "\n" +
+                "UserName: " + userUserName + "\n" +
+                "UserPassword: " + userPassword + "\n" +
+                "User Birthdate: " + userDateOfBirth + "\n" +
+                "Email: " + userEmail + "\n" +
+                "City: " + userCity + "\n" +
+                "Registered Date: " + dateUserRegistered + "\n" +
+                "Photo Link: " + pathToUserPhoto + "\n";
+
+        return userString;
     }
 }
