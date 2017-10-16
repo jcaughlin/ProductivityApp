@@ -208,7 +208,7 @@ public class UserDao {
      *
      * @return int recordCount the number of records
      */
-    public int getRecordCount() {
+ /*   public int getRecordCount() {
         Session session = null;
         Transaction transaction = null;
 
@@ -224,7 +224,7 @@ public class UserDao {
         return count;
 
 
-    }
+    }*/
 
 
 }

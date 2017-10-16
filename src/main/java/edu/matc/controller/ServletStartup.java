@@ -14,26 +14,27 @@ import java.time.LocalDate;
 
 
 @WebServlet(
+
+        name = "ServletStartup",
         urlPatterns = {"/startup"}
 )
 
 public class ServletStartup extends HttpServlet {
 
     /**
-     *  Handles HTTP GET requests.
+     * Handles HTTP GET requests.
      *
-     *@param  request               the HttpRequest
-     *@param  response              the HttpResponse
-     *@exception  ServletException  if there is a general
-     *                              servlet exception
-     *@exception  IOException       if there is a general
-     *                              I/O exception
+     * @param request  the HttpRequest
+     * @param response the HttpResponse
+     * @throws ServletException if there is a general
+     *                          servlet exception
+     * @throws IOException      if there is a general
+     *                          I/O exception
      */
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)
             throws ServletException, IOException {
 
-        //Create the url
 
         String url = "/Users/josephcaughlin/MadJavaEntFall2017/ProductivityApp/src/main/webapp/index.jsp";
 
@@ -46,10 +47,8 @@ public class ServletStartup extends HttpServlet {
         session.setAttribute("Year", year);
 
 
-
-
         //Forward to jsp page
-        RequestDispatcher  dispatcher =
+        RequestDispatcher dispatcher =
                 getServletContext().getRequestDispatcher(url);
 
         dispatcher.forward(request, response);
