@@ -42,9 +42,9 @@ public class UserDaoTest {
        /* user = dao.getUser(5);
         assertTrue(user.getUserFirstName().equals("Price"));*/
 
-        user = dao.getUserById(95);
+        user = dao.getUserById(100);
         log.info("The user found with user ID is : " + user.toString());
-        assertTrue(user.getUserLastName().equals("Petty"));
+        assertTrue(user.getUserLastName().equals("Hogan"));
 
     }
 

@@ -9,11 +9,7 @@ import javax.servlet.http.*;
 
 @WebServlet(
         name = "AdminServlet",
-
-// ex. "/url"
         urlPatterns = "/admin"
-
-
 )
 public class AdminServlet extends HttpServlet {
 
@@ -25,7 +21,7 @@ public class AdminServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String url = "/Users/josephcaughlin/MadJavaEntFall2017/ProductivityApp/src/main/webapp/admin-login.jsp";
+        String url = "../webapp/admin-login.jsp";
         RequestDispatcher dispatcher =
                 getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);

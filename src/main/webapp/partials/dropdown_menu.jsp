@@ -8,7 +8,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <!--Dropdown Menu Button-->
-<div class="col-sm-2">
+<div class="col-sm-2 menu">
     <div class="btn-group">
         <button type="button" class="btn btn-info-outline">Menu</button>
         <button type="button" class="btn btn-info-outline dropdown-toggle" data-toggle="dropdown">

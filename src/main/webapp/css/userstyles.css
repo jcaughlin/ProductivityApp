@@ -5,12 +5,12 @@ body {
 }
 
 .footer {
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 
 .form-signin {
     max-width: 330px;
-    padding: 1rem;
+    padding: 2rem;
     margin: 0 auto;
     border: solid 5px #000000;
 }
@@ -51,4 +51,8 @@ body {
 
 .pagehead {
     padding-bottom: 20px;
+}
+
+.menu {
+    vertical-align: middle;
 }

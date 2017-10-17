@@ -36,7 +36,7 @@ public class ServletStartup extends HttpServlet {
             throws ServletException, IOException {
 
 
-        String url = "/Users/josephcaughlin/MadJavaEntFall2017/ProductivityApp/src/main/webapp/index.jsp";
+        String url = "/index.jsp";
 
         LocalDate date = LocalDate.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy");
