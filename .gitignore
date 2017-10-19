@@ -36,6 +36,7 @@
 /lib/
 src/main/resources/
 src/test/resources/
+src/main/webapp/resources/
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
@@ -77,4 +78,5 @@ fabric.properties
 .Trashes
 ehthumbs.db
 Thumbs.db
-MyAppLog.log
+
+

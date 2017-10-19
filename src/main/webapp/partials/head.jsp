@@ -25,6 +25,8 @@
 
     <!-- Custom styles for this template -->
     <link href="http://v4-alpha.getbootstrap.com/examples/grid/grid.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="http://v4-alpha.getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
 
     <!--Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

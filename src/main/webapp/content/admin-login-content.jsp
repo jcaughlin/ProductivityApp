@@ -11,19 +11,19 @@
 <!-- TODO Servlet to handle post action -->
 
 
-<fieldset>
-    <form class = "form-login" id="login" method="post" action="">
 
-        <h2 class="form-heading"><i class="fa fa-lock">::before</i>" Login"</h2>
+    <form class = "form-signin" id="login" method="post" action="">
 
-        <!-- Create User Name-->
-        <label for="userName" class="sr-only">Create User</label>
-        <input type="email" class="form-control" id="userName" placeholder="Enter User Name" required autofocus>
-
-        <!--User password-->
-        <label for="userpassword" class="sr-only">Create Password:</label>
-        <input type="password" class="form-control" id="userPassword" placeholder="Enter Password" required>
-
+            <h2 class="form-heading"><i class="fa fa-lock">::before</i>" Login"</h2>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
 
         <div class="checkbox">
             <label>
@@ -34,17 +34,24 @@
 
         <!--Submit Button-->
         <input type="submit" class="btn btn-success" value="Sign Up Now"><a href="${<VARIABLE_NAME>}">Forgot Password?</a>
-
     </form>
+<hr>
+
+        <form class="form-signin">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
 
 
-
-
-
-
-    </form>
-
-</fieldset>
 
 
 
