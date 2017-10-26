@@ -11,18 +11,10 @@
 
 <!--Start of container-->
 <div class="container">
-<div class="row pagehead">
-    <div class="col-sm-4">
-        <!--Placeholder Column for spacing -->
-    </div>
-    <div class="col-sm-6">
-        <div class="page-header row center-block">
-            <h1>${heading}</h1>
+
+        <div class="jumbotron jumbotron-fluid">
+            <h1 class="center">${heading}</h1>
         </div>
-    </div>
 
-        <jsp:include page="dropdown_menu.jsp" />
-
-</div>
 
 

@@ -8,10 +8,14 @@ body {
     margin-top: 1rem;
 }
 
+.center {
+    text-align: center;
+}
+
 .form-signin {
     max-width: 330px;
     padding: 2rem;
-    margin: 0 auto;
+    margin: 1em auto;
     border: solid 5px #000000;
 }
 
@@ -49,9 +53,6 @@ body {
     border-top-right-radius: 0;
 }
 
-.pagehead {
-    padding-bottom: 20px;
-}
 
 .menu {
     vertical-align: middle;

@@ -13,8 +13,6 @@
 
 <jsp:include page="partials/header.jsp"/>
 
-<!-- Your Content Goes Here -->
-
 <jsp:include page="content/user_login_content.jsp"/>
 
 <jsp:include page="partials/footer.jsp"/>

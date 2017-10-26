@@ -14,7 +14,7 @@ import javax.servlet.http.*;
 public class LoginHandler extends HttpServlet {
 
 
-    protected void doPost(HttpServletRequest request,
+    protected void doGet(HttpServletRequest request,
                           HttpServletResponse response)
             throws ServletException,
             IOException {
