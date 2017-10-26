@@ -14,7 +14,7 @@
 
 <jsp:include page="partials/header.jsp"/>
 
-<jsp:include page="content/new_user_index_content.jsp"/>
+<jsp:include page="content/user_login_content.jsp"/>
 
 <jsp:include page="partials/footer.jsp"/>
 
