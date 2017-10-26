@@ -5604,3 +5604,189 @@ City: Roccanova
 Registered Date: 2017-10-26
 Photo Link: null
 
+2017-10-26 15:19:36,241 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-26 15:19:36,254 13   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-26 15:19:36,257 16   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-26 15:19:36,264 23   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-26 15:19:36,305 64   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-26 15:19:36,306 65   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-26 15:19:36,432 191  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-26 15:19:36,592 351  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-26 15:19:36,607 366  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/productivity_appdbtest]
+2017-10-26 15:19:36,608 367  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-26 15:19:36,609 368  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-26 15:19:36,611 370  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-26 15:19:37,424 1183 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-26 15:19:37,697 1456 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-26 15:19:37,712 1471 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-26 15:19:38,304 2063 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000227: Running hbm2ddl schema export
+2017-10-26 15:19:38,982 2741 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000230: Schema export complete
+2017-10-26 15:19:39,203 2962 [main] INFO  edu.matc.persistence.UserDao  - 
+UserID: 95
+User's Name: Gavin Petty
+UserName: Xenos
+UserPassword: QLN87XAD9CK
+User Birthdate: 1969-10-29 05:25:25
+Email: neque.sed.dictum@faucibuslectusa.edu
+City: Bacabal
+Registered Date: 2017-10-26
+Photo Link: null
+
+2017-10-26 15:19:39,218 2977 [main] INFO  edu.matc.persistence.UserDao  - 
+UserID: 95
+User's Name: Gavin Petty
+UserName: Xenos
+UserPassword: QLN87XAD9CK
+User Birthdate: 1969-10-29 05:25:25
+Email: neque.sed.dictum@faucibuslectusa.edu
+City: Bacabal
+Registered Date: 2017-10-26
+Photo Link: null
+
+2017-10-26 15:19:39,265 3024 [main] INFO  edu.matc.persistence.UserDaoTest  - The user is 
+UserID: 101
+User's Name: Jack Johnson
+UserName: galvestongiant
+UserPassword: password
+User Birthdate: null
+Email: jack@wba.org
+City: Chicago
+Registered Date: null
+Photo Link: null
+
+2017-10-26 15:19:39,344 3103 [main] INFO  edu.matc.persistence.UserDaoTest  - 3
+2017-10-26 15:19:39,350 3109 [main] INFO  edu.matc.persistence.UserDaoTest  - The user found with user ID is : 
+UserID: 100
+User's Name: Brett Hogan
+UserName: Frances
+UserPassword: NNK93WDA6UO
+User Birthdate: 1960-02-28 03:44:41
+Email: nisi.magna.sed@sapiencursus.ca
+City: Roccanova
+Registered Date: 2017-10-26
+Photo Link: null
+
+2017-10-26 15:34:07,266 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-26 15:34:07,280 14   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-26 15:34:07,285 19   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-26 15:34:07,300 34   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-26 15:34:07,345 79   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-26 15:34:07,345 79   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-26 15:34:07,479 213  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-26 15:34:07,915 649  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-26 15:34:07,926 660  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/productivity_appdbtest]
+2017-10-26 15:34:07,928 662  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-26 15:34:07,929 663  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-26 15:34:07,930 664  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-26 15:34:08,699 1433 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-26 15:34:09,122 1856 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-26 15:34:09,140 1874 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-26 15:34:09,644 2378 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000227: Running hbm2ddl schema export
+2017-10-26 15:34:09,995 2729 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000230: Schema export complete
+2017-10-26 15:34:10,250 2984 [main] INFO  edu.matc.persistence.UserDao  - 
+UserID: 95
+User's Name: Gavin Petty
+UserName: Xenos
+UserPassword: QLN87XAD9CK
+User Birthdate: 1969-10-29 05:25:25
+Email: neque.sed.dictum@faucibuslectusa.edu
+City: Bacabal
+Registered Date: 2017-10-26
+Photo Link: null
+
+2017-10-26 15:34:10,264 2998 [main] INFO  edu.matc.persistence.UserDao  - 
+UserID: 95
+User's Name: Gavin Petty
+UserName: Xenos
+UserPassword: QLN87XAD9CK
+User Birthdate: 1969-10-29 05:25:25
+Email: neque.sed.dictum@faucibuslectusa.edu
+City: Bacabal
+Registered Date: 2017-10-26
+Photo Link: null
+
+2017-10-26 15:34:10,337 3071 [main] INFO  edu.matc.persistence.UserDaoTest  - The user is 
+UserID: 101
+User's Name: Jack Johnson
+UserName: galvestongiant
+UserPassword: password
+User Birthdate: null
+Email: jack@wba.org
+City: Chicago
+Registered Date: null
+Photo Link: null
+
+2017-10-26 15:34:10,422 3156 [main] INFO  edu.matc.persistence.UserDaoTest  - 3
+2017-10-26 15:34:10,429 3163 [main] INFO  edu.matc.persistence.UserDaoTest  - The user found with user ID is : 
+UserID: 100
+User's Name: Brett Hogan
+UserName: Frances
+UserPassword: NNK93WDA6UO
+User Birthdate: 1960-02-28 03:44:41
+Email: nisi.magna.sed@sapiencursus.ca
+City: Roccanova
+Registered Date: 2017-10-26
+Photo Link: null
+
+2017-10-26 15:57:18,227 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-26 15:57:18,243 16   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-26 15:57:18,247 20   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-26 15:57:18,264 37   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-26 15:57:18,309 82   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-26 15:57:18,310 83   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-26 15:57:18,454 227  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-26 15:57:18,632 405  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-26 15:57:18,644 417  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/productivity_appdbtest]
+2017-10-26 15:57:18,646 419  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-26 15:57:18,647 420  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-26 15:57:18,648 421  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-26 15:57:19,345 1118 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-26 15:57:19,619 1392 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-26 15:57:19,653 1426 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-26 15:57:20,134 1907 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000227: Running hbm2ddl schema export
+2017-10-26 15:57:20,424 2197 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000230: Schema export complete
+2017-10-26 15:57:20,595 2368 [main] INFO  edu.matc.persistence.UserDao  - 
+UserID: 95
+User's Name: Gavin Petty
+UserName: Xenos
+UserPassword: QLN87XAD9CK
+User Birthdate: 1969-10-29 05:25:25
+Email: neque.sed.dictum@faucibuslectusa.edu
+City: Bacabal
+Registered Date: 2017-10-26
+Photo Link: null
+
+2017-10-26 15:57:20,609 2382 [main] INFO  edu.matc.persistence.UserDao  - 
+UserID: 95
+User's Name: Gavin Petty
+UserName: Xenos
+UserPassword: QLN87XAD9CK
+User Birthdate: 1969-10-29 05:25:25
+Email: neque.sed.dictum@faucibuslectusa.edu
+City: Bacabal
+Registered Date: 2017-10-26
+Photo Link: null
+
+2017-10-26 15:57:20,671 2444 [main] INFO  edu.matc.persistence.UserDaoTest  - The user is 
+UserID: 101
+User's Name: Jack Johnson
+UserName: galvestongiant
+UserPassword: password
+User Birthdate: null
+Email: jack@wba.org
+City: Chicago
+Registered Date: null
+Photo Link: null
+
+2017-10-26 15:57:20,790 2563 [main] INFO  edu.matc.persistence.UserDaoTest  - 3
+2017-10-26 15:57:20,797 2570 [main] INFO  edu.matc.persistence.UserDaoTest  - The user found with user ID is : 
+UserID: 100
+User's Name: Brett Hogan
+UserName: Frances
+UserPassword: NNK93WDA6UO
+User Birthdate: 1960-02-28 03:44:41
+Email: nisi.magna.sed@sapiencursus.ca
+City: Roccanova
+Registered Date: 2017-10-26
+Photo Link: null
+

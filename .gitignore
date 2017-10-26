@@ -34,9 +34,7 @@
 /target/
 /log/
 /lib/
-src/main/resources/
-src/test/resources/
-src/main/webapp/resources/
+
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
@@ -80,3 +78,4 @@ ehthumbs.db
 Thumbs.db
 
 
+src/test/java/edu/matc/entity/
