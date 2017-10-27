@@ -12,7 +12,7 @@
 <!--Start of container-->
 <div class="container">
 
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid bg-dark">
             <h1 class="center">${heading}</h1>
         </div>
 

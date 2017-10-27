@@ -7,11 +7,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
-
 <fieldset>
-    <form class="form-signin" method="post" action="/content/new_user_index_content.jsp">
+    <form class="form-signin" method="post" action="/content/newuser_index_content.jsp">
         <div class="container">
             <div class="wrapper"></div>
                     <h2 class="form-signin-heading">Please login</h2>

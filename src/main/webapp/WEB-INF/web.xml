@@ -3,12 +3,40 @@
          xmlns="http://java.sun.com/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-  <display-name>ProductivityApp</display-name>
+    <display-name>ProductivityApp</display-name>
 
-  <description>Let's get something done</description>
-  <welcome-file-list>
-    <welcome-file>/index.jsp</welcome-file>
-  </welcome-file-list>
+    <description>Let's get something done</description>
+    <welcome-file-list>
+        <welcome-file>/index.jsp</welcome-file>
+    </welcome-file-list>
 
+        <!-- Tell the server to use form-based authentication. -->
+<login-config>
+<auth-method>FORM</auth-method>
+<form-login-config>
+    <form-login-page>/login.jsp</form-login-page>
+    <form-error-page>/admin/login-error.jsp</form-error-page>
+</form-login-config>
+</login-config>
 
-</web-app>
+        <!-- Protect everything within the "investing" directory. -->
+<security-constraint>
+<web-resource-collection>
+    <web-resource-name>investing</web-resource-name>
+    <url-pattern>/investing/*</url-pattern>
+</web-resource-collection>
+<auth-constraint>
+    <role-name>registered-user</role-name>
+    <role-name>administrator</role-name>
+</auth-constraint>
+</security-constraint>
+
+<security-role>
+<role-name>registered-user</role-name>
+</security-role>
+
+<security-role>
+<role-name>administrator</role-name>
+</security-role>
+
+        </web-app>
