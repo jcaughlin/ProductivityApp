@@ -13,7 +13,7 @@
 
 <jsp:include page="partials/header.jsp"/>
 
-<jsp:include page="content/add_client_content.jsp"/>
+<jsp:include page="content/newuser-context.jsp"/>
 
 <jsp:include page="partials/footer.jsp"/>
 

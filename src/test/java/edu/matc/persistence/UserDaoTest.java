@@ -1,6 +1,8 @@
 package edu.matc.persistence;
 
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;
 import edu.matc.entity.User;
@@ -10,7 +12,7 @@ import static org.junit.Assert.*;
 
 public class UserDaoTest {
 
-    private final Logger log = Logger.getLogger(this.getClass());
+    private final Logger log = LogManager.getLogger(this.getClass());
     UserDao dao;
     User user;
     User user2;

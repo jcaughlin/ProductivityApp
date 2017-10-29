@@ -8,18 +8,18 @@
 --%>
 
 <fieldset>
-    <form class="form-signin" method="post" action="/content/newuser_index_content.jsp">
-        <div class="container">
+    <form class="form-signin" method="post" action="/register">
+
             <div class="wrapper"></div>
-                    <h2 class="form-signin-heading">Please login</h2>
-                    <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+                    <h2 class="form-signin-heading">Create login</h2>
+                    <input type="text" class="form-control" name="username" placeholder="Create User Name" required="" autofocus="" />
                     <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+            <input type="password" class="form-control" name="passwordConfirm" placeholder="Confirm Password" required=""/>
                     <label class="checkbox">
-                        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+                        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe">Remember me
                     </label>
                     <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
                 </form>
-            </div>
 </fieldset>
 
 

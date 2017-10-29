@@ -8,15 +8,15 @@
   To change this template use File | Settings | File Templates.
 --%>
 
-
+<!--footer snippet-->
 <div class="footer">
     <p> &#169;&nbsp;${author}&nbsp;<c:out value="${sessionScope.Year}"/></p>
 
     <c:out value="${sessionScope.Year}" />
 </div>
 
-</div> <!--Botton of Container-->
-
+</div>
+<!--Botton of Container-->
 
 </body>
 </html>

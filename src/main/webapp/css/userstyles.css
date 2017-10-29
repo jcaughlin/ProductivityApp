@@ -1,19 +1,5 @@
-body {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #eee;
-}
-
-.footer {
-    margin-top: 1rem;
-}
-
-.center {
-    text-align: center;
-}
 
 .form-signin {
-    max-width: 330px;
     padding: 2rem;
     margin: 1em auto;
     border: solid 5px #000000;
@@ -53,7 +39,6 @@ body {
     border-top-right-radius: 0;
 }
 
-
-.menu {
-    vertical-align: middle;
+.footer {
+    padding-top:1rem;
 }
