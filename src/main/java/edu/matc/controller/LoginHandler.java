@@ -24,7 +24,7 @@ public class LoginHandler extends HttpServlet {
             throws ServletException,
             IOException {
         log.info("your mom is in dogetting");
-        String url = "/signin.jsp";
+        String url = "/login.jsp";
 
         RequestDispatcher dispatcher =
                 getServletContext().getRequestDispatcher(url);

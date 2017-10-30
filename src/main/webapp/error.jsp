@@ -15,7 +15,7 @@
 
 <!-- Your Content Goes Here -->
 
-<jsp:include page="content/login-error-content.jsp"/>
+<jsp:include page="content/error-content.jsp"/>
 
 <jsp:include page="partials/footer.jsp"/>
 

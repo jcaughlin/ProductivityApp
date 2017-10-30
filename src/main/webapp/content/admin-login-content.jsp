@@ -12,44 +12,18 @@
 
 
 
-    <form class = "form-signin" id="login" method="post" action="">
+    <form class = "form-signin" id="login" ACTION="j_security_check" method="POST">
 
             <h2 class="form-heading"><i class="fa fa-lock">::before</i>" Login"</h2>
-            <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+            <label for="adminUserName" class="sr-only"></label>
+            <input type="text" id="adminUserName" class="form-control" placeholder="User Name" NAME="j_username" required="" autofocus="">
             <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                </label>
-            </div>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" NAME="j_password" required="">
+            <INPUT TYPE="SUBMIT" VALUE="Log In">
 
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" value="Remember Me">
-                <span>Remember Me</span>
-            </label>
-        </div>
-
-        <!--Submit Button-->
-        <input type="submit" class="btn btn-success" value="Sign Up Now"><a href="${<VARIABLE_NAME>}">Forgot Password?</a>
-    </form>
-<hr>
-
-        <form class="form-signin">
-            <h2 class="form-signin-heading">Please sign in</h2>
-            <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-            <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                </label>
-            </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
         </form>
+
+
 
 
 
