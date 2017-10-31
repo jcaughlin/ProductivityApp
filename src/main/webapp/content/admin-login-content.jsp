@@ -21,7 +21,7 @@
             <input type="password" id="inputPassword" class="form-control" placeholder="Password" NAME="j_password" required="">
             <INPUT TYPE="SUBMIT" VALUE="Log In">
 
-        </form>
+    </form>
 
 
 
