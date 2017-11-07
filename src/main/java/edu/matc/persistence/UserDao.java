@@ -209,7 +209,7 @@ public class UserDao {
      *
      * @return int recordCount the number of records
      */
- /*   public int getRecordCount() {
+    public int getRecordCount() {
         Session session = null;
         Transaction transaction = null;
 
@@ -217,7 +217,7 @@ public class UserDao {
 
             session = SessionFactoryProvider.getSessionFactory().openSession();
         Criteria crit = session.createCriteria(User.class);
-        crit.add( Restrictions.isNotNull(user.getUserId()));
+
         crit.setProjection(Projections.rowCount());
         Integer count = (Integer)crit.uniqueResult();
         log.info("The count is: " + count);
@@ -225,7 +225,7 @@ public class UserDao {
         return count;
 
 
-    }*/ 
+    }
 
 
 }

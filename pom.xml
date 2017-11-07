@@ -40,14 +40,18 @@
         <version>7.0</version>
       </dependency>
 
-      <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+
       <dependency>
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
         <version>5.1.39</version>
       </dependency>
 
-
+      <dependency>
+        <groupId>jstl</groupId>
+        <artifactId>jstl</artifactId>
+        <version>1.2</version>
+      </dependency>
 
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -71,7 +75,6 @@
         </dependency>
 
 
-      <!-- hibernate -->
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-core</artifactId>

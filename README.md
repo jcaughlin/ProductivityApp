@@ -35,8 +35,7 @@ In some ways this is a personal kaizen project as well as a gut check. I plan to
 * CRUD
   * User profile pictures
 * Independant Research Topic
- * JavaScript
- * DataAnalysis Jython(JVM)? Hadoop? R?
+ * Deploying to custom URL via AWS Route 53
 * API's
  * [OpenWeatherMap] [https://openweathermap.org/examples]
  * [Google Calendar] [https://developers.google.com/google-apps/calendar/]
@@ -46,4 +45,4 @@ In some ways this is a personal kaizen project as well as a gut check. I plan to
 * Deploy to AWS per requirements
 * Logging
 * Unit Testing
-* iOs/Java Integration ???
+
