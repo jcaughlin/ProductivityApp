@@ -15,7 +15,6 @@ off this elevator"/>
 <jsp:include page="partials/header.jsp"/>
 <jsp:include page="partials/navbar.jsp"/>
 
-<!-- Your Content Goes Here -->
 
 <jsp:include page="content/admin-login-content.jsp"/>
 

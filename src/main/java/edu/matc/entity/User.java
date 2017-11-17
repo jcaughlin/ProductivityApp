@@ -45,6 +45,9 @@ public class User {
     @Column(name = "user_city")
     private String userCity;
 
+    @Column
+    private Status status;
+
     // Empty Constructor
     public User() {
 
