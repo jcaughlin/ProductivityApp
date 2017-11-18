@@ -1,8 +1,7 @@
 package edu.matc.persistence;
 
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.*;
 import org.junit.Before;
 import org.junit.Test;
 import edu.matc.entity.User;

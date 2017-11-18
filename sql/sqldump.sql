@@ -118,34 +118,6 @@ LOCK TABLES `user_roles` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `user_task_list`
---
-
-DROP TABLE IF EXISTS `user_task_list`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `user_task_list` (
-  `common_tasks_id` int(11) NOT NULL,
-  `task1` varchar(45) DEFAULT NULL,
-  `task2` varchar(45) DEFAULT NULL,
-  `task3` varchar(45) DEFAULT NULL,
-  `task4` varchar(45) DEFAULT NULL,
-  `task5` varchar(45) DEFAULT NULL,
-  `task6` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`common_tasks_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `user_task_list`
---
-
-LOCK TABLES `user_task_list` WRITE;
-/*!40000 ALTER TABLE `user_task_list` DISABLE KEYS */;
-/*!40000 ALTER TABLE `user_task_list` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `user_task_list_has_task_completion_times`
 --
 
@@ -178,15 +150,15 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `users` (
   `user_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `user_name` varchar(255) DEFAULT NULL,
-  `user_pass` varchar(255) DEFAULT NULL,
+  `user_name` varchar(255) NOT NULL,
+  `user_pass` varchar(255) NOT NULL,
   `user_first_name` varchar(255) DEFAULT NULL,
   `user_last_name` varchar(255) DEFAULT NULL,
-  `user_email` varchar(255) DEFAULT NULL,
+  `user_email` varchar(255) NOT NULL,
   `user_dateofbirth` varchar(255) DEFAULT NULL,
   `user_registered_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `user_photo_link` varchar(255) DEFAULT NULL,
-  `user_city` varchar(255) DEFAULT NULL,
+  `user_city` varchar(255) NOT NULL,
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -210,4 +182,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-15 10:56:22
+-- Dump completed on 2017-11-17  9:41:36

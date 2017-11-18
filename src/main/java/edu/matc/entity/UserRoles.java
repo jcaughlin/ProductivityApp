@@ -1,14 +1,13 @@
 package edu.matc.entity;
 
 import javax.persistence.*;
-import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
 
 
 public class UserRoles {
 
-    private int userRoleTablePrimaryIdKey;
-
-    private User user;
+    private int useroleId;
 
     @Column(name="role_name")
     @Enumerated

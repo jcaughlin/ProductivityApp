@@ -14,7 +14,7 @@
                     <h2 class="form-signin-heading">Create login</h2>
                     <input type="text" class="form-control" name="username" placeholder="Create User Name" required="" autofocus="" />
                     <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
-            <input type="password" class="form-control" name="passwordConfirm" placeholder="Confirm Password" required=""/>
+                    <input type="password" class="form-control" name="passwordConfirm" placeholder="Confirm Password" required=""/>
                     <label class="checkbox">
                         <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe">Remember me
                     </label>

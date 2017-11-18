@@ -8,11 +8,13 @@
 
     <session-factory>
 
+        <property name="hbm2ddl.auto">create-drop</property>
+
         <property name="hibernate.hbm2ddl.import_files_sql_extractor">org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor</property>
 
         <!-- Database connection settings -->
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/productivity_appdb</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/productivityapp_db</property>
         <property name="connection.username">root</property>
         <property name="connection.password">rootpassword</property>
 
@@ -24,7 +26,9 @@
 
         <!-- List the annotated entity class/es -->
         <mapping class="edu.matc.entity.User"/>
-        <mapping class="edu.matc.entity.UserTasks"/>
+        <mapping class="edu.matc.entity.UserRoles"/>
+        <mapping class="edu.matc.entity.Status"/>
+        <mapping class="edu.matc.entity.TaskList"/>
         <mapping class="edu.matc.entity.OpenWeatherData"/>
 
     </session-factory>

@@ -23,13 +23,14 @@
 
     <link rel="icon" href="http://v4-alpha.getbootstrap.com/favicon.ico">
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+-->
     <!-- Custom styles for this template -->
     <link href="http://v4-alpha.getbootstrap.com/examples/grid/grid.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="http://v4-alpha.getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
-
+    <!--Start Boostrap 3 col Portfolio Template-->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
     <!--Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 

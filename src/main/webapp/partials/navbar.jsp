@@ -19,10 +19,13 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Joe Doing Awesome Things</a>
+        <a class="nav-link" href="#">Things</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Joe With Awesome People</a>
+        <a class="nav-link" href="people.jsp">People</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Stuff</a>
       </li>
     </ul>
     <span class="navbar-text">
