@@ -17,7 +17,7 @@ target/
 /log/
 /lib/
 
-
+/javadocs
 # ignoring the /idea
 .idea/
 

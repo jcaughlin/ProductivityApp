@@ -19,4 +19,4 @@
 
 6. Database for inspirationa quotes.
 
-[Time Log](TimeLog.md)
+[Time Log](logs/TimeLog.md)
