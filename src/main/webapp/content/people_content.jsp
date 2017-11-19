@@ -5,10 +5,7 @@
   Date: 11/17/17
   Time: 4:42 PM
   To change this template use Preferences | File and Code Templates--%>
-
-<!-- Page Content -->
-<div class="container">
-
+\
     <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
@@ -45,7 +42,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="../images/gregdulli.jpg" alt="Greg Dulli"></a>
+                <a href="#"><img class="card-img-top"src="/images/gregdulli.jpg"/> alt="Greg Dulli"></a>
                 <div class="card-body">
                     <h4 class="card-title">
                         <a href="#">Greg Dulli</a>
@@ -56,7 +53,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="../images/daverosser.jpg" alt="Dave Rosser"></a>
+                <a href="#"><img class="card-img-top" src="/images/daverosser.jpg" alt="Dave Rosser"></a>
                 <div class="card-body">
                     <h4 class="card-title">
                         <a href="#">Dave Rosser</a>
@@ -103,7 +100,4 @@
             </a>
         </li>
     </ul>
-
-</div>
-<!-- /.container -->
 

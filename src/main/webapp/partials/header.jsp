@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page language="java" session="true" %>
 <%--
   Created by IntelliJ IDEA.
   User: josephcaughlin
@@ -7,7 +8,6 @@
   To change this template use Preferences | File and Code Templates--%>
 
 <body>
-<!--Header-->
 <!--Start of container-->
 <div class="container">
 

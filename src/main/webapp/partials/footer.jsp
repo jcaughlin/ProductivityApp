@@ -7,10 +7,9 @@
   Time: 1:31 PM
   To change this template use File | Settings | File Templates.
 --%>
-<footer class="py-5 bg-dark">
 
-        <p class="m-0 text-center text-white"> &#169;&nbsp;${author}&nbsp;<c:out value="${sessionScope.Year}"/></p>
-
+<footer class="footer fixed-bottom">
+        <p> &#169;&nbsp;${author}&nbsp;<c:out value="${sessionScope.Year}"/></p>
 </footer>
 
 </div>

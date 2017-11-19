@@ -1,5 +1,6 @@
 package edu.matc.entity;
 
+import org.hibernate.annotations.Formula;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
@@ -13,7 +14,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name="user_tasks")
-public class TaskList {
+public class TaskMaster implements java.io.Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -21,7 +22,7 @@ public class TaskList {
     private int user_task_pk;
 
     @Column(name="task_name")
-    private String taskName;
+    private Task task;
 
     @Column(name="start_time")
     @Type(type="timestamp")
@@ -31,11 +32,11 @@ public class TaskList {
     @Type(type="timestamp")
     private Timestamp taskEndTime;
 
-    @Column(name="total_task_time")
-    private int totalTimeSpentOnTask;
+    @Formula("end_time - start_time")
+    private long totalTimeSpentOnTask;
 
     // No Argument Constructor
-    public TaskList() {
+    public TaskMaster() {
 
     }
 
@@ -59,16 +60,16 @@ public class TaskList {
      *
      * @return taskName
      */
-    public String getTaskName() {
-        return taskName;
+    public Task getTask() {
+        return task;
     }
 
     /**
      *
-     * @param taskName sets the name of the user task.
+     * @param task sets the name of the user task.
      */
-    public void setTaskName(String taskName) {
-        this.taskName = taskName;
+    public void setTask(Task task) {
+        this.task = task;
     }
 
     /**
@@ -109,7 +110,7 @@ public class TaskList {
      *
      * @return totalTimeSpentOnTask.
      */
-    public int getTotalTimeSpentOnTask() {
+    public long getTotalTimeSpentOnTask() {
         return totalTimeSpentOnTask;
     }
 
@@ -117,7 +118,7 @@ public class TaskList {
      *
      * @param totalTimeSpentOnTask Calculates the total time spent on task as the difference between taskEndTime and taskStartTime.
      */
-    public void setTotalTimeSpentOnTask(int totalTimeSpentOnTask) {
+    public void setTotalTimeSpentOnTask(long totalTimeSpentOnTask) {
         this.totalTimeSpentOnTask = totalTimeSpentOnTask;
     }
 
