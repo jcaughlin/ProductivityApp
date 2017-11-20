@@ -127,7 +127,7 @@ public class TaskMaster implements java.io.Serializable{
      * @return userTaskString;
      */
     public String toString() {
-        String userTask = "Name of task: " + taskName + "\nTime Task Commenced: " + taskStartTime + "\nTime Task Completed"
+        String userTask = "Name of task: " + task + "\nTime Task Commenced: " + taskStartTime + "\nTime Task Completed"
                 + taskEndTime + "Total Time To Complete the task";
 
         return userTask;

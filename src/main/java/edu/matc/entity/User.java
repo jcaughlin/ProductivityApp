@@ -8,6 +8,7 @@ import org.hibernate.annotations.Type;
 import javax.persistence.*;
 import java.sql.Date;
 import java.util.Set;
+import java.util.HashSet;
 
 @Entity
 @Table(name = "users")
@@ -49,33 +50,14 @@ public class User implements java.io.Serializable{
 
     @OneToMany(mappedBy = "users")
     @Cascade({CascadeType.SAVE_UPDATE,CascadeType.DELETE})
-    private Set<UserRoles> userRoles;
+    private Set<UserRoles> roles = new HashSet<UserRoles>
 
     // Empty Constructor
     public User() {
 
     }
 
-    /**
-     * Instanitates a New User
-     *
-     * @param userFirstName User First Name
-     * @param userLastName User Last Name
-     * @param userUserName User User Name
-     * @param userCity User City
-     * @param userEmail User Email
-     * @param userPassword User Password
-     *
-     */
-    public User(String userFirstName, String userLastName, String userUserName, String userCity,
-                String userEmail, String userPassword) {
-        this.userFirstName = userFirstName;
-        this.userLastName = userLastName;
-        this.userUserName = userUserName;
-        this.userCity = userCity;
-        this.userEmail = userEmail;
-        this.userPassword = userPassword;
-    }
+
 
     /**
      *

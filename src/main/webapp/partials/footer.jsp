@@ -9,7 +9,7 @@
 --%>
 
 <footer class="footer fixed-bottom">
-        <p> &#169;&nbsp;${author}&nbsp;<c:out value="${sessionScope.Year}"/></p>
+        <p> &#169;&nbsp;${author}&nbsp;<span id="year">TEXT</span></p>
 </footer>
 
 </div>

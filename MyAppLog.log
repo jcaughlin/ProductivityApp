@@ -62,3 +62,12 @@ Photo Link: null
 
 2017-10-28 18:51:31,086 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
 2017-11-17 10:52:10,186 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-19 20:13:17,819 0    [http-nio-8080-exec-10] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-19 20:13:20,185 2366 [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-19 20:28:44,783 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-19 20:31:06,471 0    [http-nio-8080-exec-10] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-19 20:36:04,212 0    [http-nio-8080-exec-9] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-19 20:45:07,478 1    [http-nio-8080-exec-10] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-19 21:22:03,630 0    [http-nio-8080-exec-8] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-19 21:25:54,568 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-19 21:27:39,396 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
