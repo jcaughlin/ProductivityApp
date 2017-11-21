@@ -10,15 +10,17 @@ import org.hibernate.annotations.CascadeType;
 public class UserRoles {
 
     @Id
+    @Column(name="user_role_id_pk")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int roleIdPk;
+
     @Column(name="role_name")
     @Enumerated(EnumType.STRING)
     private Status roleName;
 
-    @Id
     @ManyToOne
     @JoinColumn(name="user_name", referencedColumnName = "user_name", nullable = false)
     private User user;
-
 
     public UserRoles() {
 

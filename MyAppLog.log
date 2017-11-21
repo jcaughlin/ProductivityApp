@@ -71,3 +71,13 @@ Photo Link: null
 2017-11-19 21:22:03,630 0    [http-nio-8080-exec-8] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
 2017-11-19 21:25:54,568 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
 2017-11-19 21:27:39,396 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-21 12:23:57,390 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-21 12:24:29,317 31927 [http-nio-8080-exec-3] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-21 12:27:04,648 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-21 12:34:26,620 441972 [http-nio-8080-exec-3] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-21 13:18:23,868 1    [http-nio-8080-exec-10] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-21 14:00:41,767 1    [http-nio-8080-exec-10] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-21 14:04:22,602 220836 [http-nio-8080-exec-6] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-21 14:13:07,148 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-21 14:16:19,110 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-21 14:16:20,135 1025 [http-nio-8080-exec-2] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting

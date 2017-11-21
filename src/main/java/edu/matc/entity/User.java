@@ -16,6 +16,10 @@ import java.util.HashSet;
 public class User implements java.io.Serializable{
 
     @Id
+    @Column(name="user_id_pk")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int userId;
+
     @Column(name = "user_name")
     private String userUserName;
 
@@ -42,7 +46,7 @@ public class User implements java.io.Serializable{
     @Column(name = "user_city")
     private String userCity;
 
-    @OneToMany(mappedBy = "users")
+    @OneToMany(mappedBy = "user")
     @Cascade({CascadeType.SAVE_UPDATE,CascadeType.DELETE})
     private Set<UserRoles> roles = new HashSet<UserRoles>();
 

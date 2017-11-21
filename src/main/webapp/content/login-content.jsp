@@ -6,16 +6,14 @@
   Time: 10:28 AM
   To change this template use Preferences | File and Code Templates--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
-
-<!-- TODO Servlet to handle post action -->
+<!-- TODO Cookie to recognized current user still "signed in" -->
 <!-- TODO Servlet to handle recover password -->
 <div class="container">
     <div class="wrapper">
         <form class="form-signin" method="POST" action="j_security_check">
             <h2 class="form-signin-heading">Please login</h2>
-            <input type="text" class="form-control" name="username" placeholder="User Name" required="" autofocus="" />
-            <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+            <input type="text" class="form-control" name="j_username" placeholder="User Name" required="" autofocus="" />
+            <input type="password" class="form-control" name="j_password" placeholder="Password" required=""/>
             <label class="checkbox">
                 <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
             </label>

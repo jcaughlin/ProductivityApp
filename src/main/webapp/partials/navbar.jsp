@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <%@page language="java" session="true" %>
 <%--
   Created by IntelliJ IDEA.
@@ -8,18 +8,18 @@
   To change this template use File | Settings | File Templates.
 --%>
 <!--Navbar-->
+
+<!--TODO Do I need a login and home link?-->
+<!--How will I handle the traffic for the tasks above-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar w/ text</a>
+  <a class="navbar-brand" href="#">Be Funky!</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Things</a>
+        <a class="nav-link" href="about.jsp">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="people.jsp">People</a>
@@ -29,11 +29,18 @@
       </li>
     </ul>
     <span class="navbar-text">
-      <c:if test="${heading eq 'Welcome'}">
 
-        <a role="button" class="btn btn-warning" href="/signin">Sign In</a>
+      <c:choose>
+      <c:when test="${heading eq 'Welcome'}">
+        <a role="button" class="btn btn-warning" href="/signin"><span class="glyphicon glyphicon-user"></span>Sign In</a>
+      </c:when>
+      <c:when test="${heading eq 'Hey You! Login'}">
 
-      </c:if>
+      </c:when>
+      <c:otherwise>
+        <a role="button" class="btn btn-success" href="<!--TODO How do I want to handle"-->LogOut</a>
+      </c:otherwise>
+      </c:choose>
     </span>
   </div>
 </nav>

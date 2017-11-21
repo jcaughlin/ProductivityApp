@@ -5,7 +5,6 @@
   Date: 11/17/17
   Time: 4:42 PM
   To change this template use Preferences | File and Code Templates--%>
-\
     <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
@@ -42,7 +41,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-                <a href="#"><img class="card-img-top"src="/images/gregdulli.jpg"/> alt="Greg Dulli"></a>
+                <a href="#"><img class="card-img-top"src="../images/gregdulli.jpg"/> alt="Greg Dulli"></a>
                 <div class="card-body">
                     <h4 class="card-title">
                         <a href="#">Greg Dulli</a>
@@ -53,7 +52,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="/images/daverosser.jpg" alt="Dave Rosser"></a>
+                <a href="#"><img class="card-img-top" src="../images/daverosser.jpg" alt="Dave Rosser"></a>
                 <div class="card-body">
                     <h4 class="card-title">
                         <a href="#">Dave Rosser</a>
@@ -64,12 +63,12 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <a href="#"><img class="card-img-top" src="../images/michelleobama.jpg" alt="Michelle Obama"></a>
                 <div class="card-body">
                     <h4 class="card-title">
                         <a href="#">Project Six</a>
                     </h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
+                    <p class="card-text">At the White House</p>
                 </div>
             </div>
         </div>
