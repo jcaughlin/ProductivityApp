@@ -29,6 +29,7 @@
         <mapping class="edu.matc.entity.UserRoles"/>
         <mapping class="edu.matc.entity.Status"/>
         <mapping class="edu.matc.entity.TaskMaster"/>
+        <mapping class="edu.matc.entity.Task"/>
         <mapping class="edu.matc.entity.OpenWeatherData"/>
 
     </session-factory>

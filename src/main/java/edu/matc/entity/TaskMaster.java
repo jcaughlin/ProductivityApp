@@ -13,25 +13,24 @@ import java.sql.Timestamp;
  */
 
 @Entity
-@Table(name="user_tasks")
+@Table(name="user_tasks_list_records")
 public class TaskMaster implements java.io.Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="user_task_pk")
+    @Column(name="task_list_id_pk")
     private int user_task_pk;
 
     @Column(name="task_name")
-    private Task task;
+    private Task taskName;
 
     @Column(name="start_time")
-    @Type(type="timestamp")
-    private Timestamp taskStartTime;
+    private int taskStartTime;
 
     @Column(name="end_time")
-    @Type(type="timestamp")
-    private Timestamp taskEndTime;
+    private int taskEndTime;
 
+    @Column(name = "task_duration")
     @Formula("end_time - start_time")
     private long totalTimeSpentOnTask;
 
@@ -60,16 +59,16 @@ public class TaskMaster implements java.io.Serializable{
      *
      * @return taskName
      */
-    public Task getTask() {
-        return task;
+    public Task getTaskName() {
+        return taskName;
     }
 
     /**
      *
-     * @param task sets the name of the user task.
+     * @param taskName sets the name of the user task.
      */
-    public void setTask(Task task) {
-        this.task = task;
+    public void setTaskName(Task taskName) {
+        this.taskName = taskName;
     }
 
     /**
@@ -77,7 +76,7 @@ public class TaskMaster implements java.io.Serializable{
      * @return taskStartTime;
      *
      */
-    public Timestamp getTaskStartTime() {
+    public int getTaskStartTime() {
         return taskStartTime;
     }
 
@@ -85,7 +84,7 @@ public class TaskMaster implements java.io.Serializable{
      *
      * @param taskStartTime timestamp of time task was started.
      */
-    public void setTaskStartTime(Timestamp taskStartTime) {
+    public void setTaskStartTime(int taskStartTime) {
         this.taskStartTime = taskStartTime;
     }
 
@@ -94,7 +93,7 @@ public class TaskMaster implements java.io.Serializable{
      *
      * @return taskTimeAtCompletion.
      */
-    public Timestamp getTaskEndTime() {
+    public int getTaskEndTime() {
         return taskEndTime;
     }
 
@@ -102,7 +101,7 @@ public class TaskMaster implements java.io.Serializable{
      *
      * @param taskEndTime Timestamp at time task was completed.
      */
-    public void setTaskEndTime(Timestamp taskEndTime) {
+    public void setTaskEndTime(int taskEndTime) {
         this.taskEndTime = taskEndTime;
     }
 
@@ -127,7 +126,7 @@ public class TaskMaster implements java.io.Serializable{
      * @return userTaskString;
      */
     public String toString() {
-        String userTask = "Name of task: " + task + "\nTime Task Commenced: " + taskStartTime + "\nTime Task Completed"
+        String userTask = "Name of task: " + taskName + "\nTime Task Commenced: " + taskStartTime + "\nTime Task Completed"
                 + taskEndTime + "Total Time To Complete the task";
 
         return userTask;

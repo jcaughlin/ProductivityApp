@@ -1,12 +1,13 @@
 package edu.matc.entity;
 
+import edu.matc.util.LocalDateAttributeConverter;
 
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.time.LocalDate;
 import java.util.Set;
 import java.util.HashSet;
 
@@ -15,10 +16,6 @@ import java.util.HashSet;
 public class User implements java.io.Serializable{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "user_id")
-    private int userUserID;
-
     @Column(name = "user_name")
     private String userUserName;
 
@@ -36,21 +33,18 @@ public class User implements java.io.Serializable{
 
     @Column(name = "user_registered_date")
     @Type(type="timestamp")
-    private Date dateUserRegistered;
+    private LocalDate dateUserRegistered;
 
-    @Column(name = "user_dateofbirth")
-    private Date userDateOfBirth;
-
-
-    /*@Column(name = "user_photo_link")
-    private String pathToUserPhoto;*/
+    @Column(name = "user_date_birth")
+    @Convert(converter = LocalDateAttributeConverter.class)
+    private LocalDate userDateOfBirth;
 
     @Column(name = "user_city")
     private String userCity;
 
     @OneToMany(mappedBy = "users")
     @Cascade({CascadeType.SAVE_UPDATE,CascadeType.DELETE})
-    private Set<UserRoles> roles = new HashSet<UserRoles>
+    private Set<UserRoles> roles = new HashSet<UserRoles>();
 
     // Empty Constructor
     public User() {
@@ -58,22 +52,6 @@ public class User implements java.io.Serializable{
     }
 
 
-
-    /**
-     *
-     * @return userUserID
-     */
-    public int getUserUserID() {
-        return userUserID;
-    }
-
-    /**
-     *
-     * @param userUserID The user primary key id from database.
-     */
-    public void setUserUserID(int userUserID) {
-        this.userUserID = userUserID;
-    }
 
     /**
      *
@@ -125,6 +103,14 @@ public class User implements java.io.Serializable{
 
     /**
      *
+     * @param roles the role(s) of this user.
+     */
+    public void setRoles(Set<UserRoles> roles) {
+        this.roles = roles;
+    }
+
+    /**
+     *
      * @return The User's password for the application login.
      */
     public String getUserPassword() {
@@ -143,7 +129,7 @@ public class User implements java.io.Serializable{
      *
      * @return The Timestamp of the Date the User Registered.
      */
-    public Date getDateUserRegistered() {
+    public LocalDate getDateUserRegistered() {
         return dateUserRegistered;
     }
 
@@ -151,7 +137,7 @@ public class User implements java.io.Serializable{
      *
      * @param dateUserRegistered The timestamp of the date the User registered.
      */
-    public void setDateUserRegistered(Date dateUserRegistered) {
+    public void setDateUserRegistered(LocalDate dateUserRegistered) {
         this.dateUserRegistered = dateUserRegistered;
     }
 
@@ -159,7 +145,7 @@ public class User implements java.io.Serializable{
      *
      * @return The date of birth of the User.
      */
-    public Date getUserDateOfBirth() {
+    public LocalDate getUserDateOfBirth() {
         return userDateOfBirth;
     }
 
@@ -167,7 +153,7 @@ public class User implements java.io.Serializable{
      *
      * @param userDateOfBirth Sets the User's Date of Birth.
      */
-    public void setUserDateOfBirth(Date userDateOfBirth) {
+    public void setUserDateOfBirth(LocalDate userDateOfBirth) {
         this.userDateOfBirth = userDateOfBirth;
     }
 
@@ -215,27 +201,26 @@ public class User implements java.io.Serializable{
      *
      * @return The Set of the User's security roles.
      */
-    public Set<UserRoles> getUserRoles() {
-        return userRoles;
+    public Set getRoles() {
+        return roles;
     }
 
     /**
      *
-     * @param userRoles The roles of the User.
+     * @param roles The roles of the User.
      */
-    public void setUserRoles(Set<UserRoles> userRoles) {
-        this.userRoles = userRoles;
+    public void setUserRoles(Set<UserRoles> roles) {
+        this.roles = roles;
     }
 
     @Override
     public String toString() {
         String userString;
 
-        userString = "\nUserID: " + userUserID + "\n" +
+        userString =
                 "User\'s Name: " + userFirstName + " " + userLastName + "\n" +
                 "UserName: " + userUserName + "\n" +
                 "UserPassword: " + userPassword + "\n" +
-                "User Role: " + userRoles + "\n" +
                 "User Birthdate: " + userDateOfBirth + "\n" +
                 "Email: " + userEmail + "\n" +
                 "City: " + userCity + "\n" +

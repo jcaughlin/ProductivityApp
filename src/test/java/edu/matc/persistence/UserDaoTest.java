@@ -58,10 +58,7 @@ public class UserDaoTest {
 
     @Test
     public void addUserTest() throws Exception {
-
-        User user2 = new User("Jack","Johnson", "galvestongiant","Chicago","jack@wba.org",
-                "password");
-
+        
         dao.addUser(user2);
         user = dao.getUserById(101);
         log.info("The user is " + user2.toString());
