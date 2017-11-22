@@ -12,7 +12,7 @@
 <!-- TODO servlets to process-->
 
 <fieldset>
-    <form class="form" method="post" action="$1">
+    <form class="new-user-form" method="post" action="addUser">
         <h2 class="form-signin-heading">Create an Account</h2>
 
         <!-- User First Name-->
@@ -25,7 +25,7 @@
 
         <!--User Email-->
         <label for="userEmail" class="sr-only">Enter Email</label>
-        <input type="email" class="form-control" id="userEmail" placeholder="Enter Last Name">
+        <input type="email" class="form-control" id="userEmail" placeholder="Enter Email Address">
 
         <!--User City-->
         <label for="userCity" class="sr-only">Enter City</label>
@@ -43,7 +43,7 @@
 
 
         <!--Submit Button-->
-        <input type="submit" class="btn btn-success" value="Sign Up Now">
+        <input type="submit" class="btn btn-success" value="Sign Up Now"/>
 
     </form>
 </fieldset>

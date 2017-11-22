@@ -8,16 +8,17 @@
 --%>
 
 <fieldset>
-    <form class="form-signin" method="post" action="/register">
-                    <h2 class="form-signin-heading">Create login</h2>
-                    <input type="text" class="form-control" name="username" placeholder="Create User Name" required="" autofocus="" />
-                    <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
-                    <input type="password" class="form-control" name="passwordConfirm" placeholder="Confirm Password" required=""/>
-                    <label class="checkbox">
-                        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe">Remember me
-                    </label>
-                    <button class="btn btn-lg btn-primary btn-block">Create Account</button>
-                </form>
+    <form class="form-signin" method="post" action="register">
+        <h2 class="form-signin-heading">Create login</h2>
+        <input type="text" class="form-control" name="username" placeholder="Create User Name" required="" autofocus="" />
+        <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+        <input type="password" class="form-control" name="passwordConfirm" placeholder="Confirm Password" required=""/>
+        <label class="checkbox">
+            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe">Remember me
+        </label>
+        <input class="btn btn-lg btn-primary btn-block" type="submit" name="action" value="Create Account"/>
+
+    </form>
 </fieldset>
 
 

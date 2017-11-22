@@ -81,3 +81,24 @@ Photo Link: null
 2017-11-21 14:13:07,148 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
 2017-11-21 14:16:19,110 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
 2017-11-21 14:16:20,135 1025 [http-nio-8080-exec-2] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-21 16:30:53,826 0    [http-nio-8080-exec-3] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-21 17:11:40,550 0    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-21 17:11:40,554 4    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - 
+2017-11-21 17:11:40,554 4    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - 
+2017-11-21 17:11:40,554 4    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - 
+2017-11-21 17:25:30,009 0    [http-nio-8080-exec-6] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-21 17:25:30,012 3    [http-nio-8080-exec-6] INFO  edu.matc.controller.UserRegister  - 
+2017-11-21 17:25:30,012 3    [http-nio-8080-exec-6] INFO  edu.matc.controller.UserRegister  - 
+2017-11-21 17:25:30,012 3    [http-nio-8080-exec-6] INFO  edu.matc.controller.UserRegister  - 
+2017-11-21 17:47:50,225 0    [http-nio-8080-exec-9] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-21 17:47:50,233 8    [http-nio-8080-exec-9] INFO  edu.matc.controller.UserRegister  - 
+2017-11-21 17:47:50,233 8    [http-nio-8080-exec-9] INFO  edu.matc.controller.UserRegister  - 
+2017-11-21 17:47:50,233 8    [http-nio-8080-exec-9] INFO  edu.matc.controller.UserRegister  - 
+2017-11-21 17:54:35,090 0    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-21 17:54:35,093 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - 
+2017-11-21 17:54:35,093 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - 
+2017-11-21 17:54:35,093 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - 
+2017-11-21 17:57:21,613 0    [http-nio-8080-exec-9] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-21 17:57:21,618 5    [http-nio-8080-exec-9] INFO  edu.matc.controller.UserRegister  - 
+2017-11-21 17:57:21,618 5    [http-nio-8080-exec-9] INFO  edu.matc.controller.UserRegister  - 
+2017-11-21 17:57:21,618 5    [http-nio-8080-exec-9] INFO  edu.matc.controller.UserRegister  - 
