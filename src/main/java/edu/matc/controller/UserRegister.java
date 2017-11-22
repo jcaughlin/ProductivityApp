@@ -29,11 +29,11 @@ public class UserRegister extends HttpServlet {
 
         log.info(url);
 
-        userName = request.getParameter(userName);
+        userName = request.getParameter("username");
 
-        userPassword = request.getParameter(userPassword);
+        userPassword = request.getParameter("password");
 
-        userPassword2 = (String) request.getParameter(userPassword2);
+        userPassword2 = (String) request.getParameter("passwordConfirm");
 
         log.info(userName);
         log.info(userPassword);

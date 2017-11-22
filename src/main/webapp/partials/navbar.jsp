@@ -34,7 +34,7 @@
       <c:when test="${heading eq 'Welcome'}">
         <a role="button" class="btn btn-warning" href="/signin"><span class="glyphicon glyphicon-user"></span>Sign In</a>
       </c:when>
-      <c:when test="${heading eq 'Hey You! Login'}">
+      <c:when test="${heading eq 'Hey You! Login' || heading eq 'Create Yo Account'}">
 
       </c:when>
       <c:otherwise>
