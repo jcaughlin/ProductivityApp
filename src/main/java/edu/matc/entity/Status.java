@@ -5,5 +5,5 @@ public enum Status {
     MANAGER,
     PENDING,
     USER,
-    INACTIVE;
+    INACTIVE
 }

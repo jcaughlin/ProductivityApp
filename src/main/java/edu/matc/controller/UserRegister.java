@@ -33,7 +33,7 @@ public class UserRegister extends HttpServlet {
 
         userPassword = request.getParameter("password");
 
-        userPassword2 = (String) request.getParameter("passwordConfirm");
+        userPassword2 = request.getParameter("passwordConfirm");
 
         log.info(userName);
         log.info(userPassword);

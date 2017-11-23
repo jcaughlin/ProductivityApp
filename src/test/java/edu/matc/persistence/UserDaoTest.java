@@ -21,16 +21,15 @@ public class UserDaoTest {
         dao = new UserDao();
     }
 
-/*   @Test
-    public void getRecordCount() throws Exception {
+    @Test
+   /* public void getRecordCount() throws Exception {
 
-        int recordCount = 1;
-        log.info("Record Count is: " + recordCount);
-        assertEquals("Match", 101, recordCount);
+        log.info("Record Count is: " + getRecordCount());
+        assertEquals("Match", 123, recordCount);
 
     }
 */
-    @Test
+
     public void getAllUsers() throws Exception {
         List<User> users = dao.getAllUsers();
         assertTrue(users.size() > 0);
@@ -38,7 +37,6 @@ public class UserDaoTest {
     }
 
 
-    @Test
     public void getUserByIdTest() throws Exception {
        /* user = dao.getUser(5);
         assertTrue(user.getUserFirstName().equals("Price"));*/
