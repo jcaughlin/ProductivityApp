@@ -4,6 +4,7 @@ import edu.matc.util.LocalDateAttributeConverter;
 
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
+import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
@@ -13,11 +14,12 @@ import java.util.HashSet;
 
 @Entity
 @Table(name = "users")
-public class User implements java.io.Serializable{
+public class User {
 
     @Id
     @Column(name="user_id_pk")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(generator = "increment")
+    @GenericGenerator(name="increment", strategy = "increment")
     private int userId;
 
     @Column(name = "user_name")
@@ -46,13 +48,30 @@ public class User implements java.io.Serializable{
     @Column(name = "user_city")
     private String userCity;
 
+    /**
     @OneToMany(mappedBy = "user")
     @Cascade({CascadeType.SAVE_UPDATE,CascadeType.DELETE})
     private Set<UserRoles> roles = new HashSet<UserRoles>();
-
+*/
     // Empty Constructor
     public User() {
 
+    }
+
+    /**
+     *
+     * @return userId primary key of the user.
+     */
+    public int getUserId() {
+        return userId;
+    }
+
+    /**
+     *
+     * @param userId set the userId primary key in the mysql database.
+     */
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
 
@@ -103,14 +122,6 @@ public class User implements java.io.Serializable{
      */
     public void setUserUserName(String userUserName) {
         this.userUserName = userUserName;
-    }
-
-    /**
-     *
-     * @param roles the role(s) of this user.
-     */
-    public void setRoles(Set<UserRoles> roles) {
-        this.roles = roles;
     }
 
     /**
@@ -201,22 +212,6 @@ public class User implements java.io.Serializable{
         this.userEmail = userEmail;
     }
 
-    /**
-     *
-     * @return The Set of the User's security roles.
-     */
-    public Set getRoles() {
-        return roles;
-    }
-
-    /**
-     *
-     * @param roles The roles of the User.
-     */
-    public void setUserRoles(Set<UserRoles> roles) {
-        this.roles = roles;
-    }
-
     @Override
     public String toString() {
         String userString;
@@ -232,4 +227,5 @@ public class User implements java.io.Serializable{
 
         return userString;
     }
+
 }

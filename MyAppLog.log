@@ -1,217 +1,55 @@
-2017-10-28 18:51:07,767 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
-2017-10-28 18:51:07,782 15   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
-2017-10-28 18:51:07,785 18   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
-2017-10-28 18:51:07,793 26   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
-2017-10-28 18:51:07,834 67   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
-2017-10-28 18:51:07,835 68   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
-2017-10-28 18:51:07,955 188  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
-2017-10-28 18:51:08,121 354  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
-2017-10-28 18:51:08,131 364  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/productivity_appdbtest]
-2017-10-28 18:51:08,132 365  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
-2017-10-28 18:51:08,132 365  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
-2017-10-28 18:51:08,134 367  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
-2017-10-28 18:51:08,654 887  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2017-10-28 18:51:08,855 1088 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
-2017-10-28 18:51:08,883 1116 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
-2017-10-28 18:51:09,317 1550 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000227: Running hbm2ddl schema export
-2017-10-28 18:51:09,548 1781 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000230: Schema export complete
-2017-10-28 18:51:09,736 1969 [main] INFO  edu.matc.persistence.UserDao  - 
-UserID: 95
-User's Name: Gavin Petty
-UserName: Xenos
-UserPassword: QLN87XAD9CK
-User Birthdate: 1969-10-29 05:25:25
-Email: neque.sed.dictum@faucibuslectusa.edu
-City: Bacabal
-Registered Date: 2017-10-28
-Photo Link: null
-
-2017-10-28 18:51:09,748 1981 [main] INFO  edu.matc.persistence.UserDao  - 
-UserID: 95
-User's Name: Gavin Petty
-UserName: Xenos
-UserPassword: QLN87XAD9CK
-User Birthdate: 1969-10-29 05:25:25
-Email: neque.sed.dictum@faucibuslectusa.edu
-City: Bacabal
-Registered Date: 2017-10-28
-Photo Link: null
-
-2017-10-28 18:51:09,801 2034 [main] INFO  edu.matc.persistence.UserDaoTest  - The user is 
-UserID: 101
-User's Name: Jack Johnson
-UserName: galvestongiant
-UserPassword: password
-User Birthdate: null
-Email: jack@wba.org
-City: Chicago
-Registered Date: null
-Photo Link: null
-
-2017-10-28 18:51:09,878 2111 [main] INFO  edu.matc.persistence.UserDaoTest  - 3
-2017-10-28 18:51:09,883 2116 [main] INFO  edu.matc.persistence.UserDaoTest  - The user found with user ID is : 
-UserID: 100
-User's Name: Brett Hogan
-UserName: Frances
-UserPassword: NNK93WDA6UO
-User Birthdate: 1960-02-28 03:44:41
-Email: nisi.magna.sed@sapiencursus.ca
-City: Roccanova
-Registered Date: 2017-10-28
-Photo Link: null
-
-2017-10-28 18:51:31,086 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-17 10:52:10,186 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-19 20:13:17,819 0    [http-nio-8080-exec-10] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-19 20:13:20,185 2366 [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-19 20:28:44,783 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-19 20:31:06,471 0    [http-nio-8080-exec-10] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-19 20:36:04,212 0    [http-nio-8080-exec-9] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-19 20:45:07,478 1    [http-nio-8080-exec-10] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-19 21:22:03,630 0    [http-nio-8080-exec-8] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-19 21:25:54,568 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-19 21:27:39,396 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-21 12:23:57,390 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-21 12:24:29,317 31927 [http-nio-8080-exec-3] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-21 12:27:04,648 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-21 12:34:26,620 441972 [http-nio-8080-exec-3] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-21 13:18:23,868 1    [http-nio-8080-exec-10] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-21 14:00:41,767 1    [http-nio-8080-exec-10] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-21 14:04:22,602 220836 [http-nio-8080-exec-6] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-21 14:13:07,148 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-21 14:16:19,110 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-21 14:16:20,135 1025 [http-nio-8080-exec-2] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-21 16:30:53,826 0    [http-nio-8080-exec-3] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
-2017-11-21 17:11:40,550 0    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-21 17:11:40,554 4    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - 
-2017-11-21 17:11:40,554 4    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - 
-2017-11-21 17:11:40,554 4    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - 
-2017-11-21 17:25:30,009 0    [http-nio-8080-exec-6] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-21 17:25:30,012 3    [http-nio-8080-exec-6] INFO  edu.matc.controller.UserRegister  - 
-2017-11-21 17:25:30,012 3    [http-nio-8080-exec-6] INFO  edu.matc.controller.UserRegister  - 
-2017-11-21 17:25:30,012 3    [http-nio-8080-exec-6] INFO  edu.matc.controller.UserRegister  - 
-2017-11-21 17:47:50,225 0    [http-nio-8080-exec-9] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-21 17:47:50,233 8    [http-nio-8080-exec-9] INFO  edu.matc.controller.UserRegister  - 
-2017-11-21 17:47:50,233 8    [http-nio-8080-exec-9] INFO  edu.matc.controller.UserRegister  - 
-2017-11-21 17:47:50,233 8    [http-nio-8080-exec-9] INFO  edu.matc.controller.UserRegister  - 
-2017-11-21 17:54:35,090 0    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-21 17:54:35,093 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - 
-2017-11-21 17:54:35,093 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - 
-2017-11-21 17:54:35,093 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - 
-2017-11-21 17:57:21,613 0    [http-nio-8080-exec-9] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-21 17:57:21,618 5    [http-nio-8080-exec-9] INFO  edu.matc.controller.UserRegister  - 
-2017-11-21 17:57:21,618 5    [http-nio-8080-exec-9] INFO  edu.matc.controller.UserRegister  - 
-2017-11-21 17:57:21,618 5    [http-nio-8080-exec-9] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 08:43:39,639 0    [http-nio-8080-exec-6] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-22 08:43:39,642 3    [http-nio-8080-exec-6] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 08:43:39,642 3    [http-nio-8080-exec-6] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 08:43:39,642 3    [http-nio-8080-exec-6] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 10:23:38,249 0    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-22 10:23:38,253 4    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 10:23:38,253 4    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 10:23:38,253 4    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 10:25:47,290 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-22 10:25:47,293 3    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 10:25:47,293 3    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 10:25:47,293 3    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 10:34:59,532 0    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-22 10:34:59,536 4    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 10:34:59,536 4    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 10:34:59,536 4    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 10:39:54,343 0    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-22 10:39:54,347 4    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 10:39:54,347 4    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 10:39:54,347 4    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 11:58:33,351 1    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-22 11:58:33,355 5    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 11:58:33,355 5    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 11:58:33,355 5    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:16:51,597 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-22 13:16:51,600 3    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:16:51,600 3    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:16:51,600 3    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:19:08,352 0    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-22 13:19:08,354 2    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:19:08,354 2    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:19:08,355 3    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:21:21,245 0    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-22 13:21:21,248 3    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:21:21,248 3    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:21:21,248 3    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:25:33,566 1    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-22 13:25:33,571 6    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:25:33,571 6    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:25:33,571 6    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:27:36,039 0    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-22 13:27:36,042 3    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:27:36,042 3    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:27:36,042 3    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:30:36,886 0    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-22 13:30:36,889 3    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:30:36,890 4    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:30:36,890 4    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:38:47,277 0    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-22 13:38:47,280 3    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:38:47,280 3    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:38:47,280 3    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:43:21,896 1    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-22 13:43:21,899 4    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:43:21,899 4    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 13:43:21,899 4    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 14:00:55,916 0    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-22 14:00:55,920 4    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 14:00:55,920 4    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 14:00:55,920 4    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - 
-2017-11-22 14:30:01,767 0    [http-nio-8080-exec-7] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
-2017-11-22 14:30:01,773 6    [http-nio-8080-exec-7] INFO  edu.matc.controller.UserRegister  - madison0099
-2017-11-22 14:30:01,773 6    [http-nio-8080-exec-7] INFO  edu.matc.controller.UserRegister  - password
-2017-11-22 14:30:01,773 6    [http-nio-8080-exec-7] INFO  edu.matc.controller.UserRegister  - password
-2017-11-22 23:29:39,250 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
-2017-11-22 23:29:39,271 21   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
-2017-11-22 23:29:39,277 27   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
-2017-11-22 23:29:39,280 30   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
-2017-11-22 23:29:39,346 96   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
-2017-11-22 23:29:39,346 96   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
-2017-11-22 23:29:39,571 321  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
-2017-11-22 23:29:39,903 653  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
-2017-11-22 23:29:39,920 670  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/productivityapp_dbtest]
-2017-11-22 23:29:39,921 671  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
-2017-11-22 23:29:39,921 671  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
-2017-11-22 23:29:39,923 673  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
-2017-11-22 23:29:41,066 1816 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2017-11-22 23:29:41,333 2083 [main] ERROR edu.matc.persistence.UserDao  - Error getting all users
-org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: edu.matc.entity.User.roles[edu.matc.entity.UserRoles]
-	at org.hibernate.cfg.annotations.CollectionBinder.bindManyToManySecondPass(CollectionBinder.java:1135)
-	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:794)
-	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:729)
-	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:70)
-	at org.hibernate.cfg.Configuration.originalSecondPassCompile(Configuration.java:1697)
-	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1426)
-	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
-	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:23)
-	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:28)
-	at edu.matc.persistence.UserDao.getAllUsers(UserDao.java:121)
-	at edu.matc.persistence.UserDaoTest.getAllUsers(UserDaoTest.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
-	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
-	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
-	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2017-11-23 13:29:21,764 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-11-23 13:29:21,800 36   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-11-23 13:29:21,811 47   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-11-23 13:29:21,820 56   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-11-23 13:29:22,025 261  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-11-23 13:29:22,027 263  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-11-23 13:29:22,852 1088 [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-11-23 13:29:23,627 1863 [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-11-23 13:29:23,662 1898 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/productivityapp_dbtest]
+2017-11-23 13:29:23,663 1899 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-11-23 13:29:23,663 1899 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-11-23 13:29:23,670 1906 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-23 13:29:26,613 4849 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-23 13:29:28,161 6397 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-11-23 13:29:28,177 6413 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-11-23 13:29:30,248 8484 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000227: Running hbm2ddl schema export
+2017-11-23 13:29:30,502 8738 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000389: Unsuccessful: alter table user_roles drop foreign key FK_kmg4k9wkf9lbwdbej4wqu2ppk
+2017-11-23 13:29:30,502 8738 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - Can't DROP 'FK_kmg4k9wkf9lbwdbej4wqu2ppk'; check that column/key exists
+2017-11-23 13:29:31,411 9647 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000388: Unsuccessful: DROP TABLE IF EXISTS users
+2017-11-23 13:29:31,414 9650 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - Cannot delete or update a parent row: a foreign key constraint fails
+2017-11-23 13:29:31,431 9667 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000388: Unsuccessful: CREATE TABLE `users` (
+  `user_id` mediumint(8) unsigned NOT NULL auto_increment,
+  `user_name` varchar(255) default NULL,
+  `user_pass` varchar(255),
+  `user_first_name` varchar(255) default NULL,
+  `user_last_name` varchar(255) default NULL,
+  `user_email` varchar(255) default NULL,
+  `user_dateofbirth` varchar(255),
+  `user_registered_date`TIMESTAMP NOT NULL DEFAULT current_timestamp,
+  `user_photo_link` varchar(255),
+  `user_city` varchar(255),
+  PRIMARY KEY (`user_id`)
+) AUTO_INCREMENT=1
+2017-11-23 13:29:31,431 9667 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - Table 'users' already exists
+2017-11-23 13:29:31,433 9669 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000388: Unsuccessful: INSERT INTO `users` (`user_name`,`user_pass`,`user_first_name`,`user_last_name`,`user_email`,`user_dateofbirth`,`user_city`) VALUES ("Curran","KUY36LRL4HD","Macaulay","Valenzuela","metus.Aenean@consequatdolor.ca","1995-10-26 17:34:52","Morolo"),("Wylie","PKS22XKB9ZQ","Damian","Mclean","lacinia.at@pede.edu","1948-09-17 06:09:28","Vitacura"),("Hadassah","WOM32BRX5RV","Grant","Hahn","pede@ac.co.uk","1980-10-09 06:01:54","Trowbridge"),("Gavin","FFA56BOU3FA","Zachary","Copeland","cursus.luctus@lectus.co.uk","1994-03-28 11:33:23","Hohenems"),("Gage","ODW36KDU9FH","Price","Solis","sapien@Vivamus.co.uk","1958-01-24 12:44:27","Wick"),("Guinevere","GNB73PHE4XT","Edward","Silva","sit.amet.orci@posuerecubiliaCurae.com","1959-10-01 19:47:23","Wageningen"),("Mira","URS96UKP7FW","Burke","Casey","magna@Phaselluselit.ca","1977-12-22 18:39:30","Castor"),("Yuli","TJD45PSO0DM","Dominic","Stafford","ipsum.primis.in@dictum.edu","1940-02-25 01:46:09","Jacksonville"),("Price","DHF36YSI1MI","Sylvester","Elliott","quam.elementum@mattis.net","1970-09-05 16:49:08","Haddington"),("Orson","DBT06KYF4OI","Kermit","Hoover","enim.Suspendisse.aliquet@eratvelpede.net","1954-02-10 00:53:25","Saint-Servais")
+2017-11-23 13:29:31,433 9669 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - Unknown column 'user_dateofbirth' in 'field list'
+2017-11-23 13:29:31,437 9673 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000388: Unsuccessful: INSERT INTO `users` (`user_name`,`user_pass`,`user_first_name`,`user_last_name`,`user_email`,`user_dateofbirth`,`user_city`) VALUES ("Quail","IMC04LQJ2DE","Dean","Ruiz","Nunc@tellus.net","1942-04-28 22:29:58","San Rafael"),("Hasad","LLC27UKS8FT","Oleg","Hawkins","a@enim.ca","1961-07-31 10:24:17","Tavier"),("Dean","JDD56XZF5PJ","Jason","Gutierrez","Aliquam@rutrumeu.ca","1965-07-03 09:26:01","Crehen"),("Ora","HTE92SGA3ZT","Dorian","Fischer","lorem@nonluctussit.com","1968-06-11 18:53:29","Kulti-Barakar"),("Vincent","HAL13JWB8CZ","Vernon","Higgins","pellentesque.Sed.dictum@tellusjusto.com","1960-11-07 22:13:59","Traiguén"),("Paki","RKK59NGT8EL","David","Woodard","Curabitur@parturient.ca","1946-04-21 07:52:38","Massa e Cozzile"),("Marcia","KMB92YGF0TA","Duncan","Lindsey","cursus@vulputatemauris.co.uk","1954-04-30 20:00:08","Bonneville"),("Ray","QVV62KKQ3CS","Kirk","Mejia","sagittis@litoratorquent.com","1963-08-29 11:28:09","Werbomont"),("Hedley","FNU99ONH7ST","Chadwick","Woodard","Integer.vulputate@placerateget.org","1987-08-02 04:16:14","Ripalta Guerina"),("Valentine","LDQ72GQY1FW","Graham","Collins","et@Praesenteu.org","1998-07-19 18:09:25","Las Cabras")
+2017-11-23 13:29:31,437 9673 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - Unknown column 'user_dateofbirth' in 'field list'
+2017-11-23 13:29:31,439 9675 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000388: Unsuccessful: INSERT INTO `users` (`user_name`,`user_pass`,`user_first_name`,`user_last_name`,`user_email`,`user_dateofbirth`,`user_city`) VALUES ("Evan","WCG99TBF7UN","Curran","Fulton","massa.Mauris.vestibulum@eu.co.uk","1954-06-27 15:07:33","FerriŽres"),("Felix","PIJ90QRK1PM","Hamilton","Davis","ligula.consectetuer@feugiatLorem.co.uk","1966-02-18 08:51:24","Motta Visconti"),("Quintessa","ZBJ43TSL9BU","Mohammad","Whitley","quis@ornareplaceratorci.co.uk","1992-11-01 04:58:12","Minto"),("Barry","ZYO81LCH9RV","Neil","Nguyen","ut.pellentesque.eget@aliquetsemut.net","1963-08-28 10:51:40","Menai Bridge"),("Ima","QGN34IMW9FP","Steven","Huff","risus.odio.auctor@risus.ca","1948-07-08 11:50:28","Comano"),("Tad","BWU14QPN0OA","Knox","Rasmussen","nunc.sed.pede@ullamcorpermagnaSed.edu","1958-04-26 16:11:38","Altidona"),("Audra","KOA88LMZ6PN","Brenden","Golden","semper.et.lacinia@ornare.com","1974-10-03 10:16:03","Grimsby"),("Jessica","CTL29QHK6GX","Addison","Potts","Nulla@Sed.ca","1959-10-01 13:18:48","Gijzegem"),("Derek","MGM74RXI5HQ","Kuame","Pacheco","Mauris.eu@lobortis.ca","1945-12-14 15:26:57","Algarrobo"),("Noel","HDJ60ALF3TP","Palmer","Saunders","tempus.scelerisque@Aliquamauctor.co.uk","1975-06-13 12:48:01","Messancy")
+2017-11-23 13:29:31,440 9676 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - Unknown column 'user_dateofbirth' in 'field list'
+2017-11-23 13:29:31,440 9676 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000388: Unsuccessful: INSERT INTO `users` (`user_name`,`user_pass`,`user_first_name`,`user_last_name`,`user_email`,`user_dateofbirth`,`user_city`) VALUES ("Reese","JLR10FUM3ZS","Raymond","Schneider","malesuada@magnaa.edu","2000-03-16 17:57:45","Colico"),("Leslie","ATB19BZM2LU","Elton","Rosales","non@Suspendisse.ca","1950-12-25 04:11:20","Guadalajara"),("Marcia","AHN59XQV0PW","Aaron","Sheppard","velit.eget.laoreet@imperdiet.co.uk","1937-04-14 09:25:07","Calmar"),("Guinevere","GNL26NLO9HD","Logan","Ruiz","dui@sit.edu","1944-11-06 19:48:08","Sasaram"),("Yardley","CVR63OCS8WI","Stewart","Horne","euismod.enim.Etiam@Quisquefringillaeuismod.ca","1966-04-04 13:13:57","Saavedra"),("Maya","GFE44XGK0IL","Forrest","Saunders","non.bibendum.sed@risusatfringilla.net","1968-12-05 02:22:45","Milano"),("Cain","IAI63TCU8YK","Brendan","Harrington","leo@anteipsumprimis.com","1997-11-14 05:52:05","Nelson"),("Price","TNN57SZA0FP","Clark","Vang","ornare.lectus@liberoat.com","1941-04-28 13:31:31","Nieuwenrode"),("Jane","QJA54RIM7RE","Prescott","Bright","orci.lacus@lorem.ca","1960-12-28 11:58:02","Huntley"),("Alexis","FYS09UTA9PC","Tanner","Newton","eget.tincidunt@iaculisodioNam.edu","1981-08-14 23:26:16","Idaho Falls")
+2017-11-23 13:29:31,441 9677 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - Unknown column 'user_dateofbirth' in 'field list'
+2017-11-23 13:29:31,443 9679 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000388: Unsuccessful: INSERT INTO `users` (`user_name`,`user_pass`,`user_first_name`,`user_last_name`,`user_email`,`user_dateofbirth`,`user_city`) VALUES ("Raymond","DIX97LXX9KY","Kermit","Cervantes","Donec@euplacerateget.org","1968-12-29 12:39:53","Karlsruhe"),("Lysandra","HJS93YDN4NR","Giacomo","Mcmillan","lorem.ac@semper.com","1934-10-04 15:19:34","Heusweiler"),("Patricia","EZU25XKC6PW","Luke","Harding","adipiscing.elit.Curabitur@maurisSuspendisse.ca","1960-02-15 19:09:42","Westende"),("Barbara","FTN22JQJ5BA","Todd","Brewer","sagittis.semper@magnaDuis.co.uk","1982-01-23 14:11:15","Vaux-sous-ChŽvremont"),("Owen","QOP73LTU1JN","Len","Vaughan","Aenean.gravida.nunc@enimcommodohendrerit.com","1941-06-12 04:06:22","Adoni"),("Uriah","WIQ54BUV4KY","Wing","Campbell","elit@hymenaeos.com","1963-03-11 23:14:05","Hertford"),("Sacha","EGZ01ZTE8RY","Baxter","Bean","pharetra.Nam@Phasellus.net","1939-09-29 13:05:49","Dunoon"),("Simone","XUA82XXX3MA","Malachi","Bennett","in.faucibus.orci@sed.edu","1960-02-29 05:51:48","LaSalle"),("Baker","ZEI25KOG6YP","Evan","Franco","quam.Pellentesque.habitant@malesuada.edu","1951-04-23 08:08:36","Pune"),("Mia","XKM72IXX4CK","Maxwell","Parsons","montes.nascetur@at.org","1993-07-17 10:23:13","Hanau")
+2017-11-23 13:29:31,443 9679 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - Unknown column 'user_dateofbirth' in 'field list'
+2017-11-23 13:29:31,448 9684 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000388: Unsuccessful: INSERT INTO `users` (`user_name`,`user_pass`,`user_first_name`,`user_last_name`,`user_email`,`user_dateofbirth`,`user_city`) VALUES ("Kasimir","LOU77XGE0MA","Tad","Cortez","est@aenimSuspendisse.edu","1989-09-01 05:51:34","Bellevue"),("Fuller","VPQ96RVJ4VW","Holmes","Buck","at.fringilla.purus@Aliquamrutrumlorem.edu","1967-06-10 23:25:11","Fossato di Vico"),("Jael","QUK14IYZ1AK","Axel","Davidson","quis.tristique@montesnascetur.com","1986-02-06 17:29:12","Castelmezzano"),("Savannah","NDW88AQT3ZF","Sebastian","Compton","egestas.Fusce.aliquet@nisi.org","1946-05-29 03:57:44","Overland Park"),("Lucian","IAR89OTX7RU","Myles","Delaney","non.ante.bibendum@laciniaSed.edu","1959-06-30 05:48:17","Brecon"),("Fatima","BKX84WIX9MI","Harlan","Woodward","molestie.in.tempus@aenim.edu","1979-04-23 20:22:38","Surrey"),("Thane","SOX62GLB9ZO","Richard","Meadows","lacus.Quisque.purus@Quisque.co.uk","1977-09-27 03:12:47","Township of Minden Hills"),("Christine","FPK62AIU2XQ","Arthur","Giles","nulla.Integer.vulputate@iaculisodio.org","1952-08-25 11:39:50","Sialkot"),("Adam","ENR82NHX2NZ","Garth","Hester","mauris@gravida.net","1992-10-06 16:45:27","Linares"),("Keelie","NHN62CSR5PM","Philip","Castaneda","sem@telluslorem.ca","1981-11-10 23:59:25","Meerhout")
+2017-11-23 13:29:31,448 9684 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - Unknown column 'user_dateofbirth' in 'field list'
+2017-11-23 13:29:31,450 9686 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000388: Unsuccessful: INSERT INTO `users` (`user_name`,`user_pass`,`user_first_name`,`user_last_name`,`user_email`,`user_dateofbirth`,`user_city`) VALUES ("Hamilton","AAN30BVR9XG","Harper","Pate","Donec.est@urnaNunc.edu","1978-06-23 04:05:57","Sooke"),("Rhonda","OLL56ZFF9VD","Rogan","Schroeder","et.magnis.dis@euismod.co.uk","1976-08-12 12:47:24","Assen"),("Brooke","VBX65ELM9IG","Brian","Hayes","commodo@malesuadaut.com","1971-07-27 23:26:03","Vadodara"),("Randall","PJV13AWN7SI","Nero","Foley","dapibus.quam@Aeneaneuismod.org","1975-04-09 04:51:19","Eghezee"),("Iliana","XEL66IGD8NI","Trevor","Kinney","mus.Proin.vel@ligulaAenean.com","1954-09-12 09:17:05","Grand-RosiŽre-Hottomont"),("Hall","EHL97AFK5ZF","Harlan","Sloan","neque.sed@Crasloremlorem.org","1978-10-06 08:45:27","Eisleben"),("Travis","LUW65XLJ1OC","Grady","Richard","ornare.lectus@sedleoCras.org","1998-10-25 19:11:54","Troon"),("Kendall","PPO14SYC1UM","Bert","Tanner","enim@sit.net","1972-11-30 17:39:21","Mount Isa"),("Claudia","NRH83KZT9XC","Malcolm","Hensley","sagittis.augue.eu@sedtortor.com","1966-08-02 03:11:57","Portsoy"),("Adena","ZRY87MWC4VJ","Walker","Hawkins","libero.Proin.mi@aliquetlibero.ca","1979-09-29 11:17:17","Märsta")
+2017-11-23 13:29:31,451 9687 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - Unknown column 'user_dateofbirth' in 'field list'
+2017-11-23 13:29:31,453 9689 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000388: Unsuccessful: INSERT INTO `users` (`user_name`,`user_pass`,`user_first_name`,`user_last_name`,`user_email`,`user_dateofbirth`,`user_city`) VALUES ("Fallon","PAF41NUB4VV","Justin","Mendez","ornare.In@nisiaodio.com","1981-08-31 00:39:51","Townsville"),("Amery","NPM03RHU2YB","Jacob","Blackburn","pharetra.felis@ipsumdolor.ca","1939-02-18 16:27:30","Timaukel"),("Clinton","YKG62AEB1TO","Linus","Bruce","augue.ut.lacus@ametultriciessem.org","1960-05-04 11:28:46","Indianapolis"),("Stella","LEP84IPP9OG","Gregory","Brewer","dolor.Nulla.semper@duiinsodales.co.uk","1941-10-26 16:24:08","Cumberland County"),("Jonah","SNL84NHQ6WY","Philip","Nichols","iaculis.quis@cursuspurusNullam.com","1953-10-18 08:58:41","Canberra"),("Lucius","SEU71XTD1XN","Ivan","Jennings","diam.Duis@volutpatnunc.co.uk","1938-02-22 18:48:56","San Isidro"),("Gwendolyn","NZN57QEK3MC","Stuart","Macdonald","Sed@Suspendissealiquet.org","1982-10-01 14:55:27","Yumbel"),("Carl","WDF47WVD1SL","Hasad","Jacobson","sit.amet.ante@non.org","1956-02-19 16:10:09","Poggio Berni"),("Leandra","CYD25NBQ2DG","Perry","Newton","primis.in@nislQuisque.org","1963-11-05 18:13:19","Barahanagar"),("Daryl","CPL20FUA9EG","Brenden","Johnson","Nullam.enim@elit.co.uk","1960-07-02 01:50:19","Cleveland")
+2017-11-23 13:29:31,453 9689 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - Unknown column 'user_dateofbirth' in 'field list'
+2017-11-23 13:29:31,454 9690 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000388: Unsuccessful: INSERT INTO `users` (`user_name`,`user_pass`,`user_first_name`,`user_last_name`,`user_email`,`user_dateofbirth`,`user_city`) VALUES ("Rachel","SPN92HIL8HH","Martin","Alston","lacus.pede.sagittis@accumsaninterdumlibero.net","1990-01-06 16:23:56","Saalfelden am Steinernen Meer"),("Porter","KTU18PMR9SV","Hashim","Munoz","penatibus.et.magnis@mattisornarelectus.com","1954-07-25 12:37:28","Gatineau"),("Angela","DKI39BNL3UL","Jared","Collins","aliquam@Vestibulumanteipsum.edu","1981-06-15 10:48:51","Litueche"),("Brynn","AOE26HST3PM","Price","Mcclure","laoreet.libero.et@nuncsitamet.edu","1947-01-14 05:49:39","Bulzi"),("Ezekiel","XLZ15XLE9IJ","Leo","Gibson","lectus.Cum.sociis@arcuVestibulum.net","1943-07-11 03:52:50","San José de Alajuela"),("Ferdinand","TMS83TJN9XG","Arsenio","Rodgers","velit.egestas@eleifendvitaeerat.ca","1982-03-11 12:54:44","ThimŽon"),("Linus","EQK65EHG4JD","Zeus","Hawkins","erat@estmauris.co.uk","1967-10-17 11:12:22","Lota"),("Theodore","WPG15YLI8CS","Alfonso","Adkins","Duis.dignissim@erosnon.net","1968-03-28 21:06:15","Koolkerke"),("Lara","STO90QQE4PU","Griffin","Horn","enim.non.nisi@Namac.ca","1951-04-01 12:23:46","Ogbomosho"),("Hanae","JLS20ULU6FC","Tiger","Wells","odio@molestiepharetranibh.ca","1961-01-11 07:36:55","Vanier")
+2017-11-23 13:29:31,454 9690 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - Unknown column 'user_dateofbirth' in 'field list'
+2017-11-23 13:29:31,455 9691 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000388: Unsuccessful: INSERT INTO `users` (`user_name`,`user_pass`,`user_first_name`,`user_last_name`,`user_email`,`user_dateofbirth`,`user_city`) VALUES ("Leo","ADQ64IML0UH","Yuli","Parker","montes.nascetur.ridiculus@hendreritconsectetuercursus.com","1945-05-26 00:05:54","San Sostene"),("Dolan","IEH15JSG3AK","Robert","Dominguez","pulvinar@necenimNunc.org","1975-12-22 05:38:18","Landau"),("Axel","BED08NED9SP","Len","Chapman","libero.Donec.consectetuer@ante.org","1941-12-03 00:36:42","Issime"),("Quamar","YHT37OMI9BQ","Zachery","Peck","mauris.aliquam@bibendumullamcorperDuis.edu","1966-11-27 17:00:16","Åkersberga"),("Xenos","QLN87XAD9CK","Gavin","Petty","neque.sed.dictum@faucibuslectusa.edu","1969-10-29 05:25:25","Bacabal"),("Kuame","LVX67XEQ3NE","Steven","Solis","urna@interdumSedauctor.edu","1949-08-31 18:19:02","Matamata"),("Bevis","QUW40WAD5KQ","Elvis","Myers","Mauris.non@Aliquamerat.org","1972-10-22 19:10:21","Greifswald"),("Abel","DOV79UQV4PD","Rogan","Maddox","augue.Sed@ullamcorperviverraMaecenas.net","1967-06-02 09:24:04","Garaguso"),("Florence","BLF88OCC5MC","Berk","Brock","magna.Suspendisse.tristique@sollicitudinadipiscingligula.org","1976-03-04 02:20:40","Perugia"),("Frances","NNK93WDA6UO","Brett","Hogan","nisi.magna.sed@sapiencursus.ca","1960-02-28 03:44:41","Roccanova")
+2017-11-23 13:29:31,455 9691 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport  - Unknown column 'user_dateofbirth' in 'field list'
+2017-11-23 13:29:31,457 9693 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000230: Schema export complete

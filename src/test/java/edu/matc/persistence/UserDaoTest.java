@@ -31,6 +31,8 @@ public class UserDaoTest {
 */
 
     public void getAllUsers() throws Exception {
+
+        UserDao dao = new UserDao();
         List<User> users = dao.getAllUsers();
         assertTrue(users.size() > 0);
 

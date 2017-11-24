@@ -30,6 +30,10 @@
 
         <!-- List the annotated entity class/es -->
         <mapping class="edu.matc.entity.User"/>
+        <mapping class="edu.matc.entity.UserRoles"/>
+        <mapping class="edu.matc.entity.TaskMaster"/>
+        <mapping class="edu.matc.entity.Task"/>
+        <mapping class="edu.matc.entity.Status"/>
 
     </session-factory>
 
