@@ -57,3 +57,9 @@
 2017-11-24 22:55:41,128 286922 [http-nio-8080-exec-7] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
 2017-11-24 22:58:52,455 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
 2017-11-24 23:44:22,730 0    [http-nio-8080-exec-3] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-25 01:52:10,251 0    [http-nio-8080-exec-5] INFO  edu.matc.controller.AdminReportTrafficDirector  - userManagement
+2017-11-25 01:52:10,253 2    [http-nio-8080-exec-5] INFO  edu.matc.controller.AdminReportTrafficDirector  - I am  here
+2017-11-25 01:52:16,172 5921 [http-nio-8080-exec-6] INFO  edu.matc.controller.AdminReportTrafficDirector  - reportGenerator
+2017-11-25 01:52:16,173 5922 [http-nio-8080-exec-6] INFO  edu.matc.controller.AdminReportTrafficDirector  - I am  here
+2017-11-25 01:52:27,273 17022 [http-nio-8080-exec-8] INFO  edu.matc.controller.AdminReportTrafficDirector  - userManagement
+2017-11-25 01:52:27,274 17023 [http-nio-8080-exec-8] INFO  edu.matc.controller.AdminReportTrafficDirector  - I am  here

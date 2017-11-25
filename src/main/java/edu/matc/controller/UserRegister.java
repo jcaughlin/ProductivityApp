@@ -9,7 +9,7 @@ import javax.servlet.http.*;
 
 import org.apache.log4j.*;
 
-@WebServlet(name = "UserRegister", urlPatterns = "/register")
+@WebServlet(name = "UserRegister", urlPatterns = {"/register"})
 public class UserRegister extends HttpServlet {
 
     private final Logger log = LogManager.getLogger(this.getClass());
