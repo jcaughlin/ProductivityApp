@@ -9,9 +9,7 @@ import javax.servlet.http.*;
 
 import org.apache.log4j.*;
 
-@WebServlet(
-        urlPatterns = {"/register"}
-)
+@WebServlet(name = "UserRegister", urlPatterns = "/register")
 public class UserRegister extends HttpServlet {
 
     private final Logger log = LogManager.getLogger(this.getClass());
@@ -24,7 +22,6 @@ public class UserRegister extends HttpServlet {
         String userPassword = "";
         String userPassword2 = "";
 
-        ///Users/josephcaughlin/MadJavaEntFall2017/ProductivityApp/src/main/webapp/signin.jsp
         String url = "/user_register.jsp";
 
         log.info(url);
@@ -33,7 +30,12 @@ public class UserRegister extends HttpServlet {
 
         userPassword = request.getParameter("password");
 
-        userPassword2 = request.getParameter("passwordConfirm");
+        userPassword2 = request.getParameter("confirmPassword");
+        request.setAttribute("userName", userName);
+
+        if(!userPassword.equals(userPassword2)){
+            log.info("We have a mismatch");
+        }
 
         log.info(userName);
         log.info(userPassword);

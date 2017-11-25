@@ -10,13 +10,11 @@
   To change this template use Preferences | File and Code Templates--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<jsp:include page="partials/head.jsp"/>
+<jsp:include page="/partials/head.jsp"/>
 
-<jsp:include page="partials/header.jsp"/>
+<jsp:include page="/partials/header.jsp"/>
 
-<!-- Your Content Goes Here -->
+<jsp:include page="admin-reports.jsp"/>
 
-<jsp:include page="1"/>
-
-<jsp:include page="partials/footer.jsp"/>
+<jsp:include page="/partials/footer.jsp"/>
 

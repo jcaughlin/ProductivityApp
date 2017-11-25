@@ -10,9 +10,8 @@ import javax.servlet.*;
 import javax.servlet.annotation.*;
 import javax.servlet.http.*;
 
-@WebServlet(
-        urlPatterns = {"/signin"}
-)
+@WebServlet(name = "LoginHandler", urlPatterns = {"/signin"})
+
 public class LoginHandler extends HttpServlet {
 
     private final Logger log = LogManager.getLogger(this.getClass());

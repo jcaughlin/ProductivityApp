@@ -19,13 +19,13 @@
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="/about.jsp">About</a>
+        <a class="nav-link" href="${pageContext.request.contextPath}/about.jsp">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/people.jsp">People</a>
+        <a class="nav-link" href="${pageContext.request.contextPath}/people.jsp">People</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Stuff</a>
+        <a class="nav-link" href="${pageContext.request.contextPath}/stuff.jsp">Stuff</a>
       </li>
     </ul>
     <span class="navbar-text">
@@ -38,7 +38,9 @@
 
       </c:when>
       <c:otherwise>
+        <p>${pageContext.request.remoteUser}</p>
         <a role="button" class="btn btn-success" href="<!--TODO How do I want to handle"-->LogOut</a>
+
       </c:otherwise>
       </c:choose>
     </span>

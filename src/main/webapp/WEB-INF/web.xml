@@ -49,7 +49,7 @@
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>Admin Page</web-resource-name>
-            <url-pattern>/admin</url-pattern>
+            <url-pattern>/admin/</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <role-name>ADMIN</role-name>
@@ -64,6 +64,19 @@
             <role-name>PENDING</role-name>
         </auth-constraint>
     </security-constraint>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>400</error-code>
+        <location>/error.jsp</location>
+    </error-page>
+<error-page>
+    <error-code>401</error-code>
+    <location>/unauthorized.jsp</location>
+</error-page>
 
 </web-app>
 

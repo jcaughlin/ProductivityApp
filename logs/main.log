@@ -1,0 +1,59 @@
+2017-11-24 19:02:51,014 0    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-24 19:02:51,017 3    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - madison0092
+2017-11-24 19:02:51,017 3    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - password
+2017-11-24 19:02:51,017 3    [http-nio-8080-exec-4] INFO  edu.matc.controller.UserRegister  - 
+2017-11-24 19:17:30,810 0    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-24 19:17:30,813 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - We have a mismatch
+2017-11-24 19:17:30,813 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - Joe
+2017-11-24 19:17:30,813 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - password
+2017-11-24 19:17:30,813 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - 
+2017-11-24 21:30:09,567 0    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-24 21:30:09,570 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - We have a mismatch
+2017-11-24 21:30:09,570 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - joe
+2017-11-24 21:30:09,570 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - password
+2017-11-24 21:30:09,570 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - 
+2017-11-24 21:38:59,560 0    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-24 21:38:59,566 6    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - We have a mismatch
+2017-11-24 21:38:59,566 6    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - Bob
+2017-11-24 21:38:59,566 6    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - passwrd
+2017-11-24 21:38:59,566 6    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - 
+2017-11-24 21:52:00,744 0    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-24 21:52:00,763 19   [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - We have a mismatch
+2017-11-24 21:52:00,763 19   [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - murphy
+2017-11-24 21:52:00,763 19   [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - tom
+2017-11-24 21:52:00,763 19   [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - 
+2017-11-24 21:54:55,134 0    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-24 21:54:55,136 2    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - We have a mismatch
+2017-11-24 21:54:55,136 2    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - JdogPimp
+2017-11-24 21:54:55,137 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - password
+2017-11-24 21:54:55,137 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - 
+2017-11-24 21:57:04,123 0    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-24 21:57:04,126 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - We have a mismatch
+2017-11-24 21:57:04,126 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - JSmtih
+2017-11-24 21:57:04,126 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - password
+2017-11-24 21:57:04,126 3    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - 
+2017-11-24 22:09:50,895 0    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-24 22:09:50,898 3    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - We have a mismatch
+2017-11-24 22:09:50,898 3    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - Fernando
+2017-11-24 22:09:50,898 3    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - secret
+2017-11-24 22:09:50,898 3    [http-nio-8080-exec-3] INFO  edu.matc.controller.UserRegister  - 
+2017-11-24 22:14:08,795 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-24 22:14:08,798 3    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - We have a mismatch
+2017-11-24 22:14:08,799 4    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - Bud
+2017-11-24 22:14:08,799 4    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - password
+2017-11-24 22:14:08,799 4    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - 
+2017-11-24 22:19:11,557 0    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-24 22:19:11,561 4    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - We have a mismatch
+2017-11-24 22:19:11,561 4    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - Steve
+2017-11-24 22:19:11,561 4    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - password
+2017-11-24 22:19:11,561 4    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - 
+2017-11-24 22:22:09,176 0    [http-nio-8080-exec-10] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 22:30:53,004 0    [http-nio-8080-exec-2] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 22:32:40,823 1    [http-nio-8080-exec-3] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 22:50:54,206 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-24 22:50:54,209 3    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - tom
+2017-11-24 22:50:54,209 3    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - password
+2017-11-24 22:50:54,209 3    [http-nio-8080-exec-1] INFO  edu.matc.controller.UserRegister  - password
+2017-11-24 22:55:41,128 286922 [http-nio-8080-exec-7] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 22:58:52,455 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 23:44:22,730 0    [http-nio-8080-exec-3] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting

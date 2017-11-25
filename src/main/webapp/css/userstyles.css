@@ -1,4 +1,10 @@
+.jumbotron-fluid {
+    padding-top: 1rem;
+}
 
+#mrt {
+    max-width: 100%;
+}
 .form-signin {
     padding: 2rem;
     margin: 1em auto;
@@ -81,4 +87,5 @@ input:-moz-placeholder { text-align: center; }
 .container{
     background-color: rgb(241, 243, 244);
 }
+
 

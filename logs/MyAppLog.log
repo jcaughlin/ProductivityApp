@@ -995,3 +995,29 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown co
 2017-11-23 18:30:42,206 26876 [http-nio-8080-exec-5] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
 2017-11-23 18:30:47,137 31807 [http-nio-8080-exec-6] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
 2017-11-23 18:56:05,465 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 13:03:33,102 0    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-24 13:03:33,107 5    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - fred
+2017-11-24 13:03:33,108 6    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - tom
+2017-11-24 13:03:33,108 6    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - 
+2017-11-24 13:21:42,200 0    [http-nio-8080-exec-2] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 13:25:52,083 0    [http-nio-8080-exec-9] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 13:27:29,767 97684 [http-nio-8080-exec-3] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 13:32:32,263 0    [http-nio-8080-exec-2] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 13:34:34,234 121971 [http-nio-8080-exec-4] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 13:40:06,646 0    [http-nio-8080-exec-10] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 14:09:24,545 0    [http-nio-8080-exec-8] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 14:13:40,221 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 14:15:24,203 0    [http-nio-8080-exec-10] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 14:23:50,633 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 14:25:09,869 0    [http-nio-8080-exec-10] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 14:29:56,044 1    [http-nio-8080-exec-4] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 17:52:39,811 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-11-24 18:04:01,294 4    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-24 18:04:01,315 25   [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - joe
+2017-11-24 18:04:01,315 25   [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - password
+2017-11-24 18:04:01,315 25   [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - 
+2017-11-24 18:31:13,241 0    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-11-24 18:31:13,245 4    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - joe
+2017-11-24 18:31:13,246 5    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - password
+2017-11-24 18:31:13,246 5    [http-nio-8080-exec-5] INFO  edu.matc.controller.UserRegister  - 
+2017-11-24 18:51:36,087 0    [http-nio-8080-exec-1] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting

@@ -10,12 +10,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <jsp:include page="partials/head.jsp"/>
-
 <jsp:include page="partials/header.jsp"/>
-
-<!-- Your Content Goes Here -->
-
+<jsp:include page="partials/navbar.jsp"/>
 <jsp:include page="content/error-content.jsp"/>
-
 <jsp:include page="partials/footer.jsp"/>
 
