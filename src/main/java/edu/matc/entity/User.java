@@ -8,6 +8,7 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.util.Set;
 import java.util.HashSet;
@@ -39,7 +40,7 @@ public class User {
 
     @Column(name = "user_registered_date")
     @Type(type="timestamp")
-    private LocalDate dateUserRegistered;
+    private Timestamp dateUserRegistered;
 
     @Column(name = "user_date_birth")
     @Convert(converter = LocalDateAttributeConverter.class)
@@ -144,7 +145,7 @@ public class User {
      *
      * @return The Timestamp of the Date the User Registered.
      */
-    public LocalDate getDateUserRegistered() {
+    public Timestamp getDateUserRegistered() {
         return dateUserRegistered;
     }
 
@@ -152,8 +153,8 @@ public class User {
      *
      * @param dateUserRegistered The timestamp of the date the User registered.
      */
-    public void setDateUserRegistered(LocalDate dateUserRegistered) {
-        this.dateUserRegistered = dateUserRegistered;
+    public void setDateUserRegistered(Timestamp dateUserRegistered) {
+        this.dateUserRegistered= dateUserRegistered;
     }
 
     /**

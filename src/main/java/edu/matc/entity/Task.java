@@ -10,18 +10,16 @@ public class Task implements java.io.Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="task_id")
-    private int task_id;
+    @Column(name="task_id_pk")
+    private int taskID;
 
     @Column(name="task_name")
     private String taskName;
 
-    public int getTask_id() {
-        return task_id;
-    }
+    public int getTaskID(){ return taskID; }
 
-    public void setTask_id(int task_id) {
-        this.task_id = task_id;
+    public void setTaskID(int task_id) {
+        this.taskID = taskID;
     }
 
     public String getTaskName() {
@@ -41,7 +39,7 @@ public class Task implements java.io.Serializable{
 
         String taskString;
 
-        taskString = "TaskID: " + task_id + "TaskName: " + taskName;
+        taskString = "TaskID: " + taskID + "TaskName: " + taskName;
 
         return taskString;
     }

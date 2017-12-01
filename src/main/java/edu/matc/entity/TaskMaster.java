@@ -30,6 +30,9 @@ public class TaskMaster implements java.io.Serializable{
     @Column(name="end_time")
     private int taskEndTime;
 
+    @Column(name="task_status")
+    private Boolean taskStatus;
+
     @Column(name = "task_duration")
     @Formula("end_time - start_time")
     private long totalTimeSpentOnTask;
@@ -121,15 +124,33 @@ public class TaskMaster implements java.io.Serializable{
         this.totalTimeSpentOnTask = totalTimeSpentOnTask;
     }
 
+
+    /**
+     *
+     * @param taskStatus is set.
+     */
+    public void setTaskStatus(Boolean taskStatus){
+        this.taskStatus = taskStatus;
+    }
+
+    /**
+     *
+     * @return taskStatusOfTask.
+     */
+    public Boolean getTaskStatus() {
+        return taskStatus;
+    }
+
+
     /**
      *
      * @return userTaskString;
      */
     public String toString() {
-        String userTask = "Name of task: " + taskName + "\nTime Task Commenced: " + taskStartTime + "\nTime Task Completed"
+        String userTaskString = "Name of task: " + taskName + "\nTime Task Commenced: " + taskStartTime + "\nTime Task Completed"
                 + taskEndTime + "Total Time To Complete the task";
 
-        return userTask;
+        return userTaskString;
     }
 
 }

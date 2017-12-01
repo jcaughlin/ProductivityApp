@@ -21,14 +21,14 @@ public class UserDaoTest {
         dao = new UserDao();
     }
 
-    @Test
-   /* public void getRecordCount() throws Exception {
 
-        log.info("Record Count is: " + getRecordCount());
-        assertEquals("Match", 123, recordCount);
+   public void getRecordCount() throws Exception {
+        int count;
+        count = dao.getRecordCount();
+        log.info("Record Count is: " + dao.getRecordCount());
+        assertEquals("Match", 123, count);
 
     }
-*/
 
     public void getAllUsers() throws Exception {
 
@@ -43,15 +43,15 @@ public class UserDaoTest {
        /* user = dao.getUser(5);
         assertTrue(user.getUserFirstName().equals("Price"));*/
 
-        user = dao.getUserById(100);
+        user = dao.getUserById(1);
         log.info("The user found with user ID is : " + user.toString());
-        assertTrue(user.getUserLastName().equals("Hogan"));
+        assertTrue(user.getUserLastName().equals("Soetoro"));
 
     }
 
     @Test
     public void getUsersByLastNameTest() throws Exception {
-        List<User> users = dao.getUsersByLastName("Hawkins");
+        List<User> users = dao.getUsersByLastName("Soetoro");
         assertTrue(users.size() == 3);
         log.info(users.size());
     }

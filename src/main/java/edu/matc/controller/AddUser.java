@@ -22,7 +22,7 @@ public class AddUser extends HttpServlet {
         String zipCode = request.getParameter("zipCode");
         String emailAddress = request.getParameter("email");
         String birthday = request.getParameter("birthday");
-        final Part filePart = request.getPart("photoUpload");
+        // final Part filePart = request.getPart("photoUpload");
 
         String url = "/user_added.jsp";
         RequestDispatcher dispatcher =

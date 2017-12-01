@@ -8,7 +8,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <!--Navbar-->
-
 <!--TODO Do I need a login and home link?-->
 <!--How will I handle the traffic for the tasks above-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -22,7 +21,7 @@
         <a class="nav-link" href="${pageContext.request.contextPath}/about.jsp">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="${pageContext.request.contextPath}/people.jsp">People</a>
+        <a class="nav-link" href="people">People</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="${pageContext.request.contextPath}/stuff.jsp">Stuff</a>
@@ -32,14 +31,14 @@
 
       <c:choose>
       <c:when test="${heading eq 'Welcome'}">
-        <a role="button" class="btn btn-warning" href="${pageContext.request.contextPath}/signin"><span class="glyphicon glyphicon-user"></span>Sign In</a>
+        <a role="button" class="btn btn-warning" href="listController"><span class="glyphicon glyphicon-user"></span>Sign In</a>
       </c:when>
       <c:when test="${heading eq 'Hey You! Login' || heading eq 'Create Yo Account'}">
 
       </c:when>
       <c:otherwise>
         <p>${pageContext.request.remoteUser}</p>
-        <a role="button" class="btn btn-success" href="<!--TODO How do I want to handle"-->LogOut</a>
+        <a role="button" class="btn btn-success" href="logout">LogOut</a>
 
       </c:otherwise>
       </c:choose>

@@ -1,40 +1,39 @@
 <?xml version='1.0' encoding='utf-8'?>
-
 <!DOCTYPE hibernate-configuration PUBLIC
-        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
-
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-
     <session-factory>
 
-        <property name="hibernate.hbm2ddl.import_files_sql_extractor">org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor</property>
-
-
-        <!-- Database connection settings -->
+        <!--Database Connection Settings-->
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost:3306/productivityapp_dbtest</property>
         <property name="connection.username">root</property>
         <property name="connection.password">rootpassword</property>
 
-        <!-- SQL dialect -->
+        <!--SQL dialect-->
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 
-        <!-- Echo all executed SQL to stdout -->
+        <!--Echo Executed SQL to Console-->
         <property name="show_sql">true</property>
 
-        <!-- reload the db before each test -->
-        <property name="hibernate.hbm2ddl.auto">create-drop</property>
-        <!--NOTE: to load data before each test, also add import.sql to test resources where
-            import.sql is your db dump -->
+        <!--Pretty Print SQL-->
+        <property name="hibernate.format_sql">true</property>
 
-        <!-- List the annotated entity class/es -->
+        <!--Rebuild DataBase After Each Test-->
+        <!--<property name="hbm2ddl.auto">create-drop</property>-->
+
+        <property name="hibernate.hbm2ddl.import_files_sql_extractor">org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor</property>
+
+        <!--DB schema will be updated if needed -->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!--Mapping Classes-->
         <mapping class="edu.matc.entity.User"/>
         <mapping class="edu.matc.entity.UserRoles"/>
-        <mapping class="edu.matc.entity.TaskMaster"/>
         <mapping class="edu.matc.entity.Task"/>
-        <mapping class="edu.matc.entity.Status"/>
-
-    </session-factory>
-
+        <mapping class="edu.matc.entity.TaskMaster"/>
+        <mapping class="edu.matc.entity.OpenWeatherData"/>
+    
+  </session-factory>
 </hibernate-configuration>
