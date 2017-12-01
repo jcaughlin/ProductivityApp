@@ -1,11 +1,17 @@
 package edu.matc.controller;
 
+
+import org.apache.log4j.*;
+
 import java.io.*;
 import java.util.*;
 
 import javax.servlet.*;
 import javax.servlet.annotation.*;
 import javax.servlet.http.*;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletResponse;
+import javax.servlet.ServletException;
 
 @WebServlet(name = "AddUser", urlPatterns = {"/addUser"})
 public class AddUser extends HttpServlet {

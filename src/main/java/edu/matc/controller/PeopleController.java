@@ -1,5 +1,7 @@
 package edu.matc.controller;
 
+import org.apache.log4j.*;
+
 import java.io.IOException;
 import java.util.*;
 
@@ -9,15 +11,16 @@ import javax.servlet.http.*;
 
 @WebServlet(name = "PeopleController", urlPatterns = "/people")
 
-
 public class PeopleController extends HttpServlet {
 
-protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
-    String url = "/people.jsp";
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-    RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-    dispatcher.forward(request,response);
+        String url = "/people.jsp";
+
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+        dispatcher.forward(request, response);
 
     }
 }

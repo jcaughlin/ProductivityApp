@@ -14,20 +14,29 @@
             <h2 class="form-signin-heading">Please login</h2>
 
 
-            <input type="text" class="form-control"  name="j_username" id="j_username" placeholder="User Name" required="" autofocus="" />
+            <input type="text" class="form-control" name="j_username" id="j_username" placeholder="User Name"
+                   required="" autofocus=""/>
 
 
-            <input type="password" class="form-control" name="j_password" id="j_password" placeholder="Password" required=""/>
+            <input type="password" class="form-control" name="j_password" id="j_password" placeholder="Password"
+                   required=""/>
 
             <label class="checkbox">
                 <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
             </label>
 
+            <div class="row">
+                <div class="g-recaptcha" data-sitekey="6LeaVTMUAAAAAL5G3U10uuBdVbXBbNGv6Wmd9R1J"></div>
+            </div>
+
+
             <div class="button-group">
-            <button class="btn btn-primary" type="submit">Login</button>
-            <button class="btn btn-success" href="/forgotPassword">Forgot Password</button>
+                <button class="btn btn-primary" type="submit">Login</button>
+
             </div>
         </form>
+        <button class="btn btn-success" href="/lostPassword">Forgot Password</button>
+
     </div>
 
 
