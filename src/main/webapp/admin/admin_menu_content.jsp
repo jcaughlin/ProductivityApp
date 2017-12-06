@@ -8,8 +8,7 @@
   To change this template use Preferences | File and Code Templates--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<!--TODO Servlet to Direct Traffic-->
-<form class="form" action="${pageContext.request.contextPath}/reportDirector" method="get">
+<form class="forms admin-report" action="${pageContext.request.contextPath}/reportDirector" method="post">
     <fieldset>
     <h2>Select Your Report</h2>
         <div class="form-row">

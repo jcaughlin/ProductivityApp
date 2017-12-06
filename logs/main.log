@@ -88,3 +88,24 @@
 2017-11-30 13:04:48,236 166336 [http-nio-8080-exec-5] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
 2017-11-30 13:04:56,230 174330 [http-nio-8080-exec-6] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
 2017-11-30 13:05:46,321 224421 [http-nio-8080-exec-8] INFO  edu.matc.controller.LoginHandler  - your mom is in dogetting
+2017-12-05 17:41:20,318 1    [http-nio-8080-exec-10] INFO  edu.matc.controller.AdminReportTrafficDirector  - userManagement
+2017-12-05 17:41:20,323 6    [http-nio-8080-exec-10] INFO  edu.matc.controller.AdminReportTrafficDirector  - I am  here
+2017-12-05 17:41:23,318 3001 [http-nio-8080-exec-1] INFO  edu.matc.controller.AdminReportTrafficDirector  - userManagement
+2017-12-05 17:41:23,320 3003 [http-nio-8080-exec-1] INFO  edu.matc.controller.AdminReportTrafficDirector  - I am  here
+2017-12-05 17:41:25,275 4958 [http-nio-8080-exec-2] INFO  edu.matc.controller.AdminReportTrafficDirector  - userManagement
+2017-12-05 17:41:25,275 4958 [http-nio-8080-exec-2] INFO  edu.matc.controller.AdminReportTrafficDirector  - I am  here
+2017-12-05 17:41:27,932 7615 [http-nio-8080-exec-3] INFO  edu.matc.controller.AdminReportTrafficDirector  - userManagement
+2017-12-05 17:41:27,932 7615 [http-nio-8080-exec-3] INFO  edu.matc.controller.AdminReportTrafficDirector  - I am  here
+2017-12-05 17:41:30,241 9924 [http-nio-8080-exec-5] INFO  edu.matc.controller.AdminReportTrafficDirector  - 
+2017-12-05 17:41:30,241 9924 [http-nio-8080-exec-5] INFO  edu.matc.controller.AdminReportTrafficDirector  - I am  here
+2017-12-05 18:04:55,251 0    [http-nio-8080-exec-7] INFO  edu.matc.controller.AdminController  - this is the path../admin/admin.jsp
+2017-12-05 18:04:55,664 413  [http-nio-8080-exec-6] INFO  edu.matc.controller.AdminController  - this is the path../admin/admin.jsp
+2017-12-05 18:19:01,250 1    [http-nio-8080-exec-1] INFO  edu.matc.controller.PeopleController  - ${pageContext.request.contextPath}/users/people.jsp
+2017-12-05 18:26:30,294 0    [http-nio-8080-exec-5] INFO  edu.matc.controller.PeopleController  - ${pageContext.request.contextPath}/users/people.jsp
+2017-12-05 18:26:43,444 13150 [http-nio-8080-exec-10] INFO  edu.matc.controller.AdminController  - this is the path../admin/admin.jsp
+2017-12-05 18:26:43,695 13401 [http-nio-8080-exec-9] INFO  edu.matc.controller.AdminController  - this is the path../admin/admin.jsp
+2017-12-05 18:29:17,008 0    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - /user_register.jsp
+2017-12-05 18:29:17,012 4    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - murray
+2017-12-05 18:29:17,012 4    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - password
+2017-12-05 18:29:17,012 4    [http-nio-8080-exec-2] INFO  edu.matc.controller.UserRegister  - password
+2017-12-05 18:29:29,899 12891 [http-nio-8080-exec-3] INFO  edu.matc.controller.PeopleController  - ${pageContext.request.contextPath}/users/people.jsp

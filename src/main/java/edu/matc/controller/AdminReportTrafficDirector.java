@@ -1,9 +1,11 @@
 package edu.matc.controller;
 
-import org.apache.log4j.*;
+
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.*;
-import java.util.*;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -19,7 +21,7 @@ public class AdminReportTrafficDirector extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String adminReportSelector = request.getParameter("adminReportSelector");
         logger.info(adminReportSelector);
@@ -28,11 +30,11 @@ public class AdminReportTrafficDirector extends HttpServlet {
 
         if (adminReportSelector.equals("userManagement")) {
 
-           String url = "/admin/admin-report-generator.jsp";
+           String url = "/admin/admin_report_generator.jsp";
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
             dispatcher.forward(request, response);
         } else if (adminReportSelector.equals("reportGenerator")) {
-            String url = "/admin/admin-user-management.jsp";
+            String url = "/admin/admin_user_management.jsp";
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
             dispatcher.forward(request, response);
 

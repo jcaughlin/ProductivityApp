@@ -16,7 +16,7 @@
 
 <jsp:include page="partials/navbar.jsp"/>
 
-<jsp:include page="/content/recover_password_content.jsp"/>
+<jsp:include page="/content/lost_password_content.jsp"/>
 
 <jsp:include page="partials/footer.jsp"/>
 

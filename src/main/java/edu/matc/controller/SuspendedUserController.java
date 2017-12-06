@@ -1,27 +1,25 @@
 package edu.matc.controller;
 
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import java.io.IOException;
+import java.util.*;
 
-import javax.servlet.RequestDispatcher;
+import org.apache.log4j.*;
+
 import javax.servlet.ServletException;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.annotation.*;
 import javax.servlet.http.*;
 
-@WebServlet(name = "ListController", urlPatterns = "/listController")
+@WebServlet(name = "SuspendedUserController", urlPatterns = "/suspended")
 
-public class ListController extends HttpServlet {
+public class SuspendedUserController extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
-        String url = "/users/list_dashboard.jsp";
+        String url = "suspended_user.jsp";
 
         RequestDispatcher dispatcher =
                 getServletContext().getRequestDispatcher(url);

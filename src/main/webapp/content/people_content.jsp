@@ -63,7 +63,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="${pageContext.request.contextPath}/images/michelleobama.jpg" alt="Michelle Obama"></a>
+                <a href="#"><img class="card-img-top" src="/images/michelleobama.jpg" alt="Michelle Obama"></a>
                 <div class="card-body">
                     <h4 class="card-title">
                         <a href="#">Project Six</a>

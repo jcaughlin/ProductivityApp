@@ -18,10 +18,10 @@
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="${pageContext.request.contextPath}/about.jsp">About</a>
+        <a class="nav-link" href="${pageContext.request.contextPath}/users/about.jsp">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="people">People</a>
+        <a class="nav-link" href="${pageContext.request.contextPath}people">People</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="${pageContext.request.contextPath}/stuff.jsp">Stuff</a>
@@ -33,7 +33,7 @@
       <c:when test="${heading eq 'Welcome'}">
         <a role="button" class="btn btn-warning" href="listController"><span class="glyphicon glyphicon-user"></span>Sign In</a>
       </c:when>
-      <c:when test="${heading eq 'Hey You! Login' || heading eq 'Create Yo Account'}">
+      <c:when test="${heading eq 'Hey You! Login' || heading eq 'Create Yo Account'|| heading eq 'Login Error'}">
 
       </c:when>
       <c:otherwise>

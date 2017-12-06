@@ -4,18 +4,19 @@ import edu.matc.util.LocalDateAttributeConverter;
 
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
-import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Timestamp;
 import java.time.LocalDate;
-import java.util.Set;
 import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "users")
-public class User {
+public class User implements Serializable{
 
     @Id
     @Column(name="user_id_pk")
@@ -24,7 +25,7 @@ public class User {
     private int userId;
 
     @Column(name = "user_name")
-    private String userUserName;
+    private String userName;
 
     @Column(name = "user_pass")
     private String userPassword;
@@ -49,13 +50,27 @@ public class User {
     @Column(name = "user_city")
     private String userCity;
 
-    /**
-    @OneToMany(mappedBy = "user")
-    @Cascade({CascadeType.SAVE_UPDATE,CascadeType.DELETE})
-    private Set<UserRoles> roles = new HashSet<UserRoles>();
-*/
+
+    @OneToMany(mappedBy = "user", orphanRemoval=true)
+    @Cascade(CascadeType.ALL)
+    private Set<UserRoles> userRoles = new HashSet<UserRoles>();
+
     // Empty Constructor
     public User() {
+
+    }
+
+    public User(String userName, String userPassword, String userFirstName, String userLastName, String userEmail,
+                LocalDate userDateOfBirth, String userCity) {
+
+        this.userName = userName;
+        this.userPassword = userPassword;
+        this.userFirstName = userFirstName;
+        this.userLastName = userLastName;
+        this.userEmail = userEmail;
+        this.userDateOfBirth = userDateOfBirth;
+        this.userCity = userCity;
+
 
     }
 
@@ -113,16 +128,16 @@ public class User {
      *
      * @return the User's User Name for application login.
      */
-    public String getUserUserName() {
-        return userUserName;
+    public String getUserName() {
+        return userName;
     }
 
     /**
      *
-     * @param userUserName Sets the User Name for the application login.
+     * @param userName Sets the User Name for the application login.
      */
-    public void setUserUserName(String userUserName) {
-        this.userUserName = userUserName;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     /**
@@ -173,14 +188,6 @@ public class User {
         this.userDateOfBirth = userDateOfBirth;
     }
 
-    /*public String getPathToUserPhoto() {
-        return pathToUserPhoto;
-    }
-
-    public void setPathToUserPhoto(String pathToUserPhoto) {
-        this.pathToUserPhoto = pathToUserPhoto;
-    } */
-
     /**
      *
      * @return userCity
@@ -213,20 +220,28 @@ public class User {
         this.userEmail = userEmail;
     }
 
+    public Set<UserRoles> getUserRoles() {
+        return userRoles;
+    }
+
+    public void setUserRoles(Set<UserRoles> userRoles) {
+        this.userRoles = userRoles;
+    }
+
     @Override
     public String toString() {
         String userString;
 
         userString =
-                "User\'s Name: " + userFirstName + " " + userLastName + "\n" +
-                "UserName: " + userUserName + "\n" +
+                "\nUser\'s Name: " + userFirstName + " " + userLastName + "\n" +
+                "User Name: " + userName + "\n" +
                 "UserPassword: " + userPassword + "\n" +
                 "User Birthdate: " + userDateOfBirth + "\n" +
                 "Email: " + userEmail + "\n" +
                 "City: " + userCity + "\n" +
-                "Registered Date: " + dateUserRegistered;
+                "Registered Date: " + dateUserRegistered + "\n" +
+                "User Id: " + userId;
 
         return userString;
     }
-
 }

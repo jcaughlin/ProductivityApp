@@ -131,3 +131,173 @@ Caused by: java.lang.ClassNotFoundException:
 2017-11-30 16:45:29,931 2373 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
 2017-11-30 16:45:29,931 2373 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [users_user_name_uindex, uk_k8d0f2n7n88w1a16yhua64onx, primary]
 2017-11-30 16:45:29,932 2374 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000232: Schema update complete
+2017-12-03 22:14:33,886 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-12-03 22:14:33,897 11   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-12-03 22:14:33,901 15   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-12-03 22:14:33,903 17   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-12-03 22:14:33,932 46   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-12-03 22:14:33,932 46   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-12-03 22:14:34,068 182  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-12-03 22:14:34,218 332  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-12-03 22:14:34,230 344  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/productivityapp_dbtest]
+2017-12-03 22:14:34,231 345  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-12-03 22:14:34,231 345  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-12-03 22:14:34,233 347  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-03 22:14:35,030 1144 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-03 22:14:35,610 1724 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-12-03 22:14:35,617 1731 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-12-03 22:14:36,316 2430 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000228: Running hbm2ddl schema update
+2017-12-03 22:14:36,317 2431 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000102: Fetching database metadata
+2017-12-03 22:14:36,322 2436 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000396: Updating schema
+2017-12-03 22:14:36,363 2477 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.open_weather_data
+2017-12-03 22:14:36,363 2477 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [max_temperature, open_weather_city, open_weather_id_pk, open_weather_record_date, barometric_pressure, min_tempature, humidity_percentage]
+2017-12-03 22:14:36,364 2478 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2017-12-03 22:14:36,364 2478 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [primary]
+2017-12-03 22:14:36,374 2488 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.task
+2017-12-03 22:14:36,374 2488 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [task_name, task_id, task_id_pk]
+2017-12-03 22:14:36,375 2489 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2017-12-03 22:14:36,375 2489 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [primary]
+2017-12-03 22:14:36,385 2499 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.user_roles
+2017-12-03 22:14:36,386 2500 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [role_name, user_role_id_pk, user_name]
+2017-12-03 22:14:36,386 2500 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: [user_name_fk]
+2017-12-03 22:14:36,386 2500 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [user_name_fk, primary]
+2017-12-03 22:14:36,399 2513 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.user_tasks_list_records
+2017-12-03 22:14:36,399 2513 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [task_name, start_time, task_list_id_pk, task_status, end_time]
+2017-12-03 22:14:36,399 2513 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2017-12-03 22:14:36,399 2513 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [primary]
+2017-12-03 22:14:36,410 2524 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.users
+2017-12-03 22:14:36,410 2524 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_date_birth, user_email, user_first_name, user_id_pk, user_last_name, user_name, user_city, user_registered_date, user_pass]
+2017-12-03 22:14:36,410 2524 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2017-12-03 22:14:36,410 2524 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [users_user_name_uindex, uk_k8d0f2n7n88w1a16yhua64onx, primary]
+2017-12-03 22:14:36,412 2526 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000232: Schema update complete
+2017-12-03 22:16:04,987 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-12-03 22:16:05,001 14   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-12-03 22:16:05,004 17   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-12-03 22:16:05,007 20   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-12-03 22:16:05,038 51   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-12-03 22:16:05,038 51   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-12-03 22:16:05,281 294  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-12-03 22:16:05,434 447  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-12-03 22:16:05,444 457  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/productivityapp_dbtest]
+2017-12-03 22:16:05,444 457  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-12-03 22:16:05,445 458  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-12-03 22:16:05,447 460  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-03 22:16:06,475 1488 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-03 22:16:07,082 2095 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-12-03 22:16:07,100 2113 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-12-03 22:16:07,835 2848 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000228: Running hbm2ddl schema update
+2017-12-03 22:16:07,835 2848 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000102: Fetching database metadata
+2017-12-03 22:16:07,838 2851 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000396: Updating schema
+2017-12-03 22:16:07,873 2886 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.open_weather_data
+2017-12-03 22:16:07,873 2886 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [max_temperature, open_weather_city, open_weather_id_pk, open_weather_record_date, barometric_pressure, min_tempature, humidity_percentage]
+2017-12-03 22:16:07,873 2886 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2017-12-03 22:16:07,873 2886 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [primary]
+2017-12-03 22:16:07,895 2908 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.task
+2017-12-03 22:16:07,895 2908 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [task_name, task_id, task_id_pk]
+2017-12-03 22:16:07,895 2908 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2017-12-03 22:16:07,895 2908 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [primary]
+2017-12-03 22:16:07,906 2919 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.user_roles
+2017-12-03 22:16:07,906 2919 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [role_name, user_role_id_pk, user_name]
+2017-12-03 22:16:07,906 2919 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: [user_name_fk]
+2017-12-03 22:16:07,907 2920 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [user_name_fk, primary]
+2017-12-03 22:16:07,914 2927 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.user_tasks_list_records
+2017-12-03 22:16:07,915 2928 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [task_name, start_time, task_list_id_pk, task_status, end_time]
+2017-12-03 22:16:07,915 2928 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2017-12-03 22:16:07,915 2928 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [primary]
+2017-12-03 22:16:07,923 2936 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.users
+2017-12-03 22:16:07,923 2936 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_date_birth, user_email, user_first_name, user_id_pk, user_last_name, user_name, user_city, user_registered_date, user_pass]
+2017-12-03 22:16:07,923 2936 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2017-12-03 22:16:07,923 2936 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [users_user_name_uindex, uk_k8d0f2n7n88w1a16yhua64onx, primary]
+2017-12-03 22:16:07,925 2938 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000232: Schema update complete
+2017-12-03 22:18:10,846 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-12-03 22:18:10,859 13   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-12-03 22:18:10,863 17   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-12-03 22:18:10,866 20   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-12-03 22:18:10,912 66   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-12-03 22:18:10,912 66   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-12-03 22:18:11,155 309  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-12-03 22:18:11,319 473  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-12-03 22:18:11,330 484  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/productivityapp_dbtest]
+2017-12-03 22:18:11,332 486  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-12-03 22:18:11,332 486  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-12-03 22:18:11,334 488  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-03 22:18:12,238 1392 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-03 22:18:13,341 2495 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-12-03 22:18:13,357 2511 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-12-03 22:18:14,348 3502 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000228: Running hbm2ddl schema update
+2017-12-03 22:18:14,348 3502 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000102: Fetching database metadata
+2017-12-03 22:18:14,353 3507 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000396: Updating schema
+2017-12-03 22:18:14,390 3544 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.open_weather_data
+2017-12-03 22:18:14,390 3544 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [max_temperature, open_weather_city, open_weather_id_pk, open_weather_record_date, barometric_pressure, min_tempature, humidity_percentage]
+2017-12-03 22:18:14,391 3545 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2017-12-03 22:18:14,391 3545 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [primary]
+2017-12-03 22:18:14,402 3556 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.task
+2017-12-03 22:18:14,402 3556 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [task_name, task_id, task_id_pk]
+2017-12-03 22:18:14,402 3556 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2017-12-03 22:18:14,402 3556 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [primary]
+2017-12-03 22:18:14,413 3567 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.user_roles
+2017-12-03 22:18:14,413 3567 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [role_name, user_role_id_pk, user_name]
+2017-12-03 22:18:14,413 3567 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: [user_name_fk]
+2017-12-03 22:18:14,413 3567 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [user_name_fk, primary]
+2017-12-03 22:18:14,421 3575 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.user_tasks_list_records
+2017-12-03 22:18:14,421 3575 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [task_name, start_time, task_list_id_pk, task_status, end_time]
+2017-12-03 22:18:14,421 3575 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2017-12-03 22:18:14,421 3575 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [primary]
+2017-12-03 22:18:14,429 3583 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.users
+2017-12-03 22:18:14,429 3583 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_date_birth, user_email, user_first_name, user_id_pk, user_last_name, user_name, user_city, user_registered_date, user_pass]
+2017-12-03 22:18:14,430 3584 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2017-12-03 22:18:14,430 3584 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [users_user_name_uindex, uk_k8d0f2n7n88w1a16yhua64onx, primary]
+2017-12-03 22:18:14,436 3590 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000232: Schema update complete
+2017-12-03 22:18:14,678 3832 [main] INFO  edu.matc.persistence.UserDao  - User's Name: Elijah Foster
+UserName: Bartlett
+UserPassword: HHF52GVR6IG
+User Birthdate: 1945-10-15
+Email: Donec.vitae.erat@Classaptent.co.uk
+City: Harrogate
+Registered Date: 2017-12-03 22:03:01.0
+2017-12-03 22:18:14,703 3857 [main] INFO  edu.matc.persistence.UserDao  - User's Name: Elijah Foster
+UserName: Bartlett
+UserPassword: HHF52GVR6IG
+User Birthdate: 1945-10-15
+Email: Donec.vitae.erat@Classaptent.co.uk
+City: Harrogate
+Registered Date: 2017-12-03 22:03:01.0
+2017-12-03 22:19:32,950 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-12-03 22:19:32,962 12   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-12-03 22:19:32,965 15   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-12-03 22:19:32,968 18   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-12-03 22:19:33,006 56   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-12-03 22:19:33,007 57   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-12-03 22:19:33,150 200  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-12-03 22:19:33,454 504  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-12-03 22:19:33,465 515  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/productivityapp_dbtest]
+2017-12-03 22:19:33,466 516  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-12-03 22:19:33,466 516  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-12-03 22:19:33,468 518  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-03 22:19:34,359 1409 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-03 22:19:34,846 1896 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-12-03 22:19:34,856 1906 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-12-03 22:19:35,828 2878 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000228: Running hbm2ddl schema update
+2017-12-03 22:19:35,828 2878 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000102: Fetching database metadata
+2017-12-03 22:19:35,831 2881 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000396: Updating schema
+2017-12-03 22:19:35,870 2920 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.open_weather_data
+2017-12-03 22:19:35,871 2921 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [max_temperature, open_weather_city, open_weather_id_pk, open_weather_record_date, barometric_pressure, min_tempature, humidity_percentage]
+2017-12-03 22:19:35,871 2921 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2017-12-03 22:19:35,871 2921 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [primary]
+2017-12-03 22:19:35,884 2934 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.task
+2017-12-03 22:19:35,884 2934 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [task_name, task_id, task_id_pk]
+2017-12-03 22:19:35,884 2934 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2017-12-03 22:19:35,884 2934 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [primary]
+2017-12-03 22:19:35,902 2952 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.user_roles
+2017-12-03 22:19:35,902 2952 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [role_name, user_role_id_pk, user_name]
+2017-12-03 22:19:35,903 2953 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: [user_name_fk]
+2017-12-03 22:19:35,905 2955 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [user_name_fk, primary]
+2017-12-03 22:19:35,915 2965 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.user_tasks_list_records
+2017-12-03 22:19:35,915 2965 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [task_name, start_time, task_list_id_pk, task_status, end_time]
+2017-12-03 22:19:35,915 2965 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2017-12-03 22:19:35,915 2965 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [primary]
+2017-12-03 22:19:35,926 2976 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: productivityapp_dbtest.users
+2017-12-03 22:19:35,926 2976 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_date_birth, user_email, user_first_name, user_id_pk, user_last_name, user_name, user_city, user_registered_date, user_pass]
+2017-12-03 22:19:35,926 2976 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2017-12-03 22:19:35,926 2976 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [users_user_name_uindex, uk_k8d0f2n7n88w1a16yhua64onx, primary]
+2017-12-03 22:19:35,928 2978 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000232: Schema update complete

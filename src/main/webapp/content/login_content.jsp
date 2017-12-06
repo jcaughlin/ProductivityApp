@@ -10,24 +10,24 @@
 <!-- TODO Servlet to handle recover password -->
 <div class="container">
     <div class="wrapper">
-        <form class="form-signin" method="POST" action="j_security_check">
+        <form class="forms form-signin" method="POST" action="j_security_check">
             <h2 class="form-signin-heading">Please login</h2>
 
 
             <input type="text" class="form-control" name="j_username" id="j_username" placeholder="User Name"
-                   required="" autofocus=""/>
+                   class="form-control" required="" autofocus=""/>
 
 
             <input type="password" class="form-control" name="j_password" id="j_password" placeholder="Password"
-                   required=""/>
+                   class="form-control" required=""/>
 
             <label class="checkbox">
                 <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
             </label>
-
+<!--
             <div class="row">
                 <div class="g-recaptcha" data-sitekey="6LeaVTMUAAAAAL5G3U10uuBdVbXBbNGv6Wmd9R1J"></div>
-            </div>
+            </div>-->
 
 
             <div class="button-group">
@@ -35,7 +35,7 @@
 
             </div>
         </form>
-        <button class="btn btn-success" href="/lostPassword">Forgot Password</button>
+        <input type="submit" class="btn btn-success" href="/lostPassword" value="Forgot Password"/>
 
     </div>
 

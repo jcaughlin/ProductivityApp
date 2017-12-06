@@ -13,12 +13,12 @@ import javax.servlet.http.*;
 
 public class PeopleController extends HttpServlet {
 
-    private final Logger logger = LogManager.getLogger(this.getClass());
+    private final Logger log = LogManager.getLogger(this.getClass());
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String url = "/people.jsp";
-
+        String url = "${pageContext.request.contextPath}/users/people.jsp";
+        log.info("The path to the people controller" + url);
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 

@@ -179,30 +179,6 @@ public class UserDao {
 
 
     /**
-     * Query user by email
-     *
-     * @param user_email
-     * @return user
-     */
-    public User userRecoverPasswordWithEmail(String user_email) {
-
-        User user = null;
-        Session session = null;
-
-        try {
-            session = SessionFactoryProvider.getSessionFactory().openSession();
-            user = (User) session.get(User.class, user_email);
-        } catch (HibernateException he) {
-            log.error("Error in search by User Email");
-        } finally {
-            if (session != null) {
-                session.close();
-            }
-        }
-        return user;
-    }
-
-    /**
      * Return number of records
      *
      * @return int recordCount the number of records

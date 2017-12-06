@@ -4,10 +4,12 @@ import javax.persistence.*;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 
+import java.util.Set;
 
-    @Entity
-    @Table(name="user_roles")
-public class UserRoles {
+
+@Entity
+@Table(name="user_roles")
+public class UserRoles implements java.io.Serializable{
 
     @Id
     @Column(name="user_role_id_pk")
@@ -18,6 +20,7 @@ public class UserRoles {
     @Enumerated(EnumType.STRING)
     private Status roleName;
 
+
     @ManyToOne
     @JoinColumn(name="user_name", referencedColumnName = "user_name", nullable = false)
     private User user;
@@ -25,6 +28,7 @@ public class UserRoles {
     public UserRoles() {
 
     }
+
 
     /**
      * Set the User user

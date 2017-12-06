@@ -1,6 +1,5 @@
 package edu.matc.controller;
 
-import org.apache.log4j.*;
 
 import java.io.IOException;
 import java.util.*;
@@ -19,8 +18,7 @@ public class LostPasswordController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String userRecoveryEmail = request.getParameter("recoveryEmail");
-        String url = "recover_password.jsp";
+        String url = "lost_password.jsp";
 
         RequestDispatcher dispatcher =
                 getServletContext().getRequestDispatcher(url);

@@ -1,11 +1,16 @@
 package edu.matc.persistence;
 
 
+import edu.matc.entity.UserRoles;
 import org.apache.log4j.*;
 import org.junit.Before;
 import org.junit.Test;
 import edu.matc.entity.User;
+import edu.matc.entity.Status;
 import java.util.List;
+import java.sql.Date;
+import java.time.LocalDate;
+import edu.matc.util.LocalDateAttributeConverter;
 
 import static org.junit.Assert.*;
 
@@ -17,20 +22,32 @@ public class UserDaoTest {
     User user2;
 
     @Before
-    public void setup() {
+     public void setup() {
         dao = new UserDao();
     }
 
 
-   public void getRecordCount() throws Exception {
+    @Test
+    public void createNewUserInstanceTest() {
+        User testUser;
+        LocalDate birthDate = LocalDate.of(1922,04,15);
+
+        testUser = new User("DaMayor","password","Harold","Washington","Washington",birthDate,"Chicago");
+
+        log.info(testUser.toString());
+    }
+
+    @Test
+   public void getRecordCountTest() {
         int count;
         count = dao.getRecordCount();
         log.info("Record Count is: " + dao.getRecordCount());
-        assertEquals("Match", 123, count);
+        assertEquals("Match", 1, count);
 
     }
 
-    public void getAllUsers() throws Exception {
+    @Test
+    public void getAllUsersTest() {
 
         UserDao dao = new UserDao();
         List<User> users = dao.getAllUsers();
@@ -38,42 +55,47 @@ public class UserDaoTest {
 
     }
 
-
-    public void getUserByIdTest() throws Exception {
+    @Test
+    public void getUserByIdTest() {
        /* user = dao.getUser(5);
         assertTrue(user.getUserFirstName().equals("Price"));*/
 
-        user = dao.getUserById(1);
+        user = dao.getUserById(2);
         log.info("The user found with user ID is : " + user.toString());
-        assertTrue(user.getUserLastName().equals("Soetoro"));
+        assertTrue(user.getUserLastName().equals("Washington"));
 
     }
 
     @Test
-    public void getUsersByLastNameTest() throws Exception {
+    public void getUsersByLastNameTest() {
         List<User> users = dao.getUsersByLastName("Soetoro");
         assertTrue(users.size() == 3);
         log.info(users.size());
     }
 
     @Test
-    public void addUserTest() throws Exception {
-        
-        dao.addUser(user2);
-        user = dao.getUserById(101);
-        log.info("The user is " + user2.toString());
+    public void addUserTest() {
+        User testUser;
+        LocalDate birthDate = LocalDate.of(1922,04,15);
+        UserRoles roleName = new UserRoles();
+        roleName.setRoleName(Status.ADMIN);
+
+        testUser = new User("DaMayor","password","Harold","Washington","Washington",birthDate,"Chicago");
+        dao.addUser(testUser);
+        user = dao.getUserById(2);
+        log.info("The user is " + testUser.toString());
         assertTrue(user.getUserLastName().equals("Johnson"));
     }
 
     @Test
-    public void update() throws Exception {
+    public void update() {
     }
 
     @Test
-    public void removeUserTest() throws Exception {
+    public void removeUserTest() {
 
 
-        user = dao.getUserById(95);
+        user = dao.getUserById(2);
         dao.removeUser(user);
 
     }

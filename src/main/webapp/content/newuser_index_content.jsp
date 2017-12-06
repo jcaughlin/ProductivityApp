@@ -9,7 +9,7 @@
 
 <fieldset>
     <form class="form-signin forms" method="post" action="register" id="newUser">
-        <h2 class="form-signin-heading">Create login</h2>
+        <h2 class="form-signin-heading">Start Your More Better Today!!!</h2>
 
         <label for="createUserName" class="sr-only">Create A User Name</label>
         <input type="text" class="form-control" id="createUserName" name="username" placeholder="Create User Name"

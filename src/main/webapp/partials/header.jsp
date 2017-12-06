@@ -13,7 +13,6 @@
 
         <div class="jumbotron-fluid">
             <h1 class="display-3"><c:out value="${heading}" default="Hey Ya"/></h1>
-
         </div>
 
 
