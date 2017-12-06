@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="${pageContext.request.contextPath}/images/ddp.jpg" alt="Diamond Dallas Page"></a>
+                <a href="#"><img class="card-img-top" src="images/ddp.jpg" alt="Diamond Dallas Page"></a>
                 <div class="card-body">
                     <h4 class="card-title">
                         <a href="#">Diamond Dallas Page</a>
@@ -19,7 +19,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="${pageContext.request.contextPath}/images/bobelson.jpg" alt="Bob Elson"></a>
+                <a href="#"><img class="card-img-top" src="images/bobelson.jpg" alt="Bob Elson"></a>
                 <div class="card-body">
                     <h4 class="card-title">
                         <a href="#">Young Joe with Hall of Frame Broadcaster Bob Elson</a>
@@ -30,7 +30,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="${pageContext.request.contextPath}/images/kingkhan.jpg" alt="King Khan"></a>
+                <a href="#"><img class="card-img-top" src="images/kingkhan.jpg" alt="King Khan"></a>
                 <div class="card-body">
                     <h4 class="card-title">
                         <a href="#">King Khan</a>
@@ -41,7 +41,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-                <a href="#"><img class="card-img-top"src="${pageContext.request.contextPath}/images/gregdulli.jpg"  alt="Greg Dulli"/></a>
+                <a href="#"><img class="card-img-top"src="images/gregdulli.jpg"  alt="Greg Dulli"/></a>
                 <div class="card-body">
                     <h4 class="card-title">
                         <a href="#">Greg Dulli</a>
@@ -52,7 +52,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="${pageContext.request.contextPath}/images/daverosser.jpg" alt="Dave Rosser"></a>
+                <a href="#"><img class="card-img-top" src="images/daverosser.jpg" alt="Dave Rosser"></a>
                 <div class="card-body">
                     <h4 class="card-title">
                         <a href="#">Dave Rosser</a>
@@ -63,7 +63,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="/images/michelleobama.jpg" alt="Michelle Obama"></a>
+                <a href="#"><img class="card-img-top" src="images/michelleobama.jpg" alt="Michelle Obama"></a>
                 <div class="card-body">
                     <h4 class="card-title">
                         <a href="#">Project Six</a>

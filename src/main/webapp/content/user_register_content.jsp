@@ -7,7 +7,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <fieldset>
     <form id="newUser" class="new-user-form forms" method="post" action="addUser" enctype="multipart/form-data">
         <h2 class="form-signin-heading">Hey There ${userName}! Create an Account</h2>
@@ -98,10 +97,10 @@
         </div></div>
 
 
-        <label for="userBirthday" class="sr-only">Enter Birthday</label>
-        <input type="date" class="form-control" id="userBirthday" name="birthday" placeholder="Enter Birthday"/>
-
-        <!--User Profile Pic-->
+        <label for="birthday" class="sr-only">Enter Birthday</label>
+        <!--<input type="date" class="form-control" id="userBirthday" name="birthday" placeholder="Enter Birthday"/>-->
+        <input data-provide="datepicker" id="birthday" name="birthday">
+        <!--User Profile Pic
         <div class="row">
             <div class="col-12">
         <label class="custom-file">
@@ -109,7 +108,7 @@
             <span class="custom-file-control"></span>
         </label>
             </div>
-        </div>
+        </div>-->
 
         <!--Submit Button-->
         <div class="row">

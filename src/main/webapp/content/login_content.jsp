@@ -33,9 +33,9 @@
             <div class="button-group">
                 <button class="btn btn-primary" type="submit">Login</button>
 
+
             </div>
         </form>
-        <input type="submit" class="btn btn-success" href="/lostPassword" value="Forgot Password"/>
 
     </div>
 

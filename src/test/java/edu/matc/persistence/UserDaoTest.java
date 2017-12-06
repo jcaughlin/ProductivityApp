@@ -1,14 +1,15 @@
 package edu.matc.persistence;
 
-
 import edu.matc.entity.UserRoles;
-import org.apache.log4j.*;
-import org.junit.Before;
-import org.junit.Test;
 import edu.matc.entity.User;
 import edu.matc.entity.Status;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import org.junit.Before;
+import org.junit.Test;
 import java.util.List;
-import java.sql.Date;
 import java.time.LocalDate;
 import edu.matc.util.LocalDateAttributeConverter;
 

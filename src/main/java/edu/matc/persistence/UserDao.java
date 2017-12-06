@@ -1,7 +1,11 @@
 package edu.matc.persistence;
 
 import edu.matc.entity.User;
-import org.apache.log4j.*;
+
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

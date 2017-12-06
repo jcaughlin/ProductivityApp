@@ -13,7 +13,7 @@
 
 <jsp:include page="../partials/head.jsp"/>
 <jsp:include page="../partials/header.jsp"/>
-
+1
 <jsp:include page="content/error_content.jsp"/>
 <jsp:include page="../partials/footer.jsp"/>
 

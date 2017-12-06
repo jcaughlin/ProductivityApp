@@ -1,13 +1,16 @@
 package edu.matc.controller;
 
-import java.io.*;
-import java.util.*;
+import java.io.IOException;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 import javax.servlet.*;
 import javax.servlet.annotation.*;
 import javax.servlet.http.*;
 
-import org.apache.log4j.*;
+
 
 @WebServlet(name = "UserRegister", urlPatterns = {"/register"})
 public class UserRegister extends HttpServlet {
@@ -32,6 +35,7 @@ public class UserRegister extends HttpServlet {
 
         userPassword2 = request.getParameter("confirmPassword");
         request.setAttribute("userName", userName);
+        request.setAttribute("userPassword", userPassword);
 
         if(!userPassword.equals(userPassword2)){
             log.info("We have a mismatch");

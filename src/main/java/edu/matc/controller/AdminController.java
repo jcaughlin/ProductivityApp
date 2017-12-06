@@ -12,7 +12,7 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.annotation.*;
 import javax.servlet.http.*;
 
-@WebServlet(name = "AdminController", urlPatterns = "/A_D_M_I_N")
+@WebServlet(name = "AdminController", urlPatterns = "/ADMIN")
 
 public class AdminController extends HttpServlet {
 
@@ -22,7 +22,7 @@ public class AdminController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String url = "${pageContext.request.contextPath}/admin/admin.jsp";
+        String url = "/${pageContext.request.contextPath}/admin/admin.jsp";
         logger.info("this is the path" + url);
         RequestDispatcher dispatcher =
                 getServletContext().getRequestDispatcher(url);

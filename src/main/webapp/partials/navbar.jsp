@@ -21,10 +21,10 @@
         <a class="nav-link" href="${pageContext.request.contextPath}/users/about.jsp">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="${pageContext.request.contextPath}people">People</a>
+        <a class="nav-link" href="${pageContext.request.contextPath}/people">People</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="${pageContext.request.contextPath}/stuff.jsp">Stuff</a>
+        <a class="nav-link" href="${pageContext.request.contextPath}/users/stuff.jsp">Stuff</a>
       </li>
     </ul>
     <span class="navbar-text">

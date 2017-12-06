@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@page language="java" session="true" %>
 <%--
   Created by IntelliJ IDEA.

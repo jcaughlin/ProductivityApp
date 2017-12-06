@@ -14,6 +14,6 @@
 <jsp:include page="../partials/head.jsp"/>
 <jsp:include page="../partials/header.jsp"/>
 <jsp:include page="../partials/navbar.jsp"/>
-<jsp:include page="../content/stuff_content.jsp"/>
+<jsp:include page="../content/about_content.jsp"/>
 <jsp:include page="../partials/footer.jsp"/>
 

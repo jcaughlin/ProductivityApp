@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <c:set var="title" scope="session" value="Error 400-Bad Request"/>
-<c:set var="heading" scope="session" value="header"/>
+<c:set var="heading" scope="session" value="Error 400"/>
 <c:set var="author" scope="session" value="JS Caughlin"/>
 <%--
   Created by IntelliJ IDEA.

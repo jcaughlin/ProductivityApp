@@ -1,8 +1,6 @@
 package edu.matc.controller;
 
 import java.io.IOException;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,8 +13,6 @@ import javax.servlet.ServletException;
 
 @WebServlet(name = "LogoutController", urlPatterns = "/logout")
 public class LogoutController extends HttpServlet {
-
-    private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)

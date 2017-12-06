@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <c:set var="title" scope="session" value="Error 500-Internal Server Error"/>
 <c:set var="heading" scope="session" value="Internal Server Error"/>
 <c:set var="author" scope="session" value="JS Caughlin"/>
