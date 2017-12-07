@@ -7,9 +7,7 @@
   Time: 1:31 PM
   To change this template use File | Settings | File Templates.
 --%>
-<!--Navbar-->
-<!--TODO Do I need a login and home link?-->
-<!--How will I handle the traffic for the tasks above-->
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Be Funky!</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,13 +16,13 @@
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="${pageContext.request.contextPath}/users/about.jsp">About</a>
+        <a class="nav-link" href="${pageContext.request.contextPath}/navbar?pageRequested=about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="${pageContext.request.contextPath}/people">People</a>
+        <a class="nav-link" href="${pageContext.request.contextPath}/navbar?pageRequested=people">People</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="${pageContext.request.contextPath}/users/stuff.jsp">Stuff</a>
+        <a class="nav-link" href="${pageContext.request.contextPath}/navbar?pageRequested=stuff">Stuff</a>
       </li>
     </ul>
     <span class="navbar-text">
