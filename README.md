@@ -1,48 +1,56 @@
-# ProductivityApp
-Get Stuff Done
+# The Disorganizer
 
-ProductivityApp
 
-Application to gather data on common tasks to analyze completion time, time estimation accuracy, and schedule adherence Problem Statement: The psychology of scarcity suggests that when one lacks a particular resource, one's mindset changes in regards to that particular resource. This mindset can be extremely advantageous or it can be extremely debilitating depending on the context.
+### The Do Everything App for the Disorganized
 
-In my case, I lack time. I work too much. I have a family. I go to school. I want to have 300 hobbies. I want to be great at all of these things. There is always something that needs to be done. Because time is scarce, I am always doing something that needs to be done. That sounds awesome doesn't it? Sometimes it is, but I do a terrible job of knowing how long a particular task is going to take. I am constantly trying to do that one "extra thing" and because of this, I am constantly late to pretty much everything. Furthermore, because I am constantly busy, I am typically not fully present for the current task as my mind is churning in the background regarding what needs to be done next. ...And just to make my life extra fun, I am time blind.
+**_Problem Statement_**
 
-In some ways this is a personal kaizen project as well as a gut check. I plan to create a list of tasks that I do on a daily basis. In addition, I will have a feature where I can add other frequent events as well as unplanned exceptions.
+Modern living can be a challenge. There are so many things to do and so little time. For those some of us, it can be much much worse. Time blindness is real and it isn't just annoying, it can hurt one's employment, cost friends and stress relationships...
 
-* App will be a daily task list with a stop watch that one can start upon commencement of tasks and ends when said task is complete
+In my case, I am late to something almost every day. So far I have yet to find a hack that was simple to learn and yet had the tools I needed to make my life better. What I needed was :
 
-* User will be provided a list of basic every day tasks and will have the capability to customize
+1) A dashboard that shows my activities for today and tomorrow as the weather. I  need to know how to dress as well as anticipate less than pleasant weather patterns.
 
-* Task lists will be integrated will a calendar API so user can view task list by day, week and month. In addition, the user will be able * to integrate existing calendars in order to measure completion time
+2) I need a timer so that I can record start and stop times, so I can learn how long different task take me. For instance, I have zero idea have much time it takes me from wake up mode until it is time to leave the mothership and commence my day.
 
-* User data will be cross referenced to calendar API to determin if weather and/or affects productity. Client will have weather widget
+3) I also wanted to store and cross reference the data over time to find patterns of productivity.
 
-* The application will generate motivational quotes etc. i.e. quote of the day
-
-* The application will provide report both to user and admin
+4) Lastly, I wanted to make this extensible so that other's might benefit. Because of this, I will also maintain a repository of articles and endorsements of products, people and things that will help one have a brighter day.
 
 
 
-# Technologies
+
+# Technologies in Version(1.0)
 * MySQL db
-  * Store User Information
-  * User Task History with start and end times
-  * Maintain db of weather data crossreference by date and user region
+  * Full CRUD (My default will be to disable as I don't like to delete anything).
+  * Stores Information on Users as well as their tasks.
+  * Maintain db of weather data crossreference by date and user region.
+  
 * Security
- * Admin Role
- * User Registration & Login
- * Login persistance
-* CRUD
-  * User profile pictures
-* Independant Research Topic
- * Deploying to custom URL via AWS Route 53
+ * ADMIN USER PENDING SUSPENDED MANAGER(?)
+ 
+* Independent Research
+ * QA Plug-Usage and Configuration
+ * AWS-Deploy via Route 53 and custom domain.
+ * Javascript/JQuery for front end validation and some functionality.
+ * Mobile Ready with bootstrap.
+ 
 * API's
  * [OpenWeatherMap] [https://openweathermap.org/examples]
  * [Google Calendar] [https://developers.google.com/google-apps/calendar/]
  * [Google Calendar Java Quickstart] https://developers.google.com/google-apps/calendar/quickstart/java
  * [Google Task] [https://developers.google.com/google-apps/tasks/]
- * Stop Watch
-* Deploy to AWS per requirements
-* Logging
-* Unit Testing
+
+# Parking Lot for Version(2.0)
+* Daily quote/motivational generator
+* Full Integration with Google Calender and/or iCal.
+* Health Metrics-Units of sleep, BP, HR, Units of Drugs.
+* Make ADA W3C Compliant.
+* Have "nag" feature that enables users to set reminders to help them stay motivated and on task and healthy throughout the day
+
+
+# Version (3.0)
+* Machine Learning to make suggestions to live your more better life tomorrow today.
+* Data Analytics as I will have 
+
 
