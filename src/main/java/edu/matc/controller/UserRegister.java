@@ -11,46 +11,42 @@ import javax.servlet.annotation.*;
 import javax.servlet.http.*;
 
 
-
 @WebServlet(name = "UserRegister", urlPatterns = {"/register"})
 public class UserRegister extends HttpServlet {
 
     private final Logger log = LogManager.getLogger(this.getClass());
 
-
+    @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String userName = "";
-        String userPassword = "";
-        String userPassword2 = "";
+        RequestDispatcher dispatcher;
+        String userName;
+        String url;
+        String password;
+        String passwordConfirm;
 
-        String url = "/user_register.jsp";
-
-        log.info(url);
-
+        // TODO Check db if username exists
         userName = request.getParameter("username");
+        // TODO check that password doesn't exist
+        password = request.getParameter("password");
+        passwordConfirm = request.getParameter("confirmPassword");
 
-        userPassword = request.getParameter("password");
+        if (!passwordConfirm.equals(password)) {
+            String errorMessage = "Passwords Do Not Match. Please Try Again";
+            url = "/index.jsp";
+            request.setAttribute("errorMessage", errorMessage);
+            dispatcher = getServletContext().getRequestDispatcher(url);
+            dispatcher.forward(request, response);
 
-        userPassword2 = request.getParameter("confirmPassword");
-        request.setAttribute("userName", userName);
-        request.setAttribute("userPassword", userPassword);
-
-        if(!userPassword.equals(userPassword2)){
-            log.info("We have a mismatch");
+        } else {
+            url = "/user_register.jsp";
+            request.setAttribute("userName", userName);
+            request.setAttribute("userPassword", password);
+            dispatcher = getServletContext().getRequestDispatcher(url);
+            dispatcher.forward(request, response);
+            // Code down here would keep running...Java is multi-threaded.
         }
-
-        log.info(userName);
-        log.info(userPassword);
-        log.info(userPassword2);
-
-        RequestDispatcher dispatcher =
-                getServletContext().getRequestDispatcher(url);
-        dispatcher.forward(request, response);
-        // Code down here would keep running...Java is multi-threaded.
     }
-
-
 }
 

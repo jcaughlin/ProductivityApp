@@ -1,12 +1,16 @@
 package edu.matc.controller;
 
+import edu.matc.entity.Status;
 import edu.matc.entity.User;
+import edu.matc.entity.UserRoles;
 import edu.matc.persistence.UserDao;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Locale;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletResponse;
@@ -19,44 +23,51 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "AddUser", urlPatterns = {"/addUser"})
 public class AddUser extends HttpServlet {
 
-    protected void doPost(HttpServletRequest request,
-                          HttpServletResponse response)
-            throws ServletException,
+    private final Logger logger = LogManager.getLogger(this.getClass());
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
             IOException {
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MMM-dd");
 
-
-        User user = new User();
+        RequestDispatcher dispatcher;
 
         RequestDispatcher dispatcher2 = getServletContext().getRequestDispatcher("/register");
 
-        String userName = (String)request.getAttribute("userName");
-        String userPassword = (String)request.getAttribute("userPassword");
-        String firstName = request.getParameter("firstName");
-        String lastName = request.getParameter("lastName");
-        String city = request.getParameter("city");
-        String state = request.getParameter("state");
-        String zipCode = request.getParameter("zipCode");
-        String emailAddress = request.getParameter("email");
-        String birthday = request.getParameter("birthday");
-        LocalDate localBirthDate = LocalDate.parse(birthday , formatter);
-        // final Part filePart = request.getPart("photoUpload");
 
-        user.setUserName(userName);
-        user.setUserPassword(userPassword);
-        user.setUserFirstName(firstName);
-        user.setUserLastName(lastName);
-        user.setUserCity(city);
-        user.setUserEmail(emailAddress);
-        user.setUserDateOfBirth(LocalDate.from(localBirthDate));
+            User user = new User();
 
-        UserDao userDao = new UserDao();
-        userDao.addUser(user);
-        String url = "/user_added.jsp";
-        RequestDispatcher dispatcher =
-                getServletContext().getRequestDispatcher(url);
-        dispatcher.forward(request, response);
+            String userName = (String) request.getAttribute("userName");
+            String userPassword = (String) request.getAttribute("userPassword");
+            String firstName = request.getParameter("firstName");
+            String lastName = request.getParameter("lastName");
+            String city = request.getParameter("city");
+            // String state = request.getParameter("state");
+            // String zipCode = request.getParameter("zipCode");
+            String emailAddress = request.getParameter("email");
+            String birthday = request.getParameter("birthday");
+            LocalDate localBirthDate = LocalDate.parse(birthday, formatter);
+            user.setUserName(userName);
+            user.setUserPassword(userPassword);
+            user.setUserFirstName(firstName);
+            user.setUserLastName(lastName);
+            user.setUserCity(city);
+            user.setUserEmail(emailAddress);
+            user.setUserDateOfBirth(LocalDate.from(localBirthDate));
+
+            LocalDate birthDate = LocalDate.of(1922,04,15);
+
+            UserDao userDao = new UserDao();
+                User testUser = new User("coco","password","userEmail","Tampa");
+            userDao.addUser(testUser);
+
+            String url = "user_added.jsp";
+
+            dispatcher = getServletContext().getRequestDispatcher(url);
+            dispatcher.forward(request, response);
+
+
 
     }
 }

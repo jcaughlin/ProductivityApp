@@ -204,6 +204,29 @@ public class UserDao {
 
     }
 
+    /**
+     *
+     * @param searchTerm The value that Hibernate is to search by.
+     * @param value The entity property that Hibernate is querying.
+     * @return
+     */
+    public User getUserByCriteria(String searchTerm) {
+        User user = null;
+        Session session = null;
+        try {
+            session = SessionFactoryProvider.getSessionFactory().openSession();
+            user = (User) session.get(User.class, searchTerm);
+        } catch (HibernateException hibernateException) {
+            log.error("Error getting all users with: " + searchTerm, hibernateException);
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+        log.info("successful");
+        return user;
+    }
+
 
 
 }

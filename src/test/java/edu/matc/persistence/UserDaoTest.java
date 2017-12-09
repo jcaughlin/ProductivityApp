@@ -9,8 +9,10 @@ import org.apache.logging.log4j.Logger;
 
 import org.junit.Before;
 import org.junit.Test;
+
 import java.util.List;
 import java.time.LocalDate;
+
 import edu.matc.util.LocalDateAttributeConverter;
 
 import static org.junit.Assert.*;
@@ -23,7 +25,7 @@ public class UserDaoTest {
     User user2;
 
     @Before
-     public void setup() {
+    public void setup() {
         dao = new UserDao();
     }
 
@@ -31,15 +33,15 @@ public class UserDaoTest {
     @Test
     public void createNewUserInstanceTest() {
         User testUser;
-        LocalDate birthDate = LocalDate.of(1922,04,15);
+        LocalDate birthDate = LocalDate.of(1922, 04, 15);
 
-        testUser = new User("DaMayor","password","Harold","Washington","Washington",birthDate,"Chicago");
+        testUser = new User("DaMayor", "password", "Harold", "Washington", "Washington", birthDate, "Chicago");
 
         log.info(testUser.toString());
     }
 
     @Test
-   public void getRecordCountTest() {
+    public void getRecordCountTest() {
         int count;
         count = dao.getRecordCount();
         log.info("Record Count is: " + dao.getRecordCount());
@@ -61,9 +63,9 @@ public class UserDaoTest {
        /* user = dao.getUser(5);
         assertTrue(user.getUserFirstName().equals("Price"));*/
 
-        user = dao.getUserById(2);
+        user = dao.getUserById(6);
         log.info("The user found with user ID is : " + user.toString());
-        assertTrue(user.getUserLastName().equals("Washington"));
+        assertTrue(user.getUserLastName().equals("Page"));
 
     }
 
@@ -76,15 +78,13 @@ public class UserDaoTest {
 
     @Test
     public void addUserTest() {
-        User testUser;
-        LocalDate birthDate = LocalDate.of(1922,04,15);
+        LocalDate birthDate = LocalDate.of(1922, 04, 15);
         UserRoles roleName = new UserRoles();
         roleName.setRoleName(Status.ADMIN);
 
-        testUser = new User("DaMayor","password","Harold","Washington","Washington",birthDate,"Chicago");
+        User testUser = new User("DDP", "password", "Dallas", "Page", "email", birthDate, "Atlanta");
         dao.addUser(testUser);
         user = dao.getUserById(2);
-        log.info("The user is " + testUser.toString());
         assertTrue(user.getUserLastName().equals("Johnson"));
     }
 
@@ -95,12 +95,16 @@ public class UserDaoTest {
     @Test
     public void removeUserTest() {
 
-
         user = dao.getUserById(2);
         dao.removeUser(user);
 
     }
 
-
+    @Test
+    public void getUserByCriteria() {
+        UserDao dao = new UserDao();
+        //dao.getUserByCriteria("DDP", "userName");
+        assertTrue(user.getUserName().equals("DDP"));
+    }
 
 }

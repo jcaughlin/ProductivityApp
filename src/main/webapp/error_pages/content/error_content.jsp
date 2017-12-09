@@ -2,11 +2,8 @@
 
 
 
+<h1>You don't belong here.</h1>
 
-<blockquote class="blockquote">
-    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-</blockquote>
 
-<h1>You don't belong here</h1>
-
+<h4>This is why ${"errorMessage"}</h4>
 

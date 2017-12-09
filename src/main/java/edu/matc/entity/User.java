@@ -39,6 +39,7 @@ public class User implements Serializable{
     @Column(name = "user_email")
     private String userEmail;
 
+    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "user_registered_date")
     @Type(type="timestamp")
     private Timestamp dateUserRegistered;
@@ -58,6 +59,13 @@ public class User implements Serializable{
     // Empty Constructor
     public User() {
 
+    }
+
+    public User(String userName, String userPassword, String userEmail, String userCity) {
+        this.userName = userName;
+        this.userPassword = userPassword;
+        this.userEmail = userEmail;
+        this.userCity = userCity;
     }
 
     public User(String userName, String userPassword, String userFirstName, String userLastName, String userEmail,

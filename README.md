@@ -42,11 +42,14 @@ In my case, I am late to something almost every day. So far I have yet to find a
  * [Google Task] [https://developers.google.com/google-apps/tasks/]
 
 # Parking Lot for Version(2.0)
+* User Avatar/UserPhoto
 * Daily quote/motivational generator
 * Full Integration with Google Calender and/or iCal.
 * Health Metrics-Units of sleep, BP, HR, Units of Drugs.
 * Make ADA W3C Compliant.
-* Have "nag" feature that enables users to set reminders to help them stay motivated and on task and healthy throughout the day
+* Have "nag" feature that enables users to set reminders to help them stay motivated and on task and healthy throughout the day.
+* SSL PORT 443 DEPLOYMENT
+* JAVA password encryption and storage best practices.
 
 
 # Version (3.0)

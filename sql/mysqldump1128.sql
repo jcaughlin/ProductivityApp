@@ -129,19 +129,19 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `users` (
-  `user_name` varchar(15) NOT NULL,
-  `user_pass` varchar(15) NOT NULL,
-  `user_first_name` varchar(20) DEFAULT NULL,
-  `user_last_name` varchar(20) DEFAULT NULL,
-  `user_email` varchar(50) NOT NULL,
-  `user_city` varchar(20) NOT NULL,
-  `user_birth_date` date DEFAULT NULL,
-  `user_registered_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `user_id_pk` int(11) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`user_id_pk`),
-  UNIQUE KEY `users_user_name_uindex` (`user_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=1365 DEFAULT CHARSET=latin1;
+  CREATE TABLE `users` (
+    `user_name` varchar(15) NOT NULL,
+    `user_pass` varchar(15) NOT NULL,
+    `user_first_name` varchar(20) DEFAULT NULL,
+    `user_last_name` varchar(20) DEFAULT NULL,
+    `user_email` varchar(50) NOT NULL,
+    `user_city` varchar(20) NOT NULL,
+    `user_birth_date` date DEFAULT NULL,
+    `user_registered_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `user_id_pk` int(11) NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY (`user_id_pk`),
+    UNIQUE KEY `users_user_name_uindex` (`user_name`)
+  ) ENGINE=InnoDB AUTO_INCREMENT=1365 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
