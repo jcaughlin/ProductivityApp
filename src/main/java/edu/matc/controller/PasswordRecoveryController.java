@@ -22,12 +22,6 @@ public class PasswordRecoveryController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String userName;
-        String userEmail;
-
-        userName = request.getParameter("userName");
-        userEmail = request.getParameter("userEmail");
-
         String url = "/recover_password.jsp";
 
         RequestDispatcher dispatcher =

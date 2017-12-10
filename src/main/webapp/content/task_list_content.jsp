@@ -84,14 +84,11 @@
     </tr>
 </table>
 
-
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add New Task</button>
-
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#taskCreator">Add New Task</button>
 
 </div>
 
-
-<div class="modal fade" id="myModal" role="dialog">
+<div class="modal fade" id="taskCreator" role="dialog">
     <div class="modal-dialog modal-lg">
 
         <!-- Modal content-->
@@ -99,16 +96,16 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
+                <h4 class="modal-title">Enter Task</h4>
             </div>
             <div class="modal-body">
                 <form method="post">
                     <div class="form-group">
-                        <label for="taskName"><span class="glyphicon glyphicon-user"></span>Enter Task Name/label>
+                        <label for="taskName"><span class="glyphicon glyphicon-user"></span>Enter Task Name</label>
                         <input type="text" class="form-control" id="taskName" placeholder="Enter Task Name">
                     </div>
                     <div class="form-group">
-                        <label for="dateTaskScheduled" ><span class="glyphicon glyphicon-user"></span>Date Task Scheduled</label>
+                        <label for="dateTaskScheduled"><span class="glyphicon glyphicon-saved"></span>Date Task Scheduled</label>
                         <input type="date" class="form-control" id="dateTaskScheduled" placeholder="">
                     </div>
 

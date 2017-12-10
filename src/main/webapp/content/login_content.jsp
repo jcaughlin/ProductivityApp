@@ -21,24 +21,46 @@
             <input type="password" class="form-control" name="j_password" id="j_password" placeholder="Password"
                    class="form-control" required=""/>
 
-            <p>Forgot <a href="#">Password?</a></p>
+            <p>Forgot <a data-toggle="modal" data-target="#passwordRecover">Lost Password?</a></p>
 
             <label class="checkbox">
-                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe">Remember me
             </label>
-<!--
-            <div class="row">
-                <div class="g-recaptcha" data-sitekey="6LeaVTMUAAAAAL5G3U10uuBdVbXBbNGv6Wmd9R1J"></div>
-            </div>-->
 
 
             <div class="button-group">
                 <button class="btn btn-primary" type="submit">Login</button>
-
-
             </div>
         </form>
+    </div>
 
+
+    <div class="modal fade" id="passwordRecover" tabindex="-1" role="dialog" aria-labelledby="passwordRecover" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Yes. You are an idiot. You lost your password!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" action="/passwordRecovery">
+                        <div class="form-group">
+                            <label for="userName"><span class="glyphicon glyphicon-user"></span>Enter User Enter</label>
+                            <input type="userName" class="form-control" id="userName" placeholder="Enter User Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="userEmail"><span class="glyphicon glyphicon-envelope"></span>Enter Email</label>
+                            <input type="email" class="form-control" id="userEmail" placeholder="Enter Your Email">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 

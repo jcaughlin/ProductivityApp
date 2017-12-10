@@ -37,7 +37,6 @@
       <c:otherwise>
         <p>${pageContext.request.remoteUser}</p>
         <a role="button" class="btn btn-success" href="logout">LogOut</a>
-
       </c:otherwise>
       </c:choose>
     </span>

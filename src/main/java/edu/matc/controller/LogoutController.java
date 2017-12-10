@@ -10,7 +10,7 @@ import javax.servlet.http.HttpSession;
 import javax.servlet.ServletException;
 
 
-
+// TODO doFilter method
 @WebServlet(name = "LogoutController", urlPatterns = "/logout")
 public class LogoutController extends HttpServlet {
 
