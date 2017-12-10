@@ -1,20 +1,19 @@
 package edu.matc.controller;
 
+import java.io.IOException;
+import java.util.*;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.IOException;
-
 import javax.servlet.ServletException;
 import javax.servlet.RequestDispatcher;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
 
+@WebServlet(name = "PasswordRecoveryController", urlPatterns = "/passwordRecovery")
 
-@WebServlet(name = "RecoverPasswordController", urlPatterns = "/recoverPassword")
-public class RecoverPasswordController extends HttpServlet {
+public class PasswordRecoveryController extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
@@ -23,10 +22,13 @@ public class RecoverPasswordController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String userEmail = request.getParameter("recoverEmail");
-        logger.info("Email for lost account is " + userEmail);
+        String userName;
+        String userEmail;
 
-        String url = "recovered_password.jsp";
+        userName = request.getParameter("userName");
+        userEmail = request.getParameter("userEmail");
+
+        String url = "/recover_password.jsp";
 
         RequestDispatcher dispatcher =
                 getServletContext().getRequestDispatcher(url);

@@ -21,6 +21,8 @@
             <input type="password" class="form-control" name="j_password" id="j_password" placeholder="Password"
                    class="form-control" required=""/>
 
+            <p>Forgot <a href="#">Password?</a></p>
+
             <label class="checkbox">
                 <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
             </label>

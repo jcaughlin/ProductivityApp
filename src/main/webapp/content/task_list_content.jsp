@@ -5,6 +5,7 @@
   Date: 11/24/17
   Time: 11:03 PM
   To change this template use Preferences | File and Code Templates--%>
+<!--TODO Add Time Schedule to Task modal-->
 <table class="table table-bordered table-striped table-hover">
 
     <thead class="thead-inverse">
@@ -82,10 +83,42 @@
         <td><div id="TrashButton" class="glyphicon glyphicon-trash"></div></td>
     </tr>
 </table>
-<p>
-    <a href="#" class="btn btn-info btn-lg">
-        <span class="glyphicon glyphicon-plus"></span>Add New Task
-    </a>
-</p>
+
+
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add New Task</button>
+
+
+</div>
+
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <form method="post">
+                    <div class="form-group">
+                        <label for="taskName"><span class="glyphicon glyphicon-user"></span>Enter Task Name/label>
+                        <input type="text" class="form-control" id="taskName" placeholder="Enter Task Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="dateTaskScheduled" ><span class="glyphicon glyphicon-user"></span>Date Task Scheduled</label>
+                        <input type="date" class="form-control" id="dateTaskScheduled" placeholder="">
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span>Submit</button>
+            </div>
+        </div>
+
+    </div>
 </div>
 
