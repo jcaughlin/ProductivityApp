@@ -6,7 +6,8 @@
   Time: 9:21 AM
   To change this template use Preferences | File and Code Templates--%>
 <div class="container">
+    <h1>Welcome + ${User.userFirstName} + " " ${User.userLastName}</h1>
 
-    <h1> Hey There</h1>
+    <h3>Please Confirm Your Information and start adding tasks</h3>
 </div>
 

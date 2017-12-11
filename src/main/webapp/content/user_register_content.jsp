@@ -7,6 +7,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<script src="javascript/validation.js"></script>
 <fieldset>
     <form id="newUser" class="new-user-form forms" method="post" action="addUser" enctype="multipart/form-data">
         <h2 class="form-signin-heading">Hey There ${userName}! Create an Account</h2>
@@ -15,16 +17,15 @@
             <!-- User First Name-->
             <div class="col-6">
                 <label for="userFirstName" class="sr-only">Enter First Name</label>
-                <input type="text" class="form-control" id="userFirstName" name="firstName" minlength="2"
-                       placeholder="Enter First Name">
+                <input type="text" class="form-control" id="userFirstName" name="firstName" placeholder="Enter First Name">
             </div>
             <!--User Last Name-->
             <div class="col-6">
                 <label for="userLastName" class="sr-only">Enter Last Name</label>
-                <input type="text" class="form-control" id="userLastName" name="lastName" minlength="2"
-                       placeholder="Enter Last Name">
+                <input type="text" class="form-control" id="userLastName" name="lastName" placeholder="Enter Last Name">
             </div>
         </div>
+
         <!--User Email-->
         <label for="userEmail" class="sr-only">Enter Email</label>
         <input type="email" class="form-control" id="userEmail" name="email" placeholder="Enter Email Address">
@@ -101,11 +102,8 @@
         </div>
 
         <div class="row>">
-            <label for="birthday" class="sr-only">Enter Birthday</label>
-            <!--<input type="date" class="form-control" id="userBirthday" name="birthday" placeholder="Enter Birthday"/>-->
-            <input data-provide="datepicker" id="birthday" name="birthday"><span class="input-group-addon">
-                          <span class="fa fa-calendar"></span>
-                      </span>
+            <label for="userBirthDate" class="sr-only">Enter Birthday</label>
+            <input type="text" id="userBirthDate" name="birthday">
         </div>
 
 

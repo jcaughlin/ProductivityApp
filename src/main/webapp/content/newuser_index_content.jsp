@@ -16,6 +16,9 @@
             <label for="createUserName" class="sr-only">Create A User Name</label>
             <input type="text" class="form-control" id="createUserName" name="username" placeholder="Create User Name"
                    autofocus=""/>
+            <div class="invalid-feedback">
+                <p>${userExistsError}</p>
+            </div>
             <p>${userExistsError}</p>
         </div>
 

@@ -36,6 +36,7 @@ public class AddUser extends HttpServlet {
         RequestDispatcher dispatcher2 = getServletContext().getRequestDispatcher("/register");
 
 
+        try {
             User user = new User();
 
             String userName = (String) request.getAttribute("userName");
@@ -46,29 +47,36 @@ public class AddUser extends HttpServlet {
             // String state = request.getParameter("state");
             // String zipCode = request.getParameter("zipCode");
             String emailAddress = request.getParameter("email");
-            String birthday = request.getParameter("birthday");
-            LocalDate localBirthDate = LocalDate.parse(birthday, formatter);
+            // LocalDate birthday = LocalDate.parse(request.getParameter("birthday"), formatter);
+
             user.setUserName(userName);
             user.setUserPassword(userPassword);
             user.setUserFirstName(firstName);
             user.setUserLastName(lastName);
             user.setUserCity(city);
             user.setUserEmail(emailAddress);
-            user.setUserDateOfBirth(LocalDate.from(localBirthDate));
+            // user.setUserDateOfBirth(birthday);
 
-            LocalDate birthDate = LocalDate.of(1922,04,15);
 
             UserDao userDao = new UserDao();
-                User testUser = new User("coco","password","userEmail","Tampa");
-            userDao.addUser(testUser);
 
-            String url = "user_added.jsp";
+            userDao.addUser(user);
+
+            request.setAttribute("User", user);
+            String url = "/user_added.jsp";
 
             dispatcher = getServletContext().getRequestDispatcher(url);
             dispatcher.forward(request, response);
 
+        } catch (ServletException servletexception) {
 
+            String url = "/user_register.jsp";
+            String errorMessage = "The was an error and user was not added. Contact Management";
+            request.setAttribute("errorMessage", errorMessage);
+            dispatcher = getServletContext().getRequestDispatcher(url);
+            dispatcher.forward(request, response);
 
+        }
     }
 }
 

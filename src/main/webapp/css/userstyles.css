@@ -97,5 +97,10 @@ input:-moz-placeholder { text-align: center; }
     background-color: rgb(241, 243, 244);
 }
 
+.margin-correct{
+    margin-left: 0;
+    margin-right:0;
+}
+
 
 

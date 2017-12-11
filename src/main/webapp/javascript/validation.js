@@ -1,5 +1,5 @@
-$(document).ready(function () {
-   $("#confirmPassword")
+$(document).ready(function (){
+   console.log($("#birthday").val());
 })
 
 //confirmPassword

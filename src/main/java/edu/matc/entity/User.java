@@ -68,6 +68,15 @@ public class User implements Serializable{
         this.userCity = userCity;
     }
 
+    public User(String userName, String userPassword, String userFirstName, String userLastName, String userEmail, String userCity) {
+        this.userName=userName;
+        this.userPassword=userPassword;
+        this.userFirstName=userFirstName;
+        this.userLastName=userLastName;
+        this.userEmail = userEmail;
+        this.userCity=userCity;
+    }
+
     public User(String userName, String userPassword, String userFirstName, String userLastName, String userEmail,
                 LocalDate userDateOfBirth, String userCity) {
 
