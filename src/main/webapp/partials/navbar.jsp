@@ -1,5 +1,4 @@
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
-<%@page language="java" session="true" %>
 <%--
   Created by IntelliJ IDEA.
   User: josephcaughlin
@@ -9,7 +8,7 @@
 --%>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Be Funky!</a>
+  <a class="navbar-brand" href="https://youtu.be/jJvjWh2Vhu4">Be Funky!</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -28,15 +27,17 @@
     <span class="navbar-text">
 
       <c:choose>
-      <c:when test="${heading eq 'Welcome'}">
-        <a role="button" class="btn btn-warning" href="listController"><span class="glyphicon glyphicon-user"></span>Sign In</a>
-      </c:when>
-      <c:when test="${heading eq 'Hey You! Login' || heading eq 'Create Yo Account'|| heading eq 'Login Error'}">
+      <c:when test="${button eq 'logout'}">
+        <p>${pageContext.request.remoteUser}</p>
+       <a role="button" class="btn btn-success" href="logout">LogOut</a>
 
       </c:when>
+
+      <c:when test="${button eq 'login'}">
+          <a role="button" class="btn btn-warning" href="listController"><span class="glyphicon glyphicon-user"></span>Sign In</a>
+      </c:when>
       <c:otherwise>
-        <p>${pageContext.request.remoteUser}</p>
-        <a role="button" class="btn btn-success" href="logout">LogOut</a>
+
       </c:otherwise>
       </c:choose>
     </span>

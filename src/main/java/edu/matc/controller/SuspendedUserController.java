@@ -1,7 +1,6 @@
 package edu.matc.controller;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 
 import java.io.IOException;
 
@@ -17,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class SuspendedUserController extends HttpServlet {
 
-    private final Logger logger = LogManager.getLogger(this.getClass());
+    private final Logger logger = Logger.getLogger(this.getClass());
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)

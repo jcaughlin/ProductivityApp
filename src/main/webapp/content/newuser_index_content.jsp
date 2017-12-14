@@ -6,7 +6,6 @@
   Time: 1:30 PM
   To change this template use File | Settings | File Templates.
 --%>
-<script src="javascript/validation.js"></script>
 <fieldset>
     <form class="form-signin forms" method="post" action="register" id="newUser">
         <h2 class="form-signin-heading">Start Your More Better Today!!!</h2>
@@ -24,15 +23,15 @@
 
         <!--User Password-->
         <div class="row">
-            <label for="createPassword" class="sr-only">Create A Password</label>
-            <input type="password" class="form-control" id="createPassword" name="password"
+            <label for="password" class="sr-only">Create A Password</label>
+            <input type="password" class="form-control" id="password" name="password"
                    placeholder="Create a password"/>
         </div>
 
         <!--Password Confirm-->
         <div class="row">
-            <label for="confirmPassword" class="sr-only">Confirm Password</label>
-            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
+            <label for="confirm_password" class="sr-only">Confirm Password</label>
+            <input type="password" class="form-control" id="confirm_password" name="confirm_password"
                    placeholder="Confirm Password"/>
         </div>
         <div class="invalid-feedback">Passwords Do Not Match</div>
@@ -52,7 +51,9 @@
 
     </form>
 </fieldset>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js"></script>
+<script src="javascript/validation.js"></script>
 
 
 

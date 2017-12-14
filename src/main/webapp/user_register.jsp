@@ -13,11 +13,15 @@
 
 <jsp:include page="partials/head.jsp"/>
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.standalone.min.css" />
+
 <jsp:include page="partials/header.jsp"/>
 
 <jsp:include page="partials/navbar.jsp"/>
 
 <jsp:include page="content/user_register_content.jsp"/>
+
 
 <jsp:include page="partials/footer.jsp"/>
 

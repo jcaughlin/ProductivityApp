@@ -4,13 +4,15 @@ import edu.matc.entity.Status;
 import edu.matc.entity.User;
 import edu.matc.entity.UserRoles;
 import edu.matc.persistence.UserDao;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import edu.matc.util.LocalDateAttributeConverter;
 
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+
+import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletResponse;
@@ -23,29 +25,36 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "AddUser", urlPatterns = {"/addUser"})
 public class AddUser extends HttpServlet {
 
-    private final Logger logger = LogManager.getLogger(this.getClass());
+    private final Logger logger = Logger.getLogger(this.getClass());
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
-            IOException {
+            IOException{
+
+        String errorMessage;
+        String successMessage;
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MMM-dd");
 
         RequestDispatcher dispatcher;
 
-        RequestDispatcher dispatcher2 = getServletContext().getRequestDispatcher("/register");
-
-
         try {
             User user = new User();
 
             String userName = (String) request.getAttribute("userName");
+            logger.info("user Name is: " + userName);
             String userPassword = (String) request.getAttribute("userPassword");
-            String firstName = request.getParameter("firstName");
-            String lastName = request.getParameter("lastName");
-            String city = request.getParameter("city");
-            // String state = request.getParameter("state");
-            // String zipCode = request.getParameter("zipCode");
+            logger.info("User Pass is: "+ userPassword);
+            String firstName = request.getParameter("firstname");
+            logger.info("user first name is: " + firstName);
+            String lastName = request.getParameter("lastname");
+            logger.info("User Last Name is: " + lastName);
+            String address = request.getParameter("addrees");
+            logger.info("User address: " + address);
+            String userCity = request.getParameter("city");
+            logger.info("User City: " + userCity);
+            String state = request.getParameter("state");
+            String zipCode = request.getParameter("zipCode");
             String emailAddress = request.getParameter("email");
             // LocalDate birthday = LocalDate.parse(request.getParameter("birthday"), formatter);
 
@@ -53,25 +62,29 @@ public class AddUser extends HttpServlet {
             user.setUserPassword(userPassword);
             user.setUserFirstName(firstName);
             user.setUserLastName(lastName);
-            user.setUserCity(city);
+            user.setUserCity(userCity);
             user.setUserEmail(emailAddress);
             // user.setUserDateOfBirth(birthday);
+
+            logger.debug("this works");
 
 
             UserDao userDao = new UserDao();
 
             userDao.addUser(user);
 
+            successMessage = firstName + " " + lastName + " Thanks for joining";
+            request.setAttribute("Success" , successMessage);
             request.setAttribute("User", user);
             String url = "/user_added.jsp";
 
             dispatcher = getServletContext().getRequestDispatcher(url);
             dispatcher.forward(request, response);
 
-        } catch (ServletException servletexception) {
+        } catch (ServletException servletException) {
 
             String url = "/user_register.jsp";
-            String errorMessage = "The was an error and user was not added. Contact Management";
+            errorMessage = "The was an error and user was not added. Contact Management";
             request.setAttribute("errorMessage", errorMessage);
             dispatcher = getServletContext().getRequestDispatcher(url);
             dispatcher.forward(request, response);

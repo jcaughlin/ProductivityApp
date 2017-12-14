@@ -2,8 +2,7 @@ package edu.matc.controller;
 
 
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 
 import java.io.*;
 
@@ -18,8 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class AdminReportTrafficDirector extends HttpServlet {
 
-
-    private final Logger logger = LogManager.getLogger(this.getClass());
+    private final Logger logger = Logger.getLogger(this.getClass());
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

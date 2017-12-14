@@ -1,7 +1,6 @@
 package edu.matc.persistence;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -12,7 +11,7 @@ import java.util.List;
 public class GenericDao<T> {
 
     private Class<T> type;
-    private final Logger log = LogManager.getLogger(this.getClass());
+    private final Logger log = Logger.getLogger(this.getClass());
 
     public GenericDao(Class<T> type) {
         this.type=type;

@@ -1,7 +1,6 @@
 package edu.matc.controller;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -16,7 +15,7 @@ import java.io.IOException;
 @WebServlet(name = "NavbarController", urlPatterns = "/navbar")
 public class NavbarController extends HttpServlet {
 
-    private final Logger log = LogManager.getLogger(this.getClass());
+    private final Logger log = Logger.getLogger(this.getClass());
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

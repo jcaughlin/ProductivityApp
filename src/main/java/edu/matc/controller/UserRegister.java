@@ -2,8 +2,8 @@ package edu.matc.controller;
 
 import java.io.IOException;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import edu.matc.persistence.UserDao;
+import org.apache.log4j.Logger;
 
 
 import javax.servlet.*;
@@ -14,7 +14,7 @@ import javax.servlet.http.*;
 @WebServlet(name = "UserRegister", urlPatterns = {"/register"})
 public class UserRegister extends HttpServlet {
 
-    private final Logger log = LogManager.getLogger(this.getClass());
+    private final Logger log = Logger.getLogger(this.getClass());
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -25,12 +25,17 @@ public class UserRegister extends HttpServlet {
         String url;
         String password;
         String passwordConfirm;
+        UserDao userDao;
 
         // TODO Check db if username exists
+
+        userDao = new UserDao();
         userName = request.getParameter("username");
-        // TODO check that password doesn't exist
+
+        userDao.getUserByUserName("username");
+
         password = request.getParameter("password");
-        passwordConfirm = request.getParameter("confirmPassword");
+        passwordConfirm = request.getParameter("confirm_password");
 
         if (!passwordConfirm.equals(password)) {
             String errorMessage = "Passwords Do Not Match. Please Try Again";

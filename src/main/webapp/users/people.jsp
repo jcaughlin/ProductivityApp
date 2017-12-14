@@ -3,6 +3,7 @@
 <c:set var="title" scope="session" value="People I met"/>
 <c:set var="heading" scope="session" value="Joe With Awesome People"/>
 <c:set var="author" scope="session" value="JS Caughlin"/>
+<c:set var="button" scope="session" value="logout"/>
 <%--
   Created by IntelliJ IDEA.
   User: josephcaughlin

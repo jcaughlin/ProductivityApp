@@ -1,14 +1,27 @@
-$(document).ready(function() {
-    $("#userBirthDate").datepicker();
+$(document).ready(function () {
+    console.log("working");
+    $('#sandbox-container input').datepicker({
+        autoclose: true
+    });
 
-    $("button").click(function() {
-        var selected = $("#dropdown option:selected").text();
-        var departing = $("#departing").val();
-        var returning = $("#returning").val();
-        if (departing === "" || returning === "") {
-            alert("Please select departing and returning dates.");
-        } else {
-            confirm("Would you like to go to " + selected + " on " + departing + " and return on " + returning + "?");
+    $('#sandbox-container input').on('show', function (event) {
+
+
+        if (event.date) {
+            $(this).data('date', event.date);
+        }
+        else {
+            $(this).data('date', null);
+        }
+    });
+
+    $('#sandbox-container input').on('hide', function (event) {
+        var stickyDate = $(this).data('date');
+
+        if (!event.date && date) {
+
+            $(this).datepicker('setDate', date);
+            $(this).data('date', null);
         }
     });
 });

@@ -8,7 +8,6 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<script src="javascript/validation.js"></script>
 <fieldset>
     <form id="newUser" class="new-user-form forms" method="post" action="addUser" enctype="multipart/form-data">
         <h2 class="form-signin-heading">Hey There ${userName}! Create an Account</h2>
@@ -17,25 +16,31 @@
             <!-- User First Name-->
             <div class="col-6">
                 <label for="userFirstName" class="sr-only">Enter First Name</label>
-                <input type="text" class="form-control" id="userFirstName" name="firstName" placeholder="Enter First Name">
+                <input type="text" class="form-control" id="userFirstName" name="firstname"
+                       placeholder="Enter First Name">
             </div>
             <!--User Last Name-->
             <div class="col-6">
                 <label for="userLastName" class="sr-only">Enter Last Name</label>
-                <input type="text" class="form-control" id="userLastName" name="lastName" placeholder="Enter Last Name">
+                <input type="text" class="form-control" id="userLastName" name="lastname" placeholder="Enter Last Name">
             </div>
         </div>
 
-        <!--User Email-->
-        <label for="userEmail" class="sr-only">Enter Email</label>
-        <input type="email" class="form-control" id="userEmail" name="email" placeholder="Enter Email Address">
 
+        <!--User Street Address-->
         <div class="row">
-            <!--User City-->
+            <label for="userStreetAddress" class="sr-only">Street Addres</label>
+            <input type="address" class="form-control" id="userStreetAddress" name="address"
+                   placeholder="Street Address">
+        </div>
+
+        <!--User City-->
+        <div class="row">
             <div class="col-6">
                 <label for="userCity" class="sr-only">Enter City</label>
                 <input type="text" class="form-control" id="userCity" name="city" placeholder="Enter City">
             </div>
+
             <!--User State-->
             <div class="col-3">
                 <label for="userState" class="sr-only">State</label>
@@ -101,9 +106,15 @@
             </div>
         </div>
 
+        <div class="row"><!--User Email-->
+            <label for="userEmail" class="sr-only">Enter Email</label>
+            <input type="email" class="form-control" id="userEmail" name="email" placeholder="Enter Email Address">
+        </div>
+
         <div class="row>">
-            <label for="userBirthDate" class="sr-only">Enter Birthday</label>
-            <input type="text" id="userBirthDate" name="birthday">
+            <div id="sandbox-container">
+                <input type="text" class="form-control" placeholder="Enter Birthday"/>
+            </div>
         </div>
 
 
@@ -115,3 +126,13 @@
         </div>
     </form>
 </fieldset>
+<div class="row">
+    <h3>${errorMessage}</h3>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"
+        integrity="sha256-7Ls/OujunW6k7kudzvNDAt82EKc/TPTfyKxIE5YkBzg=" crossorigin="anonymous"></script>
+<script src="javascript/datepicker.js"></script>
+<script src="javascript/validation.js"></script>

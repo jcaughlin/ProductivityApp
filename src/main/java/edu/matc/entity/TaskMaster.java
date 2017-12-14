@@ -24,25 +24,25 @@ public class TaskMaster implements java.io.Serializable{
     @Column(name="task_list_id_pk")
     private int userTaskKey;
 
-    @Column(name="task_name")
-    private Task taskName;
-
-    @Column(name="start_time")
-    private int taskStartTime;
-
-    @Column(name="end_time")
-    private int taskEndTime;
-
-    @Column(name="task_status")
-    private Boolean taskStatus;
-
     @Convert(converter=LocalDateAttributeConverter.class)
     @Column(name="task_scheduled_date")
     private LocalDate dateTaskScheduled;
 
+    @Column(name="task_name")
+    private Task taskName;
+
+    @Column(name="task_start_time")
+    private int taskStartTime;
+
+    @Column(name="task_end_time")
+    private int taskEndTime;
+
     @Column(name = "task_duration")
     @Formula("end_time - start_time")
     private long totalTimeSpentOnTask;
+
+    @Column(name="task_status")
+    private Boolean taskStatus;
 
     // No Argument Constructor
     public TaskMaster() {

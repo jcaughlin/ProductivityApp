@@ -3,23 +3,23 @@ package edu.matc.persistence;
 import edu.matc.entity.UserRoles;
 import edu.matc.entity.User;
 import edu.matc.entity.Status;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import edu.matc.util.LocalDateAttributeConverter;
+import org.apache.log4j.Logger;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.List;
 import java.time.LocalDate;
+import java.util.List;
+import java.util.Date;
 
-import edu.matc.util.LocalDateAttributeConverter;
+
 
 import static org.junit.Assert.*;
 
 public class UserDaoTest {
 
-    private final Logger log = LogManager.getLogger(this.getClass());
+    private final Logger log = Logger.getLogger(this.getClass());
     UserDao dao;
     User user;
     User user2;
@@ -40,14 +40,6 @@ public class UserDaoTest {
         log.info(testUser.toString());
     }
 
-    @Test
-    public void getRecordCountTest() {
-        int count;
-        count = dao.getRecordCount();
-        log.info("Record Count is: " + dao.getRecordCount());
-        assertEquals("Match", 1, count);
-
-    }
 
     @Test
     public void getAllUsersTest() {

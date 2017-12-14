@@ -1,7 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="title" scope="session" value="Welcome Admin"/>
-<c:set var="heading" scope="session" value="If your name ain't Joe, you best be gettin'
-off this elevator"/>
+<c:set var="heading" scope="session" value="Welcome Joe"/>
 <%--
   Created by IntelliJ IDEA.
   User: josephcaughlin

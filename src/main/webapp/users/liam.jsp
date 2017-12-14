@@ -2,6 +2,7 @@
 <c:set var="title" scope="session" value="Liam's Page"/>
 <c:set var="heading" scope="session" value="Hello. My Name is Liam"/>
 <c:set var="author" scope="session" value="JS Caughlin"/>
+<c:set var="button" scope="session" value="logout"/>
 <%--
   Created by IntelliJ IDEA.
   User: josephcaughlin

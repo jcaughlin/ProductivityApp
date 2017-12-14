@@ -3,6 +3,7 @@
 <c:set var="title" scope="request" value="User Task Entry"/>
 <c:set var="heading" scope="request" value="What Have you done"/>
 <c:set var="author" scope="session" value="JS Caughlin"/>
+<c:set var="button" scope="session" value="logout"/>
 
 <%--
   Created by IntelliJ IDEA.

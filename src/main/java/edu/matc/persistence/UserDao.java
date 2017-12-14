@@ -3,13 +3,9 @@ package edu.matc.persistence;
 import edu.matc.entity.User;
 
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 
-import org.hibernate.Criteria;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
+import org.hibernate.*;
 import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 
@@ -19,7 +15,7 @@ import java.util.List;
 public class UserDao {
 
 
-    private final Logger log = LogManager.getLogger(this.getClass());
+    private final Logger log = Logger.getLogger(this.getClass());
 
     /**
      * save new user
@@ -27,15 +23,14 @@ public class UserDao {
      * @param user user to insert
      * @return id of the inserted user
      */
-
     public int addUser(User user) {
-        int id = 0;
+        int userID = 0;
         Transaction transaction = null;
         Session session = null;
         try {
             session = SessionFactoryProvider.getSessionFactory().openSession();
             transaction = session.beginTransaction();
-            id = (int) session.save(user);
+            userID = (Integer) session.save(user);
             transaction.commit();
         } catch (HibernateException he) {
             if (transaction != null) {
@@ -50,7 +45,7 @@ public class UserDao {
                 session.close();
             }
         }
-        return id;
+        return userID;
     }
 
     /**
@@ -89,7 +84,6 @@ public class UserDao {
      *
      * @param user user to update
      */
-
     public void update(User user) {
         Transaction transaction = null;
         Session session = null;
@@ -139,7 +133,7 @@ public class UserDao {
      * Retrieve users by lastname
      *
      * @param lastName User's last name which is the search criteria
-     * @return User
+     * @return users Users matching the last name.
      */
     public List<User> getUsersByLastName(String lastName) {
         List<User> users = new ArrayList<User>();
@@ -191,42 +185,39 @@ public class UserDao {
         Session session = null;
         Transaction transaction = null;
 
-
-
-            session = SessionFactoryProvider.getSessionFactory().openSession();
-        Criteria crit = session.createCriteria(User.class);
-
-        crit.setProjection(Projections.rowCount());
-        Integer count = (Integer)crit.uniqueResult();
+        session = SessionFactoryProvider.getSessionFactory().openSession();
+        Criteria criteria = session.createCriteria(User.class);
+        criteria.setProjection(Projections.rowCount());
+        criteria.setProjection(Projections.rowCount());
+        Integer count = (Integer)criteria.uniqueResult();
         log.info("The count is: " + count);
 
         return count;
 
     }
 
-    /**
-     *
-     * @param searchTerm The value that Hibernate is to search by.
-     * @param value The entity property that Hibernate is querying.
-     * @return
-     */
-    public User getUserByCriteria(String searchTerm) {
-        User user = null;
+
+   public Boolean getUserByUserName(String userName){
         Session session = null;
-        try {
-            session = SessionFactoryProvider.getSessionFactory().openSession();
-            user = (User) session.get(User.class, searchTerm);
-        } catch (HibernateException hibernateException) {
-            log.error("Error getting all users with: " + searchTerm, hibernateException);
-        } finally {
-            if (session != null) {
+        User user = new User();
+
+        try{
+            session=SessionFactoryProvider.getSessionFactory().openSession();
+            user = (User) session.get(User.class, userName);
+            log.info("users match");
+        } catch(HibernateException hibernateexception) {
+            log.error("user don't match");
+            log.error("Error Finding User: " + hibernateexception);
+        } catch(Exception exception) {
+            log.error("Generally Something Went Wrong" + exception);
+        } finally{
+            if(session == null){
+
                 session.close();
             }
         }
-        log.info("successful");
-        return user;
-    }
-
+        return true;
+   }
 
 
 }
